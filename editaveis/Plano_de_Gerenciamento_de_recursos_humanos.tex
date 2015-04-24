@@ -1,8 +1,15 @@
-\documentclass[12pt,openright,twoside,a4paper,brazil]{article}
+\documentclass[12pt,openright,oneside,a4paper,brazil]{abntex2}
 \usepackage[utf8]{inputenc}
+\counterwithout{section}{section}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+\setlength{\parindent}{1.3cm}
+\usepackage{indentfirst}
+\setlength{\parskip}{0.2cm}
 \usepackage[bottom=2cm,top=3cm,left=3cm,right=2cm]{geometry}
 \usepackage{graphicx}
 \graphicspath{{figuras/}}
+\usepackage{placeins}
 
 %opening
 \title{}
@@ -10,23 +17,11 @@
 
 \begin{document}
 
-%capa
-\begin{titlepage}
- \begin{center}
-  {\large UnB - Universidade de Brasília}\\[0.2cm]
-  {\large FGA - Faculdade do Gama}\\[0.2cm]
-  {\large Engenharias}\\[0.2cm]
-  {\large Projeto Integrador 1}\\[5.1cm]
-  {\large \Huge Plano de gerenciamento dos Recursos Humanos}\\[2.0cm]
-  {\large \huge Planta de abastecimento de água potável a partir da umidade do ar}
- \end{center}
 
-\end{titlepage}
-
-\begin{titlepage}
+\textual
 \begin{center}
- {\large \bf Plano de gerenciamento dos Recursos Humanos}\\[0.2cm]
- {\bf Planta de abastecimento de água potável a partir da umidade do ar}\\
+ {\large Plano de gerenciamento dos Recursos Humanos}\\[0.2cm]
+ {Planta de abastecimento de água potável a partir da umidade do ar}\\
  \end{center}
  
  \section{Histórico de Alterações}
@@ -36,7 +31,8 @@
 
 Data & Versão & Descrição & Responsável\\
 \hline                               
-19/04/2015 & 0.0 & Criação do plano de recursos humanos e suas especificações. & Amanda Leite de Castro
+19/04/2015 & 0.0 & Criação do plano de recursos humanos e suas especificações. & Amanda Leite de Castro\\
+\hline
 \end{tabular}
 \end{table}
 
@@ -61,7 +57,7 @@ Gerente de Aquisições – Yan Watanabe Martins\\
   Amanda de Leite Castro;\\
   Eric Vinicius Lima Barbosa;\\
   Júlio César Tavares Primo.\\
-  \item Equipe: identifica e informa as necessidades de mudanças; informa a ocorrência de contingências que podem impactar no insucesso do projeto; registra e arquiva as atividades, documentos elaborados e lições aprendidas; entregar formalmente (com aceitação) os pacotes de trabalho.
+  \item Equipe: identifica e informa as necessidades de mudanças; informa a ocorrência de contingências que podem impactar no insucesso do projeto; registra e arquiva as atividades, documentos elaborados e lições aprendidas; entregar formalmente (com aceitação) os pacotes de trabalho.\\
 Componentes:\\
 Ana Paula Chavier Rodrigues;\\
 Andre Luis Motoshima Barros;\\
@@ -79,22 +75,24 @@ Rafael Contessotto Braganca Pinheiro;\\
 Victor Felipe Borges;\\
 Vitor Silva Ribeiro.\\
   \end{itemize}
-
-  \section{Organograma do Projeto}
-  \begin{figure}[!htb]
+\newpage
+\section{Organograma do Projeto}
+  \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.6]{Organograma}
 \caption{Orgonograma do projeto}
 \label{Rotulo}
 \end{figure}
+\FloatBarrier
 
-  \section{Matriz de Responsabilidades}
-    \begin{figure}[!htb]
-\centering
+ \section{Matriz de Responsabilidades}
+ \FloatBarrier
+ \begin{figure}[h]
 \includegraphics[scale=0.65]{matriz}
+\label{matrizderesponsabilidades}
 \caption{Matriz de Responsabilidades}
-\label{Rotulo}
-\end{figure}
+ \end{figure}
+
 Legenda: R= Responsável; V= Valida; P= Participa.\\
   
 
@@ -138,11 +136,12 @@ ERIC VINÍCIUS LIMA BARBOSA - SUPLENTE DO RESPONSÁVEL DIRETO PELO PLANO DE GERE
 Todas as mudanças no quadro de gerenciamento dos Recursos Humanos devem ser apresentadas e discutidas em reunião sendo o Gerente de Recursos Humanos o responsável por tal avaliação. A responsabilidade de possíveis mudanças no quadro pessoal da equipe fica direcionada à comissão.
 
 \section{Assinaturas}
-Data:	19/04/2015\\ \\ \\
+\begin{center}
+Data: \rule{0.5cm}{0.1mm}/\rule{0.5cm}{0.1mm}/\rule{1cm}{0.1mm}     \\
 \rule{13cm}{0.1mm}\\
-ADRIANNY VIANA DE ARAÚJO AMORIM – GERENTE DE PROJETO\\ \\ \\
+ADRIANNY VIANA DE ARAÚJO AMORIM – GERENTE DE PROJETO\\
 \rule{13cm}{0.1mm}\\
 AMANDA LEITE DE CASTRO - GERENTE DE RECURSOS HUMANOS
 
-\end{titlepage}
+\end{center}
 \end{document}
