@@ -10,9 +10,24 @@
 {CIRILO, J. et~al. Manejo integrado de água no semi-árido brasileiro.
 2007.}
 
+\bibitem[Krajewski e Hitzman 1996]{krajewski96}
+\abntrefinfo{Krajewski e Hitzman}{KRAJEWSKI; HITZMAN}{1996}
+{KRAJEWSKI, J.~L.; HITZMAN, P.~L. \emph{Operations management strategy and
+  analysis}. [S.l.]: Addison Wesley, 1996.}
+
+\bibitem[Ramaswamy 1996]{ramaswamy96}
+\abntrefinfo{Ramaswamy}{RAMASWAMY}{1996}
+{RAMASWAMY, R. \emph{Design and Management of Service Processes: Keeping
+  Customers for Life}. [S.l.]: Addison Wesley, 1996.}
+
 \bibitem[Rebouças 2003]{reboucas03}
 \abntrefinfo{Rebouças}{REBOUçAS}{2003}
 {REBOUçAS, A. da C. Água no brasil: abundância, desperdício e escassez.
 2003.}
+
+\bibitem[Slack et al. 1999]{slack99}
+\abntrefinfo{Slack et al.}{SLACK et al.}{1999}
+{SLACK, N. et al. \emph{Administração da produção}. São Paulo: Atlas,
+  1999.}
 
 \end{thebibliography}
