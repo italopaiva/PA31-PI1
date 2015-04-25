@@ -1,13 +1,28 @@
-%\chapter*[Introdução]{Introdução}
-%\addcontentsline{toc}{chapter}{Introdução}
-
-\chapter{Introdução}
+\chapter[Introdução]{Introdução}
+\addcontentsline{toc}{chapter}{Introdução}
 
 Este trabalho apresenta ...
 
 \section{Contexto}
 
-Apresentar o Contexto da falta de água no nordeste e especificamente na cidade escolhida..
+Água, de todos os recursos naturais, o mais importante, extremamente essencial para a manutenção da vida na Terra.
+Não há nenhuma forma de vida que não tenha necessidade de água para sua sobreviver e desenvolvimento. 
+
+A água doce é também base de atividades econômicas e sociais, como por exemplo, o abastecimento público, agricultura,
+pecuária, turismo e está relacionada muita das vezes a matriz energética de um país. 
+
+Denominada cientificamente como “hidróxido de hidrogênio” ou “monóxido de di-hidrogênio, a água é uma substância química
+cuja moléculas são formadas por dois átomos de hidrogênio e um de oxigênio. É encontrada em grande quantidade no Universo,
+inclusive no planeta Terra, onde cobre parte de sua superfície e é o maior constituinte dos fluídos dos seres vivos. 
+
+O Brasil é o quinto maior país em extensão do mundo com 8.547.403,5 km$^2$,
+localizado na parte centro-oriental da América do Sul , ocupa 47,7\%  da área deste continente, cortado pela Linha do Equador
+e pelo Trópico de Capricórnio. Possui uma extensa diversidade climática por consequência de vários elementos como a configuração
+geográfica, altitudes, relevos, dinâmicas das massa de ar e principalmente pela sua extensão territorial. 
+Como consequência o país recebe um abundante índice pluviométrico que varia, sobre mais de 90\% de seu território,
+encontrando-se entre 1.000 e mais de 3.000 mm/ano \cite{reboucas03}.
+
+
 
 \section{Justificativa}
 

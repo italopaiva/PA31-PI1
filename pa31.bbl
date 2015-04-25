@@ -5,9 +5,14 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
-\bibitem[Boehm e Turner 2004]{boehm}
-\abntrefinfo{Boehm e Turner}{BOEHM; TURNER}{2004}
-{BOEHM, B.; TURNER, R. \emph{Balancing Agility and Discipline: A Guide for the
-  perplexed}. 7. ed. [S.l.]: Addison Wesley, 2004.}
+\bibitem[Cirilo 2007]{cirilo}
+\abntrefinfo{Cirilo}{CIRILO}{2007}
+{CIRILO, J. et~al. Manejo integrado de água no semi-árido brasileiro.
+2007.}
+
+\bibitem[Rebouças 2003]{reboucas03}
+\abntrefinfo{Rebouças}{REBOUçAS}{2003}
+{REBOUçAS, A. da C. Água no brasil: abundância, desperdício e escassez.
+2003.}
 
 \end{thebibliography}
