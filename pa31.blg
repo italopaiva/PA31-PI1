@@ -29,7 +29,7 @@ Warning--campo year vazio ou faltando em eole
 +---------------------------------------------------------+
 You've used 14 entries,
             6711 wiz_defined-function locations,
-            1259 strings with 11551 characters,
+            1259 strings with 11550 characters,
 and the built_in function-call counts, 8963 in all, are:
 = -- 718
 > -- 291
