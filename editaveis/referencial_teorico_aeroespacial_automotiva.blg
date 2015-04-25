@@ -1,4 +1,8 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: referencial_teorico_aeroespacial_automotiva.aux
-I found no \bibdata command---while reading file referencial_teorico_aeroespacial_automotiva.aux
-I found no \bibstyle command---while reading file referencial_teorico_aeroespacial_automotiva.aux
+I couldn't open style file abnt-alf.bst
+---line 40 of file referencial_teorico_aeroespacial_automotiva.aux
+ : \bibstyle{abnt-alf
+ :                   }
+I'm skipping whatever remains of this command
+I found no style file---while reading file referencial_teorico_aeroespacial_automotiva.aux
 (There were 2 error messages)
