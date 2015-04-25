@@ -5,3 +5,7 @@
 *.lot
 *.toc
 *.lof
+*.backup
+*.bbl
+*.blg
+*.brf
