@@ -13,59 +13,59 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
-I was expecting an "="---line 5 of file bibliografia.bib
- :        
- :        note = "[Online; accessed 23-Abril-2015]"
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--campo year vazio ou faltando em barrosVarela
+Warning--campo year vazio ou faltando em warkawater
+Warning--campo year vazio ou faltando em portalEnergia
+Warning--campo year vazio ou faltando em rossiEtAl
+Warning--campo year vazio ou faltando em eole
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 6 entries,
+You've used 14 entries,
             6711 wiz_defined-function locations,
-            1221 strings with 9846 characters,
-and the built_in function-call counts, 4083 in all, are:
-= -- 390
-> -- 118
+            1259 strings with 11551 characters,
+and the built_in function-call counts, 8963 in all, are:
+= -- 718
+> -- 291
 < -- 0
-+ -- 89
-- -- 37
-* -- 253
-:= -- 629
-add.period$ -- 15
-call.type$ -- 6
-change.case$ -- 46
-chr.to.int$ -- 6
-cite$ -- 5
-duplicate$ -- 151
-empty$ -- 323
-format.name$ -- 177
-if$ -- 956
++ -- 150
+- -- 92
+* -- 553
+:= -- 1309
+add.period$ -- 42
+call.type$ -- 14
+change.case$ -- 114
+chr.to.int$ -- 14
+cite$ -- 18
+duplicate$ -- 381
+empty$ -- 752
+format.name$ -- 432
+if$ -- 2129
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 95
-newline$ -- 30
-num.names$ -- 25
-pop$ -- 148
+missing$ -- 229
+newline$ -- 70
+num.names$ -- 65
+pop$ -- 343
 preamble$ -- 1
-purify$ -- 21
+purify$ -- 48
 quote$ -- 0
-skip$ -- 265
+skip$ -- 562
 stack$ -- 1
-substring$ -- 134
-swap$ -- 54
+substring$ -- 226
+swap$ -- 146
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 32
+warning$ -- 5
+while$ -- 75
 width$ -- 0
-write$ -- 76
-(There was 1 error message)
+write$ -- 183
+(There were 5 warnings)
