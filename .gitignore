@@ -9,3 +9,6 @@
 *.bbl
 *.blg
 *.brf
+*.synctex.gz
+*.gz
+*.synctex
