@@ -5,3 +5,11 @@
 *.lot
 *.toc
 *.lof
+*.backup
+*.bbl
+*.blg
+*.brf
+*.synctex.gz
+*.gz
+*.synctex
+*.kate-swp

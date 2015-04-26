@@ -5,9 +5,87 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
-\bibitem[Boehm e Turner 2004]{boehm}
-\abntrefinfo{Boehm e Turner}{BOEHM; TURNER}{2004}
-{BOEHM, B.; TURNER, R. \emph{Balancing Agility and Discipline: A Guide for the
-  perplexed}. 7. ed. [S.l.]: Addison Wesley, 2004.}
+\bibitem[Barros e Varella]{barrosVarela}
+\abntrefinfo{Barros e Varella}{BARROS; VARELLA}{}
+{BARROS, M.~M. de; VARELLA, V.~S. de Q. \emph{Fontes de Energia Renováveis:
+  Geração Eólica}.
+Disponível em: <http://www.solar.coppe.ufrj.br/eolica/eol\_txt.htm>. Acesso em
+  23/04/2015.}
+
+\bibitem[Cirilo 2007]{cirilo}
+\abntrefinfo{Cirilo}{CIRILO}{2007}
+{CIRILO, J. et~al. Manejo integrado de água no semi-árido brasileiro.
+2007.}
+
+\bibitem[DEVELOPMENT 2012]{renewable}
+\abntrefinfo{DEVELOPMENT}{DEVELOPMENT}{2012}
+{DEVELOPMENT, R.~E. \emph{Extraindo água do ar utilizando a energia eólica}.
+  2012.
+Disponível em:
+  <http://renewableenergydev.com/extracting-water-from-the-air-using-wind-power>.
+  Acesso em 23/04/2015.}
+
+\bibitem[Duarte]{warkawater}
+\abntrefinfo{Duarte}{DUARTE}{}
+{DUARTE, T.~L. \emph{FANTÁSTICA INVENÇÃO QUE GERA 100 LITROS DE ÁGUA POR
+  DIA – WARKA WATER}.
+Disponível em:
+  <http://yogui.co/fantastica-invencao-que-gera-100-litros-de-agua-por-dia-warka-water>.
+  Acesso em 23/04/2015.}
+
+\bibitem[ENERGIA]{portalEnergia}
+\abntrefinfo{ENERGIA}{ENERGIA}{}
+{ENERGIA, P. \emph{Eole Water cria aerogerador capaz de gerar água potável}.
+Disponível em:
+  <http://www.portal-energia.com/eole-water-cria-aerogerador-capaz-de-gerar-agua-potavel>.
+  Acesso em 23/04/2015.}
+
+\bibitem[Krajewski e Hitzman 1996]{krajewski96}
+\abntrefinfo{Krajewski e Hitzman}{KRAJEWSKI; HITZMAN}{1996}
+{KRAJEWSKI, J.~L.; HITZMAN, P.~L. \emph{Operations management strategy and
+  analysis}. [S.l.]: Addison Wesley, 1996.}
+
+\bibitem[Ramaswamy 1996]{ramaswamy96}
+\abntrefinfo{Ramaswamy}{RAMASWAMY}{1996}
+{RAMASWAMY, R. \emph{Design and Management of Service Processes: Keeping
+  Customers for Life}. [S.l.]: Addison Wesley, 1996.}
+
+\bibitem[Rebouças 2003]{reboucas03}
+\abntrefinfo{Rebouças}{REBOUçAS}{2003}
+{REBOUçAS, A. da C. Água no brasil: abundância, desperdício e escassez.
+2003.}
+
+\bibitem[ROSSI, OLIVEIRA e ALÉ]{rossiEtAl}
+\abntrefinfo{ROSSI, OLIVEIRA e ALÉ}{ROSSI; OLIVEIRA; ALÉ}{}
+{ROSSI, P. H.~J.; OLIVEIRA, C.~P. de; ALÉ, J.~V. \emph{Perguntas Frequentes
+  sobre Energia Eólica}.
+Disponível em: <http://www.pucrs.br/ce-eolica/faq.php?q=23\#23>. Acesso em
+  23/04/2015.}
+
+\bibitem[SAS]{eole}
+\abntrefinfo{SAS}{SAS}{}
+{SAS, E.~A. \emph{Nossos produtos: Lista de especialidades}.
+Disponível em: <http://www.eolewater.com/gb/our-products/our-expertise.html>.
+  Acesso em 23/04/2015.}
+
+\bibitem[Slack et al. 1999]{slack99}
+\abntrefinfo{Slack et al.}{SLACK et al.}{1999}
+{SLACK, N. et al. \emph{Administração da produção}. São Paulo: Atlas,
+  1999.}
+
+\bibitem[Times 2014]{warkawater2}
+\abntrefinfo{Times}{TIMES}{2014}
+{TIMES, E. \emph{Warka Water: água pura para populações pobres}. 2014.
+Disponível em:
+  <https://www.epochtimes.com.br/warka-water-agua-pura-para-populacoes-pobres/\#.VTmOTtJViko>.
+  Acesso em 23/04/2015.}
+
+\bibitem[USP 2005]{usp}
+\abntrefinfo{USP}{USP}{2005}
+{USP. \emph{PEA 5002- ENERGIA EÓLICA FUNDAMENTOS E VIABILIDADE
+  TÉCNICO-ECONÔMICA}. 2005.
+Disponível em:
+  http://disciplinas.stoa.usp.br/pluginfile.php/84860/mod\_resource/content/1/Aula5\_tecnologia\_2013.pdf.
+  Accesso em 23/04/2015.}
 
 \end{thebibliography}
