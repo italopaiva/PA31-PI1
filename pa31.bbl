@@ -6,9 +6,16 @@
 \abntbstabout{v-1.9.2 }
 
 \bibitem[ANA]{anaGov}
-\abntrefinfo{ANA}{ANA}{}
-{ANA, A.~N. de~Águas. \emph{Qualidade das Águas}.
+\abntrefinfo{ANA}{ANA}{a}
+{ANA, A.~N. de~Águas. \emph{Portal da Qualidade das Águas}.
 Disponível em:<http://portalpnqa.ana.gov.br/>. Acesso em: 20/04/2015.}
+
+\bibitem[ANA]{anaGovIndicadores}
+\abntrefinfo{ANA}{ANA}{b}
+{ANA, A.~N. de~Águas. \emph{Portal da Qualidade das Águas: Indicadores de
+  qualidade da água}.
+Disponível em:<http://portalpnqa.ana.gov.br/indicadores-indice-aguas.aspx>.
+  Acesso em: 19/04/2015.}
 
 \bibitem[Barros e Varella]{barrosVarela}
 \abntrefinfo{Barros e Varella}{BARROS; VARELLA}{}
@@ -16,6 +23,27 @@ Disponível em:<http://portalpnqa.ana.gov.br/>. Acesso em: 20/04/2015.}
   Geração Eólica}.
 Disponível em: <http://www.solar.coppe.ufrj.br/eolica/eol\_txt.htm>. Acesso em
   23/04/2015.}
+
+\bibitem[Brasil]{cleanEnvironmentBrasil}
+\abntrefinfo{Brasil}{BRASIL}{}
+{BRASIL, C.~E. \emph{Sonda YSI EXO 2 para Monitoramento da Qualidade da Água}.
+Disponível em: <http://www.clean.com.br/site/ysi-exo-2/>. Acesso em:
+  19/04/2015.}
+
+\bibitem[CETESB]{cetesbOxigenioDissolvido}
+\abntrefinfo{CETESB}{CETESB}{a}
+{CETESB, C. de~Tecnologia de Saneamento Ambiental do Estado~de S.~P.
+  \emph{Alterações físico químicas – Oxigênio dissolvido}.
+Disponível em: <http://www.cetesb.sp.gov.br/mortandade/causas\_oxigenio.php>.
+  Acesso em: 19/04/2015.}
+
+\bibitem[CETESB]{cetesbIndiceQualidadeH2O}
+\abntrefinfo{CETESB}{CETESB}{b}
+{CETESB, C. de~Tecnologia de Saneamento Ambiental do Estado~de S.~P.
+  \emph{Índice de Qualidade das Águas}.
+Disponível em:
+  <http://www.cetesb.sp.gov.br/agua/águassuperficiais/108-índices-de-qualidade-das-águas
+  01.pdf/02.pdf/>. Acesso em: 19/04/2015.}
 
 \bibitem[Cirilo 2007]{cirilo}
 \abntrefinfo{Cirilo}{CIRILO}{2007}

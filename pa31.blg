@@ -18,7 +18,11 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Warning--campo year vazio ou faltando em anaGov
+Warning--campo year vazio ou faltando em anaGovIndicadores
 Warning--campo year vazio ou faltando em barrosVarela
+Warning--campo year vazio ou faltando em cleanEnvironmentBrasil
+Warning--campo year vazio ou faltando em cetesbOxigenioDissolvido
+Warning--campo year vazio ou faltando em cetesbIndiceQualidadeH2O
 Warning--campo year vazio ou faltando em warkawater
 Warning--campo year vazio ou faltando em portalEnergia
 Warning--campo year vazio ou faltando em eWater
@@ -31,45 +35,45 @@ Warning--campo year vazio ou faltando em loggerPro
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 19 entries,
+You've used 23 entries,
             6711 wiz_defined-function locations,
-            1283 strings with 12345 characters,
-and the built_in function-call counts, 12011 in all, are:
-= -- 918
-> -- 402
+            1301 strings with 13265 characters,
+and the built_in function-call counts, 14127 in all, are:
+= -- 1050
+> -- 462
 < -- 0
-+ -- 189
-- -- 127
-* -- 740
-:= -- 1734
-add.period$ -- 57
-call.type$ -- 19
-change.case$ -- 156
-chr.to.int$ -- 19
-cite$ -- 27
-duplicate$ -- 530
-empty$ -- 1019
-format.name$ -- 594
-if$ -- 2863
-int.to.chr$ -- 0
++ -- 211
+- -- 147
+* -- 852
+:= -- 2038
+add.period$ -- 69
+call.type$ -- 23
+change.case$ -- 184
+chr.to.int$ -- 21
+cite$ -- 35
+duplicate$ -- 638
+empty$ -- 1223
+format.name$ -- 686
+if$ -- 3375
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 314
-newline$ -- 94
-num.names$ -- 90
-pop$ -- 468
+missing$ -- 378
+newline$ -- 114
+num.names$ -- 110
+pop$ -- 560
 preamble$ -- 1
-purify$ -- 65
+purify$ -- 77
 quote$ -- 0
-skip$ -- 750
+skip$ -- 892
 stack$ -- 1
-substring$ -- 271
-swap$ -- 204
+substring$ -- 299
+swap$ -- 244
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 9
-while$ -- 101
+warning$ -- 13
+while$ -- 121
 width$ -- 0
-write$ -- 249
-(There were 9 warnings)
+write$ -- 301
+(There were 13 warnings)
