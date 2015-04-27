@@ -5,6 +5,11 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[ANA]{anaGov}
+\abntrefinfo{ANA}{ANA}{}
+{ANA, A.~N. de~Águas. \emph{Qualidade das Águas}.
+Disponível em:<http://portalpnqa.ana.gov.br/>. Acesso em: 20/04/2015.}
+
 \bibitem[Barros e Varella]{barrosVarela}
 \abntrefinfo{Barros e Varella}{BARROS; VARELLA}{}
 {BARROS, M.~M. de; VARELLA, V.~S. de Q. \emph{Fontes de Energia Renováveis:
@@ -40,10 +45,30 @@ Disponível em:
   <http://www.portal-energia.com/eole-water-cria-aerogerador-capaz-de-gerar-agua-potavel>.
   Acesso em 23/04/2015.}
 
+\bibitem[eWater]{eWater}
+\abntrefinfo{eWater}{EWATER}{}
+{EWATER. \emph{Water Quality Analyser}.
+Disponível
+  em:<http://www.ewater.com.au/products/music/related-tools/water-quality-analyser/>.
+  Acesso em: 20/04/2015.}
+
+\bibitem[Hydrogeologic]{aquaChem}
+\abntrefinfo{Hydrogeologic}{HYDROGEOLOGIC}{}
+{HYDROGEOLOGIC, W. \emph{AquaChem: Water Quality Data Analysis and Reporting
+  Software}.
+Disponível
+  em:<http://www.novametrixgm.com/groundwater-software/water-quality-analysis/aquachem>.
+  Acesso em: 20/04/2015.}
+
 \bibitem[Krajewski e Hitzman 1996]{krajewski96}
 \abntrefinfo{Krajewski e Hitzman}{KRAJEWSKI; HITZMAN}{1996}
 {KRAJEWSKI, J.~L.; HITZMAN, P.~L. \emph{Operations management strategy and
   analysis}. [S.l.]: Addison Wesley, 1996.}
+
+\bibitem[Preece, Rogers e Sharp 2002]{preece02}
+\abntrefinfo{Preece, Rogers e Sharp}{PREECE; ROGERS; SHARP}{2002}
+{PREECE, J.; ROGERS, Y.; SHARP, H. \emph{Interaction Design: beyond
+  Human-Computer Interaction}. [S.l.]: John Wiley \& Sons, 2002.}
 
 \bibitem[Ramaswamy 1996]{ramaswamy96}
 \abntrefinfo{Ramaswamy}{RAMASWAMY}{1996}
@@ -87,5 +112,11 @@ Disponível em:
 Disponível em:
   http://disciplinas.stoa.usp.br/pluginfile.php/84860/mod\_resource/content/1/Aula5\_tecnologia\_2013.pdf.
   Accesso em 23/04/2015.}
+
+\bibitem[Vernier]{loggerPro}
+\abntrefinfo{Vernier}{VERNIER}{}
+{VERNIER. \emph{LoggerPro: Sofware de coleta de dados para análise}.
+Disponível em:<http://www.vernier.com/products/software/lp/>. Acesso em:
+  20/04/2015.}
 
 \end{thebibliography}
