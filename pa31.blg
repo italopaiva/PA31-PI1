@@ -13,22 +13,19 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
-Warning--string name "warka" is undefined
---line 69 of file bibliografia.bib
-I was expecting a `,' or a `}'---line 69 of file bibliografia.bib
- :  title = warka 
- :                water 3.2",
+I was expecting a `,' or a `}'---line 208 of file bibliografia.bib
+ :        
+ :        address = "UFMG, Belo Horizonte"}
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Warning--campo year vazio ou faltando em anaGov
-Warning--campo year vazio ou faltando em anaGovIndicadores
 Warning--campo year vazio ou faltando em barrosVarela
 Warning--campo year vazio ou faltando em cleanEnvironmentBrasil
 Warning--campo year vazio ou faltando em cetesbOxigenioDissolvido
-Warning--campo year vazio ou faltando em cetesbIndiceQualidadeH2O
 Warning--campo year vazio ou faltando em island
 Warning--campo year vazio ou faltando em warkawater
 Warning--campo year vazio ou faltando em portalEnergia
@@ -42,45 +39,45 @@ Warning--campo year vazio ou faltando em loggerPro
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 32 entries,
+You've used 43 entries,
             6711 wiz_defined-function locations,
-            1338 strings with 14472 characters,
-and the built_in function-call counts, 19204 in all, are:
-= -- 1378
-> -- 597
-< -- 0
-+ -- 256
-- -- 192
-* -- 1146
-:= -- 2776
-add.period$ -- 99
-call.type$ -- 32
-change.case$ -- 245
-chr.to.int$ -- 30
-cite$ -- 45
-duplicate$ -- 911
-empty$ -- 1714
-format.name$ -- 893
-if$ -- 4574
-int.to.chr$ -- 2
+            1384 strings with 16005 characters,
+and the built_in function-call counts, 26652 in all, are:
+= -- 1900
+> -- 861
+< -- 3
++ -- 348
+- -- 274
+* -- 1648
+:= -- 3820
+add.period$ -- 140
+call.type$ -- 43
+change.case$ -- 342
+chr.to.int$ -- 52
+cite$ -- 54
+duplicate$ -- 1296
+empty$ -- 2338
+format.name$ -- 1279
+if$ -- 6329
+int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 532
-newline$ -- 157
-num.names$ -- 155
-pop$ -- 757
+missing$ -- 738
+newline$ -- 206
+num.names$ -- 210
+pop$ -- 1033
 preamble$ -- 1
-purify$ -- 104
+purify$ -- 143
 quote$ -- 0
-skip$ -- 1201
+skip$ -- 1596
 stack$ -- 1
-substring$ -- 450
-swap$ -- 343
+substring$ -- 668
+swap$ -- 493
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 14
-while$ -- 174
+warning$ -- 12
+while$ -- 242
 width$ -- 0
-write$ -- 425
+write$ -- 582
 (There was 1 error message)
