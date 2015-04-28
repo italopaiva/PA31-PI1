@@ -13,6 +13,12 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
+Warning--string name "warka" is undefined
+--line 69 of file bibliografia.bib
+I was expecting a `,' or a `}'---line 69 of file bibliografia.bib
+ :  title = warka 
+ :                water 3.2",
+I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -23,57 +29,58 @@ Warning--campo year vazio ou faltando em barrosVarela
 Warning--campo year vazio ou faltando em cleanEnvironmentBrasil
 Warning--campo year vazio ou faltando em cetesbOxigenioDissolvido
 Warning--campo year vazio ou faltando em cetesbIndiceQualidadeH2O
+Warning--campo year vazio ou faltando em island
 Warning--campo year vazio ou faltando em warkawater
 Warning--campo year vazio ou faltando em portalEnergia
 Warning--campo year vazio ou faltando em eWater
 Warning--campo year vazio ou faltando em aquaChem
+Warning--campo year vazio ou faltando em warkawater3
 Warning--campo year vazio ou faltando em rossiEtAl
-Warning--campo year vazio ou faltando em eole
 Warning--campo year vazio ou faltando em loggerPro
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 29 entries,
+You've used 32 entries,
             6711 wiz_defined-function locations,
-            1328 strings with 14141 characters,
-and the built_in function-call counts, 17551 in all, are:
-= -- 1272
-> -- 552
+            1338 strings with 14472 characters,
+and the built_in function-call counts, 19204 in all, are:
+= -- 1378
+> -- 597
 < -- 0
-+ -- 241
-- -- 177
-* -- 1055
-:= -- 2538
-add.period$ -- 90
-call.type$ -- 29
-change.case$ -- 225
-chr.to.int$ -- 27
-cite$ -- 41
-duplicate$ -- 829
-empty$ -- 1550
-format.name$ -- 824
-if$ -- 4177
++ -- 256
+- -- 192
+* -- 1146
+:= -- 2776
+add.period$ -- 99
+call.type$ -- 32
+change.case$ -- 245
+chr.to.int$ -- 30
+cite$ -- 45
+duplicate$ -- 911
+empty$ -- 1714
+format.name$ -- 893
+if$ -- 4574
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 483
-newline$ -- 143
-num.names$ -- 140
-pop$ -- 692
+missing$ -- 532
+newline$ -- 157
+num.names$ -- 155
+pop$ -- 757
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 104
 quote$ -- 0
-skip$ -- 1092
+skip$ -- 1201
 stack$ -- 1
-substring$ -- 407
-swap$ -- 312
+substring$ -- 450
+swap$ -- 343
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 13
-while$ -- 157
+warning$ -- 14
+while$ -- 174
 width$ -- 0
-write$ -- 386
-(There were 13 warnings)
+write$ -- 425
+(There was 1 error message)
