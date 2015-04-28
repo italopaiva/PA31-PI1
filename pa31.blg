@@ -35,45 +35,45 @@ Warning--campo year vazio ou faltando em loggerPro
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 23 entries,
+You've used 29 entries,
             6711 wiz_defined-function locations,
-            1301 strings with 13265 characters,
-and the built_in function-call counts, 14127 in all, are:
-= -- 1050
-> -- 462
+            1328 strings with 14141 characters,
+and the built_in function-call counts, 17551 in all, are:
+= -- 1272
+> -- 552
 < -- 0
-+ -- 211
-- -- 147
-* -- 852
-:= -- 2038
-add.period$ -- 69
-call.type$ -- 23
-change.case$ -- 184
-chr.to.int$ -- 21
-cite$ -- 35
-duplicate$ -- 638
-empty$ -- 1223
-format.name$ -- 686
-if$ -- 3375
++ -- 241
+- -- 177
+* -- 1055
+:= -- 2538
+add.period$ -- 90
+call.type$ -- 29
+change.case$ -- 225
+chr.to.int$ -- 27
+cite$ -- 41
+duplicate$ -- 829
+empty$ -- 1550
+format.name$ -- 824
+if$ -- 4177
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 378
-newline$ -- 114
-num.names$ -- 110
-pop$ -- 560
+missing$ -- 483
+newline$ -- 143
+num.names$ -- 140
+pop$ -- 692
 preamble$ -- 1
-purify$ -- 77
+purify$ -- 95
 quote$ -- 0
-skip$ -- 892
+skip$ -- 1092
 stack$ -- 1
-substring$ -- 299
-swap$ -- 244
+substring$ -- 407
+swap$ -- 312
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 13
-while$ -- 121
+while$ -- 157
 width$ -- 0
-write$ -- 301
+write$ -- 386
 (There were 13 warnings)

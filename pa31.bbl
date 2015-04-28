@@ -5,6 +5,20 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Amaral 2012]{amaral12}
+\abntrefinfo{Amaral}{AMARAL}{2012}
+{AMARAL, B.~M. \emph{Modelos Varx Para Geração De Cenários De Vento E Vazão
+  Aplicados À Comercialização De Energia}. Rio de Janeiro. PUC-RIO: [s.n.],
+  2012.}
+
+\bibitem[Amarante 2001]{amarante01}
+\abntrefinfo{Amarante}{AMARANTE}{2001}
+{AMARANTE et~al O.~A. Atlas do potencial eólico brasileiro.
+Rio de Janeiro, 2001.
+Disponível em:
+  <http://www.cresesb.cepel.br/index.php?section=publicacoes\&task=livro\&cid=1>.
+  Acesso em: 22/04/2015.}
+
 \bibitem[ANA]{anaGov}
 \abntrefinfo{ANA}{ANA}{a}
 {ANA, A.~N. de~Águas. \emph{Portal da Qualidade das Águas}.
@@ -30,6 +44,17 @@ Disponível em: <http://www.solar.coppe.ufrj.br/eolica/eol\_txt.htm>. Acesso em
 Disponível em: <http://www.clean.com.br/site/ysi-exo-2/>. Acesso em:
   19/04/2015.}
 
+\bibitem[CBEE/UFPE 2000]{cbee}
+\abntrefinfo{CBEE/UFPE}{CBEE/UFPE}{2000}
+{CBEE/UFPE, C. B. D. E.~E. \emph{Eólica Tecnologia}. 2000.
+Disponível em: <www.eolica.com.br>. Accesso em 23/04/2015.}
+
+\bibitem[CEMIG 2012]{cmig}
+\abntrefinfo{CEMIG}{CEMIG}{2012}
+{CEMIG, C.~E. de M.~G. \emph{Alternativas Energéticas: uma visão Cemig}.
+  2012.
+Disponível em: <http://www.cemig.com.br>. Accesso em 23/04/2015.}
+
 \bibitem[CETESB]{cetesbOxigenioDissolvido}
 \abntrefinfo{CETESB}{CETESB}{a}
 {CETESB, C. de~Tecnologia de Saneamento Ambiental do Estado~de S.~P.
@@ -49,6 +74,12 @@ Disponível em:
 \abntrefinfo{Cirilo}{CIRILO}{2007}
 {CIRILO, J. et~al. Manejo integrado de água no semi-árido brasileiro.
 2007.}
+
+\bibitem[D'ALEXANDRIA 2007]{dalexandria07}
+\abntrefinfo{D'ALEXANDRIA}{D'ALEXANDRIA}{2007}
+{D'ALEXANDRIA, C.~B. Otimização de sistema de bombeamento com energia eólica
+  : sistema de bombeamento de são gabriel-ba.
+Natal-RN, 2007.}
 
 \bibitem[DEVELOPMENT 2012]{renewable}
 \abntrefinfo{DEVELOPMENT}{DEVELOPMENT}{2012}
@@ -125,6 +156,11 @@ Disponível em: <http://www.eolewater.com/gb/our-products/our-expertise.html>.
 \abntrefinfo{Slack et al.}{SLACK et al.}{1999}
 {SLACK, N. et al. \emph{Administração da produção}. São Paulo: Atlas,
   1999.}
+
+\bibitem[Terciote 2002]{terciote02}
+\abntrefinfo{Terciote}{TERCIOTE}{2002}
+{TERCIOTE, R. \emph{Eficiência energética de um sistema eólico isolado}.
+  Enc. Energ. Meio Rural: [s.n.], 2002.}
 
 \bibitem[Times 2014]{warkawater2}
 \abntrefinfo{Times}{TIMES}{2014}
