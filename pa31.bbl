@@ -5,6 +5,12 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Almeida 2004]{almeida04}
+\abntrefinfo{Almeida}{ALMEIDA}{2004}
+{ALMEIDA, W. R.~M. Anemômetro baseado no método de tempo de trânsito: Estudo
+  comparativo de arquiteturas, avaliação de incertezas e implementação.
+Universidade Federal do Maranhão, 2004.}
+
 \bibitem[Amaral 2012]{amaral12}
 \abntrefinfo{Amaral}{AMARAL}{2012}
 {AMARAL, B.~M. \emph{Modelos Varx Para Geração De Cenários De Vento E Vazão
@@ -92,6 +98,11 @@ Disponível em
   <http://www.islandsky.com/downloads/BROCHURES/300\_usa\_english\_pgs\_ltr\_41510.pdf>.
   Acesso em 23/04/2015.}
 
+\bibitem[Cyliax 2006]{cyliax06}
+\abntrefinfo{Cyliax}{CYLIAX}{2006}
+{CYLIAX, I. Connected sonic anemometer.
+CircuitCellar, the Magazine for Computer Applications, 2006.}
+
 \bibitem[D'ALEXANDRIA 2007]{dalexandria07}
 \abntrefinfo{D'ALEXANDRIA}{D'ALEXANDRIA}{2007}
 {D'ALEXANDRIA, C.~B. Otimização de sistema de bombeamento com energia eólica
@@ -171,6 +182,12 @@ Disponível em <https://www.kickstarter.com/.../warka-water-32/description>.
 {NEIDHARDT, F.~C. et al. \emph{Escherichia coli andSalmonella: cellular and
   molecular biology}. 2. ed. Washington D.C.: ASM Press, 1996.}
 
+\bibitem[Olimpio 2007]{olimpio07}
+\abntrefinfo{Olimpio}{OLIMPIO}{2007}
+{OLIMPIO, J.~G. CaracterizaÇÃo geoambiental da microrregiÃo do seridÓ
+  oriental do rio grande do norte.
+2007.}
+
 \bibitem[Preece, Rogers e Sharp 2002]{preece02}
 \abntrefinfo{Preece, Rogers e Sharp}{PREECE; ROGERS; SHARP}{2002}
 {PREECE, J.; ROGERS, Y.; SHARP, H. \emph{Interaction Design: beyond
@@ -191,6 +208,12 @@ Disponível em <https://www.kickstarter.com/.../warka-water-32/description>.
 \abntrefinfo{Rebouças}{REBOUçAS}{2003}
 {REBOUçAS, A. da C. Água no brasil: abundância, desperdício e escassez.
 2003.}
+
+\bibitem[Ribeiro et al. 2006]{ribeiro06}
+\abntrefinfo{Ribeiro et al.}{RIBEIRO et al.}{2006}
+{RIBEIRO, M. R.~S. et al. Desenvolvimento de um anêmometro digital
+  ultrasônico.
+2006.}
 
 \bibitem[ROSSI, OLIVEIRA e ALÉ]{rossiEtAl}
 \abntrefinfo{ROSSI, OLIVEIRA e ALÉ}{ROSSI; OLIVEIRA; ALÉ}{}
