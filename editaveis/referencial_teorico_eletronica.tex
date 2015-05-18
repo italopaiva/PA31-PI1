@@ -188,15 +188,23 @@ de turbidez, sensores de nitrato/nitrogênio, entre outros.
 	 \end{figure}
 	
 	\begin{center}
-	 \textbf{Medição de nível de fosforo total}
+	 \textbf{Medição de nível de fósforo total}
 	\end{center}
 	
-	O fosforo encontrado na agua pode ter origem da dissolução doas solos e decomposição de matéria orgânica,
+	O fósforo encontrado na agua pode ter origem da dissolução doas solos e decomposição de matéria orgânica,
 	do uso de fertilizantes, despejos domésticos e industriais, detergentes e excrementos animais \cite{danelon12}.
 	
-	Então é importante que os níveis do fosforo sejam controlados, seguindo os níveis propostos pela ANA,
+	Então é importante que os níveis do fósforo sejam controlados, seguindo os níveis propostos pela ANA,
 	para medir-se esse parâmetro, não é possível por meio de sensores, então
 	se utiliza um aparelho chamado de Fotômetro medidor de fósforo.
+	  
+	\begin{figure}[!h]
+	  \centering
+	  \includegraphics[scale=0.6]{editaveis/figuras/fotometro_spec}
+	  \caption[Especificações de um fotômetro]{Tabela de especificações do Fotômetro (Modelo HI 96706C)}
+	  \FloatBarrier
+	  \label{fotometro_spec}
+	 \end{figure}
 	
     \item \textbf{Coliformes fecais}
     
@@ -222,4 +230,120 @@ de turbidez, sensores de nitrato/nitrogênio, entre outros.
 	A quantidade de coliformes fecais não deve exceder um limite de 200 por 100 mililitros em 80\% ou mais de pelo menos
 	5 amostras mensais colhidas em qualquer mês.
 	
+    \item \textbf{Anêmometro ultrasônico}
+    
+	Anemômetro é um equipamento que mede a velocidade e a direção dos ventos. No SI (Sistema internacional) a unidade
+	utilizada para medir a velocidade do vento pode ser em m/s (metros por segundo), em km/h (quilômetros por hora) ou
+	em nós \cite{almeida04}.
+	
+	No mercado existem vários tipos de anemômetros com diferentes exatidões, custo e métodos de medição, são alguns deles: 
+	anemômetro de copo, termoelétrico e o ultrassônico.
+	
+	O anemômetro de copo é o mais utilizado e o mais comum no mercado \cite{cyliax06}. Ele possui vários copos ocos
+	fixos em dois eixos, que se movem proporcionalmente com a velocidade do vento, que é indicada por um tacômetro. Este
+	anemômetro é de baixo custo e possui precisão de mais ou menos 2\%, mas precisa ser calibrado e passar por manutenção
+	periodicamente, pois tem partes móveis que se desgastam com o tempo e alteram a sua precisão.
+	
+	O anemômetro termoelétrico possui dois tipos o de fio e o de tubo, genericamente os dois tipos utilizam o calor dissipado
+	pelos sensores do anemômetro para a medição da velocidade do vento, ou seja, o sensor é aquecido e o calor que é dissipado
+	é proporcional a velocidade do vento.  O tempo de resposta do termoelétrico é maior do que o de copo, é não possui partes
+	moveis, porém não é indicado para locais abertos, pois seus sensores são frágeis e os fios ou tubos acumulam impurezas,
+	desse modo diminuindo sua precisão.
+	
+	O anemômetro ultrassônico é um tipo anemômetro que possibilita a medição da velocidade do vento , por meio da velocidade
+	do som no ar.Possuisensores ultrassônicos dispostos em formato de tetraedro e em cada extremidade possui um sensor
+	piezolétricos \cite{ribeiro06}, este sensor é um tipo de transdutor ultrassônicos que pode se comportar tanto
+	como transdutor-transmissor quanto um transdutor-receptor, ou seja, ele pode gerar ondas ultrassônicas e também de
+	recebê-las (KOYAMA,2007).
+	
+	O tempo que o pulso enviado por um dos sensores leva para chegar a um dos outros é medido e incrementado ou decrementado,
+	dependendo da direção da velocidade do som, assim podendo obter-se a velocidade do vento nas três direções.
+	
+	\begin{figure}[!h]
+	  \centering
+	  \includegraphics[scale=0.8]{editaveis/figuras/sinal_ultrasonico}
+	  \caption[Soma do sinal ultrassônico e a velocidade do vento]
+	    {Figura ilustrativa da soma do sinal ultrassônico e a velocidade do vento \cite{cyliax06}.}
+	  \FloatBarrier
+	  \label{sinal_ultrasonico}
+	\end{figure}
+	
+	Este anemômetro é um dos mais confiáveis, não possui partes móveis, tem uma resposta rápida e com boa exatidão, não
+	precisa de manutenção periódica epode ser utilizado em qualquer ambiente, sem comprometer sua precisão.
+	
+	Abaixo uma tabela de especificações técnicas de um anemômetro ultrassônico (Vaisala WINDCAP\textregistered WMT700):
+	
+	\begin{figure}[!h]
+	  \centering
+	  \includegraphics[scale=0.6]{editaveis/figuras/vaisala_spec}
+	  \caption[Especificações técnicas do anemômetro ultrassônico Vaisala WINDCAP\textregistered WMT700]
+	    {Especificações técnicas do anemômetro ultrassônico Vaisala WINDCAP\textregistered WMT700}
+	  \FloatBarrier
+	  \label{vaisala_spec}
+	\end{figure}
+	
+    \item \textbf{Demanda Bioquímica de Oxigênio (DBO5,20)}
+    
+	Os principais métodos de determinação do DBO são o método manométrico e o método da diluição. O primeiro se baseia em
+	mensurar a variação de pressão de oxigênio durante a análise, já o segundo consiste em incubação em garrafas Winkler
+	(impedem que qualquer ser vivo seja capaz de realizar a fotossíntese dentro da garrafa) (UMWELT, 2015).
+	
+	O método da diluição envolve a medição de OD (oxigênio dissolvido) na amostra a ser analisada antes da incubação, e 
+	5 dias depois da incubação. Dessa forma, a diferença entre OD final e OD inicial obtida representa a DBO5,20 (em caso 
+	do ambiente de experimentação estar à 20 graus Celsius) \cite{cetesbOxigenioDissolvido}.
+	
+	Por outro lado, o método manométrico se baseia no consumo de oxigênio determinado pela variação de pressão. Essa diferença
+	de pressão é medida com o auxílio de um sensor de pressão (piezoelétrico, por exemplo) acoplado ao topo das garrafas.
+	As vantagens desse método são:
+	
+	\begin{itemize}
+	 \item Não há necessidade de diluição da amostra;
+	 \item Exibição contínua do valor de DBO durante o tempo de incubação.
+	\end{itemize}
+	
+	Foram obtidas algumas especificações de um sensor que realizam tal tipo de medição disponível no mercado:
+	
+	CONTINUAR DAQUI
+    
+    \item \textbf{Microcontroladores}
+	
+	O microcontrolador é uma espécie de computador que é programado para realizar funções de acordo com o que se deseja.
+	Dentro de um computador de mesa (desktop), por exemplo, existem vários microcontroladores de vários modelos e tamanhos
+	que realizam diversas funções diferentes. Ou seja, são dispositivos que geralmente são embutidos no interior de um produto
+	que podem controlar as funções ou ações desse produto \footnotemark. 
+	\footnotetext{Disponível em: <http://tecnologia.hsw.uol.com.br/microcontroladores1.htm>}
+	
+	No contexto em que se encaixa este documento, os microcontroladores serão responsáveis por fazerem leituras de sinais 
+	que posteriormente poderão nos informar a qualidade da água, potência em que se está sendo trabalhada a turbina,
+	quantidade de água armazenada no reservatório em tempo real, a velocidade atual em que o vento atinge as turbinas,
+	umidade do ar, etc. Mas para a obtenção dessas diversas informações, é necessária a utilização dos vários sensores
+	citados anteriormente que vão trabalhar de modo conjunto com os microcontroladores, que formam um sistema para ler
+	essas informações.
+	
+	Inicialmente, ao se receber a informação dentro do sistema, ela tem de ser condicionada. O condicionador mais comum é
+	o amplificador. Este tem a função de amplificar sinais de baixa intensidade a fim de se aumentar sua resolução. Logo
+	após isto, este sinal é enviado a um filtrador que tem por função melhorar a freqüência enviada, ou seja, ele vai
+	remover sinais indesejados fazendo a freqüência permanecer no formato desejado. Dependendo de cada sinal, deverá ser
+	usado um filtro diferente, pois sinais AC e DC requerem tratamentos diferenciados. Por exemplo, sensores de temperatura 
+	recolhem sinais DC que geralmente são de alta freqüência, com isto, os filtradores buscam deixar esse sinal mais tênue.
+	Posteriormente também se pode amplificar novamente o sinal. Essa etapa geralmente depende da ordem em que a tensão está
+	chegando. Uma tensão da ordem de micro volts pode requerer ser amplificada mais uma vez para que seja sensível ao
+	microcontrolador. Em sequência, o sinal deve passar por um conversor analógico digital, que tem por função passar
+	informação do nosso mundo, como luz, som, para o formato digital, e então é enviado para um microcontrolador. A partir
+	dessa etapa, o microcontrolador passa a informação para um transmissor que envia a informação para uma central \footnotemark.
+	
+	\footnotetext{Disponível em: <http://www.sabereletronica.com.br/artigos/2805-condicionamento-de-sinais-analgicos-e-sensores>}
+	
+	A figura ~\ref{funcionamento_microcontrolador} ilustra o funcionamento desse sistema.
+	
+	\begin{figure}[!h]
+	  \centering
+	  \includegraphics[scale=0.6]{editaveis/figuras/funcionamento_microcontrolador}
+	  \caption[Processamento do sinal]{Processamento do sinal}
+	  \FloatBarrier
+	  \label{funcionamento_microcontrolador}
+	\end{figure}
+	
   \end{enumerate}
+  
+  \vfill
