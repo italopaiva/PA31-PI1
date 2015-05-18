@@ -26,12 +26,10 @@ Warning--campo year vazio ou faltando em anaGov
 Warning--campo year vazio ou faltando em barrosVarela
 Warning--campo year vazio ou faltando em cleanEnvironmentBrasil
 Warning--campo year vazio ou faltando em cetesbOxigenioDissolvido
-Warning--campo year vazio ou faltando em island
 Warning--campo year vazio ou faltando em warkawater
 Warning--campo year vazio ou faltando em portalEnergia
 Warning--campo year vazio ou faltando em eWater
 Warning--campo year vazio ou faltando em aquaChem
-Warning--campo year vazio ou faltando em warkawater3
 Warning--campo year vazio ou faltando em rossiEtAl
 Warning--campo year vazio ou faltando em loggerPro
 +---------------------------------------------------------+
@@ -39,45 +37,45 @@ Warning--campo year vazio ou faltando em loggerPro
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 47 entries,
+You've used 45 entries,
             6711 wiz_defined-function locations,
-            1399 strings with 16560 characters,
-and the built_in function-call counts, 28931 in all, are:
-= -- 2021
-> -- 947
+            1391 strings with 16249 characters,
+and the built_in function-call counts, 27873 in all, are:
+= -- 1955
+> -- 917
 < -- 3
-+ -- 379
-- -- 301
-* -- 1800
-:= -- 4166
-add.period$ -- 152
-call.type$ -- 47
-change.case$ -- 377
-chr.to.int$ -- 56
-cite$ -- 58
-duplicate$ -- 1417
-empty$ -- 2521
-format.name$ -- 1409
-if$ -- 6838
++ -- 369
+- -- 291
+* -- 1744
+:= -- 4014
+add.period$ -- 146
+call.type$ -- 45
+change.case$ -- 363
+chr.to.int$ -- 54
+cite$ -- 54
+duplicate$ -- 1363
+empty$ -- 2419
+format.name$ -- 1363
+if$ -- 6582
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 803
-newline$ -- 226
-num.names$ -- 230
-pop$ -- 1121
+missing$ -- 771
+newline$ -- 216
+num.names$ -- 220
+pop$ -- 1075
 preamble$ -- 1
-purify$ -- 157
+purify$ -- 151
 quote$ -- 0
-skip$ -- 1725
+skip$ -- 1653
 stack$ -- 1
-substring$ -- 736
-swap$ -- 525
+substring$ -- 722
+swap$ -- 505
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 12
-while$ -- 266
+warning$ -- 10
+while$ -- 256
 width$ -- 0
-write$ -- 636
+write$ -- 610
 (There was 1 error message)

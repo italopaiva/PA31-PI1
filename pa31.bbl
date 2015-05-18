@@ -91,13 +91,6 @@ Disponível em:
 {CNI, C. N. D.~I. \emph{Metrologia: Conhecendo e aplicando na sua empresa}.
   Brasília: [s.n.], 2001.}
 
-\bibitem[CORPORATION]{island}
-\abntrefinfo{CORPORATION}{CORPORATION}{}
-{CORPORATION, I.~S. \emph{SKY WATER 300 BROCHURE}.
-Disponível em
-  <http://www.islandsky.com/downloads/BROCHURES/300\_usa\_english\_pgs\_ltr\_41510.pdf>.
-  Acesso em 23/04/2015.}
-
 \bibitem[Cyliax 2006]{cyliax06}
 \abntrefinfo{Cyliax}{CYLIAX}{2006}
 {CYLIAX, I. Connected sonic anemometer.
@@ -160,12 +153,6 @@ Disponível
 Disponível
   em:<http://www.novametrixgm.com/groundwater-software/water-quality-analysis/aquachem>.
   Acesso em: 20/04/2015.}
-
-\bibitem[INC]{warkawater3}
-\abntrefinfo{INC}{INC}{}
-{INC, W.~W. \emph{Warka water 3.2}.
-Disponível em <https://www.kickstarter.com/.../warka-water-32/description>.
-  Acesso em 27/04/2015.}
 
 \bibitem[Ingle e Proakis 2000]{vinay00}
 \abntrefinfo{Ingle e Proakis}{INGLE; PROAKIS}{2000}
@@ -280,10 +267,10 @@ Disponível em:
 Disponível em:<http://www.vernier.com/products/software/lp/>. Acesso em:
   20/04/2015.}
 
-\bibitem[WHISSON 2007]{whisson}
-\abntrefinfo{WHISSON}{WHISSON}{2007}
+\bibitem[Whisson 2007]{whisson}
+\abntrefinfo{Whisson}{WHISSON}{2007}
 {WHISSON, M. \emph{Introducing the Max Water}. 2007.
-Disponível em <http://www.rexresearch.com/whisson/whisson.htm>. Acesso em
+Disponível em: <http://www.rexresearch.com/whisson/whisson.htm>. Acesso em
   27/04/2015.}
 
 \end{thebibliography}

@@ -26,7 +26,12 @@
 %  {\large Captação de água e materiais estruturais}\\[0.2cm]
 %  \end{center}
  
-Dentre as inspirações de tecnologia a serem aplicadas no projeto, as que se destacaram foram a Eolewater, MaxWater, Skywater e Warkawater. As três primeiras se baseiam no \emph{cooling compression}, porém com custos diferentes.\cite{eole}\cite{whisson}\cite{island}. A Quarta tem custo extremamente baixo se comparado com as outras três tecnologias, por causa da simplicidade dos materiais que a constituem. Contudo, produz valores significantemente menores de água, além de não gerar energia para os processos de controle da qualidade da água\cite{warkawater3}.Por não gerar energia, também descartamos o Skywater.
+Dentre as inspirações de tecnologia a serem aplicadas no projeto, as que se destacaram foram a Eolewater, MaxWater, Skywater
+e Warkawater. As três primeiras se baseiam no \emph{cooling compression}, porém com custos
+diferentes \cite{eole} \cite{whisson}.
+A Quarta tem custo extremamente baixo se comparado com as outras três tecnologias, por causa da simplicidade dos
+materiais que a constituem. Contudo, produz valores significantemente menores de água, além de não gerar energia
+para os processos de controle da qualidade da água (WARKA WATER INC, 2014). Por não gerar energia, também descartamos o Skywater.
 
 \begin{figure}[!ht]
 \centering
@@ -37,7 +42,9 @@ Dentre as inspirações de tecnologia a serem aplicadas no projeto, as que se de
 \end{figure}
 \footnotetext{Disponível em: http://peswiki.com/index.php/Image:Max-water.jpg}
 
-Eole water e max water são turbinas eólicas autossuficientes que retiram a umidade do ar. A geometria dos rotores do MaxWater não é tão eficiente como os rotores tradicionais, por terem pequeno torque. Além disso, ele ainda não foi testado. Devido a insegurança do maxwater, escolhemos como base o sistema da EoleWater, que está retratado na Figura ~\ref{Eole_Water}.
+Eole water e max water são turbinas eólicas autossuficientes que retiram a umidade do ar. A geometria dos rotores do MaxWater
+não é tão eficiente como os rotores tradicionais, por terem pequeno torque. Além disso, ele ainda não foi testado. Devido a 
+insegurança do maxwater, escolhemos como base o sistema da EoleWater, que está retratado na Figura ~\ref{Eole_Water}.
 
 \begin{figure}[!htbp]
 \centering
@@ -75,15 +82,31 @@ No momento, o levantamento de materiais será apenas estrutural e se baseará em
 
 Dentro da turbina eólica temos os seguintes subconjuntos: 
 \begin{itemize}
-\item torre: é o elemento que sustenta o rotor e a nacele na altura adequada para o funcionamento da turbina eólica. Esse item é de elevada 	contribuição no custo inicial do sistema.
-\item Rotor: 	é o componente onde as pás são conectadas e que realiza a 	transformação de energia cinética dos ventos em energia mecânica 	de rotação \cite{rossiEtAl}.
-\item Nacele: é um compartimento localizado no alto da torre que abrigam 	mecanismos do gerador (freios, caixa multiplicadora, embreagens, 	sistemas hidráulico, etc). Usaremos a Nacele para também abrigar 	os mecanismos de obtenção de água.
-\item Caixa 	multiplicadora (transmissão): o mecanismo que transmite a energia 	mecânica do eixo do rotar ao eixo do gerador. 	
-\item Gerador: 	converterá energia mecânica do eixo em energia elétrica.
-\item Mecanismos 	de controle: supervisiona a velocidade média nominal que ocorre com 	maior frequência durante um determinado período.
-\item Biruta: 	é um conjunto de sensores que captam a direção do vento
-\item Anemômetro: tem a função de medir a intensidade e a velocidade dos ventos. 	
-\item Pás: 	do rotor captam o vento e converte sua potência ao centro do rotor \cite{rossiEtAl}.	 	
+\item torre: é um componente que elevará o custo inicial da turbina eólica. Ele tem como funcionalidade sustentar a nacele,
+  e todos os seus componentes internos, além de também sustentar o rotor. Essa sustentação permitirá que o sistema trabalhe em
+  uma altura adequada ao seu funcionamento.
+
+\item Rotor: transformará a energia proveniente dos ventos (cinética) em energia mecânica, esse mecanismo fixado as pás o qual
+  realiza a conversão é chamado de rotor. \cite{rossiEtAl}.
+
+\item Nacele: é a designação a uma estrutura que armazena ou abriga os sistemas matriz da turbina eólica, como os mecanismos do
+  gerador (sistemas hidráulicos, embreagens, etc). Usaremos a Nacele para também abrigar os mecanismos de obtenção de água.
+
+\item Caixa multiplicadora: Tem como função transmitir a energia mecânica transformada no rotor para o eixo de rotação do gerador.
+
+\item Gerador: 	A energia transmitida para o eixo de rotação do gerador será transformada em energia elétrica, portanto,
+  possui a função de transformar energia mecânica em elétrica.
+
+\item Mecanismos de controle: supervisiona a velocidade média nominal em os ventos chegaram nas pás da turbina, em com qual
+  frequência ele irá atuar mediante a um tempo pré-estabelecido.
+
+\item Biruta: 	indicador de direção do vento, também conhecido como \textit{windsock}.
+
+\item Anemômetro: nstrumento capaz de medir a velocidade dos ventos, e também sua intensidade em um intervalo de tempo
+  pré-determinado.
+  
+\item Pás: Estruturas que se movimentarão com o vento e converterão sua potência ao eixo de rotação do rotor, 
+  o qual irá fazer a conversão já citada \cite{rossiEtAl}.	 	
 
 \end{itemize}
 
@@ -101,9 +124,10 @@ fibra de carbono. A escolha do material vai depender da escolha do perfil aerodi
 \end{figure}
 \footnotetext{Fonte: \cite{usp}}
 
-Como pode ser visto as fibras são colocadas estruturalmente nas principais direções de propagação das tensões, quando 
-em operação. A fibra de carbono e ou Kevlar são atualmente os compostos mais avançados que podem ser utilizados em áreas
-críticas (longarina da pá), mas tal material possui preços muito elevados \cite{barrosVarela}.  
+Como pode se visto na imagem acima, as fibras são colocadas nas principais direções onde as tensões atuam quando a turbina
+está em operação, região também conhecida como área crítica (longarina da pá). A fibra de carbono e ou Kevlar são atualmente
+os compostos mais avançados que podem ser utilizados em áreas críticas (longarina da pá), mas tal material possui preços muito
+elevados \cite{barrosVarela}.  
 
 Em relação ao suporte estrutural, ou torre, nas turbinas eólicas elas podem ser do tipo treliçadas, tubular e estaiada,
 no entanto, para a Eolewater as estruturas mais comuns são as duas últimas. As torres são constituídas de concreto e aço,
@@ -138,7 +162,8 @@ integra a ação dos cilindros telescópicos com capacidade de empuxo de 115 ton
 que entram em contato com a água são feitos de uma liga de aço inoxidável especial que operará sem risco de corrosão 
 \cite{eole}.
 
-Uma tecnologia como essa segundo a Eolewater, uma turbina de vento abaixo de 100 kW vai custa por volta de US \$ 3.000 a US \$ 5.000 por quilowatt de capacidade\cite{eole}.
+Uma tecnologia como essa segundo a Eolewater, uma turbina de vento abaixo de 100 kW vai custa por volta de
+ US \$ 3.000 a US \$ 5.000 por quilowatt de capacidade \cite{eole}.
 
 Portanto, levando em conta as especificações técnicas do Turbine WMS1000 abaixo a tecnologia é eficiente, mas cara \cite{renewable}.
 	
@@ -162,7 +187,8 @@ de água por dia \cite{warkawater2}.
 \begin{figure}[!htbp]
 \centering
 \includegraphics[scale=0.3]{editaveis/figuras/warkawater}
-\caption[Utilização da tecnologia warkawater por uma população carente]{Utilização da tecnologia warkawater por uma população carente  \footnotemark}
+\caption[Utilização da tecnologia warkawater por uma população carente]
+{Utilização da tecnologia warkawater por uma população carente  \footnotemark}
 \FloatBarrier
 \label{Especificacoes}
 \end{figure}
