@@ -5,6 +5,11 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Abilio e Etiene 2005]{abilio05}
+\abntrefinfo{Abilio e Etiene}{ABILIO; ETIENE}{2005}
+{ABILIO, S.~G.; ETIENE, C. \emph{Propriedades físico-químicas da água}.
+  Universidade Federal Fluminense: [s.n.], 2005.}
+
 \bibitem[Almeida 2004]{almeida04}
 \abntrefinfo{Almeida}{ALMEIDA}{2004}
 {ALMEIDA, W. R.~M. Anemômetro baseado no método de tempo de trânsito: Estudo
@@ -36,6 +41,12 @@ Disponível em:<http://portalpnqa.ana.gov.br/>. Acesso em: 20/04/2015.}
   qualidade da água}. 2012.
 Disponível em:<http://portalpnqa.ana.gov.br/indicadores-indice-aguas.aspx>.
   Acesso em: 19/04/2015.}
+
+\bibitem[ANVISA 2005]{anvisa05}
+\abntrefinfo{ANVISA}{ANVISA}{2005}
+{ANVISA. \emph{esolução RDC nº 274, de 22 de setembro de 2005. REGULAMENTO
+  TÉCNICO PARA ÁGUAS ENVASADAS E GELO.} 2005.
+Diário Oficial da União, Brasília, n. 151, 23 set. 2005.}
 
 \bibitem[Barros e Varella]{barrosVarela}
 \abntrefinfo{Barros e Varella}{BARROS; VARELLA}{}

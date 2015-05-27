@@ -13,7 +13,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
-I was expecting a `,' or a `}'---line 221 of file bibliografia.bib
+I was expecting a `,' or a `}'---line 234 of file bibliografia.bib
  :        
  :        address = "UFMG, Belo Horizonte"}
 (Error may have been on previous line)
@@ -37,45 +37,45 @@ Warning--campo year vazio ou faltando em loggerPro
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 46 entries,
+You've used 48 entries,
             6711 wiz_defined-function locations,
-            1395 strings with 16463 characters,
-and the built_in function-call counts, 28454 in all, are:
-= -- 1995
-> -- 932
+            1403 strings with 16741 characters,
+and the built_in function-call counts, 29791 in all, are:
+= -- 2090
+> -- 979
 < -- 3
-+ -- 374
-- -- 296
-* -- 1778
-:= -- 4097
-add.period$ -- 150
-call.type$ -- 46
-change.case$ -- 370
-chr.to.int$ -- 55
-cite$ -- 55
-duplicate$ -- 1392
-empty$ -- 2476
-format.name$ -- 1386
-if$ -- 6721
++ -- 391
+- -- 311
+* -- 1867
+:= -- 4280
+add.period$ -- 157
+call.type$ -- 48
+change.case$ -- 387
+chr.to.int$ -- 57
+cite$ -- 57
+duplicate$ -- 1451
+empty$ -- 2597
+format.name$ -- 1456
+if$ -- 7043
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 788
-newline$ -- 221
-num.names$ -- 225
-pop$ -- 1097
+missing$ -- 823
+newline$ -- 230
+num.names$ -- 235
+pop$ -- 1147
 preamble$ -- 1
-purify$ -- 154
+purify$ -- 161
 quote$ -- 0
-skip$ -- 1687
+skip$ -- 1764
 stack$ -- 1
-substring$ -- 741
-swap$ -- 517
+substring$ -- 777
+swap$ -- 542
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 10
-while$ -- 262
+while$ -- 274
 width$ -- 0
-write$ -- 624
+write$ -- 652
 (There was 1 error message)
