@@ -1,0 +1,36 @@
+Para analisar a qualidade da água são necessários sensores, os dados obtidos por esses sensores são transmitidos para
+unidades com capacidade de processamento, para computadores. Os dados obtidos por esses sensores individualmente devem
+ser analisados via software. Para efetuar a análise da qualidade da água, é necessária uma análise dos dados obtidos
+pelo conjunto desses sensores, pois cada um indica uma ou algumas características específicas da água e não a qualidade
+como um todo.
+
+O software a ser utilizado depende basicamente do circuito eletrônico escolhido, tanto do computador, como dos tipos
+e especificações dos sensores. Para medir a qualidade da água serão utilizados sensores capazes de avaliar basicamente
+o nível de PH, oxigênio dissolvido, temperatura, íons dissolvidos, turbidez, resíduo total da água.
+
+No software será definido o intervalo em que cada um dos indicadores de qualidade é aceitável para consumo humano de
+acordo com a análise feita pelo grupo.  Em algumas situações, não seguiremos estritamente os padrões estipulados pelas 
+agências reguladoras, desde que a escolha esteja dendro do estipulado por elas e traga algum benefício aos usuários. 
+Por exemplo, o valor ideal de PH da água para consumo humano é de 6 a 9, porém a Agência Nacional de Vigilância Sanitária (ANVISA)
+não estabelece nenhuma resolução indicando um valor mínimo para o pH.
+
+Outro aspecto importante do software é que ele impeça a passagem da água, caso ela esteja fora dos padrões de qualidade
+estipulados, até que o tratamento ocorra e seja finalizado. Para que isso ocorra,  o software fará uma uma comparação
+entre cada um dos índices com os valores adequados e, caso a água não esteja dentro do padrão, o hardware enviará um 
+sinal elétrico, comandando um mecanismo eletromecânico capaz de bloquear a passagem de água.
+
+Além da análise da qualidade da água, será necessário sensores para analisar o nível da água tanto no reservatório
+de distribuição de água, como no reservatório de armazenamento de água para tratamento. Os dados relacionados ao nível 
+e qualidade da água serão transmitidos para um outro sistema que possibilita uma interação com o usuário, composto por
+um software diferente.
+
+Pretende-se utilizar a linguagem C/C++ para a elaboração do software relacionado ao controle da água. Estas linguagens
+pode ser compiladas e utilizadas para uma grande parte dos sistemas embarcados. Para o desenvolvimento, será feito uma
+análise mais profunda do problema, serão levantados todos os requisitos funcionais e não funcionais do software, a 
+arquitetura, além disso, serão feitos testes ao longo do processo de desenvolvimento.
+
+Além desse software, será necessário o desenvolvimento de outros, que estão mais relacionados à interação com o ser
+humano, apresentando para o usuário os índices de qualidade da água. Esses softwares serão executados por hardwares
+mais potentes e,  portanto, não haverá tantas limitações de processamento e memória. Dessa forma, não será necessário
+fazer uma análise profunda da interação entre a eletrônica e o software, embora seja necessário uma análise dos 
+sistemas operacionais, linguagens que possam ser interpretadas ou compiladas para ele.

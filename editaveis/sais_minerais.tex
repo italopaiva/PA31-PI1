@@ -1,0 +1,77 @@
+
+A água potável em sua forma pura é conhecida como água destilada. Esta água é desprovida de sais minerais ou de gases.
+O consumo constante de água destilada pode ser prejudicial aos seres humano devido ao fato de a ingestão diária de sais
+minerais ser complementada pelos sais presentes na água mineral. Segundo resolução da Anvisa, toda água mineral no país 
+que possua como objetivo ser comercializada deve ser adicionada de sais minerais. Visando seguir esta especificação e
+visando não provocar um impacto na saúde dos habitantes de Acarí optou-se por adicionar sais minerais básicos à água
+retirada da umidade do ar já que a falta de sais minerais na dieta dos habitantes pode levar a doenças para os mesmos,
+tais como diarreia e desidratação.
+
+Uma das propriedades mais importantes da água é o fato de ser uma substância polar, capaz de associar-se a outras substâncias 
+polares ou iônicas para formar soluções aquosas. O processo de solubilização para a planta de abastecimento de água por meio
+da umidade do ar pode ser realizado por um simples processo de mistura entre os sais contidos em um reservatório e a água
+provinda da turbina. Portanto, será implementado um sistema de injeção e monitoramento de sais minerais à água provinda da
+turbina que contará com processos mecânicos e digitais.
+
+\subsubsection*{Quantidade e especificações dos sais minerais adicionados}
+
+  Segundo a Anvisa, a água adicionada de sais  deve ser possuir pelo menos 30ml de um dos seguintes sais, de grau alimentício:
+  bicarbonato de cálcio, bicarbonato de magnésio, bicarbonato de potássio, bicarbonato de sódio, carbonato de cálcio, carbonato
+  de magnésio, carbonato de potássio, carbonato de sódio, cloreto de cálcio, cloreto de magnésio, cloreto de potássio, cloreto
+  de sódio, sulfato de cálcio, sulfato de magnésio, sulfato de potássio, sulfato de sódio, citrato de cálcio, citrato de magnésio,
+  citrato de potássio e citrato de sódio.
+  
+  \begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+    
+    \hline
+    Substância & Quantidade(mg)\\
+    \hline                               
+    Cálcio & 25\\
+    \hline                               
+    Magnésio & 6,5\\
+    \hline                               
+    Potássio & 50\\
+    \hline                               
+    Sódio & 60\\
+    \hline
+    \end{tabular}
+    \caption{Quantidades limites de sais minerais para cada 100 mililitros de água \cite{anvisa05}.}
+  \end{table}
+  
+\subsubsection{Mecanismos para a adição dos sais minerais}
+
+  Para a adição de sais minerais na água, será implementado um mecanismo baseado em equipamentos já existentes, que injetarão
+  sais minerais na água provinda da turbina. Para a realização de um processo automático de inserção de sais, será necessária 
+  a utilização de um dosador automático, que varia a dosagem de uma substância de acordo com as concentrações da mesma na mistura 
+  que será constantemente verificada. Existem equipamentos como o Dosimat 865, da empresa Metrohm, que possui o modo de operação
+  CNT D: ao ser inserida a concentração final que se deseja de uma substância, o dosador é capaz de determinar o volume de água
+  a ser adicionado para que a concentração desejada seja mantida.
+  
+\subsubsection{Funcionamento básico do sistema}
+
+  \begin{itemize}
+   
+   \item O \textbf{sistema de controle} terá a função de enviar comandos e desta forma realizar o controle mecânico da comporta 
+   que abre e fecha o tanque de armazenamento da água retirada da umidade do ar. Este sistema terá acesso direto ao aparelho
+   dosador e ao sistema de sensoriamento, pois, por meio dele terá acesso às concentrações dos sais no tanque de adição. 
+   Quando as concentrações de sais no tanque de adição estiverem altas, a comporta se abrirá e mais água será adicionada à 
+   mistura. Por outro lado, quando as concentrações de sais estiverem baixas no tanque de adição, os comandos serão dados
+   para que a comporta seja fechada. Este processo ocorrerá até que as concentrações ideais dos sais sejam atingidas.
+   
+   \item A \textbf{válvula de retenção} será utilizada para que a água flua apenas em um sentido, que no caso do esquemático 
+   seria da esquerda para a direita. Isto impedirá que a água já adicionada de sais retorne ao tanque da água retirada da
+   umidade do ar.
+   
+   \item O \textbf{tanque para adição de sais} será o reservatório que conterá a água adicionada de sais. Neste tanque, além
+   de ocorrer a adição de sais, ocorrerá também o processo de mistura para que a solubilização dos sais na água aconteça de
+   forma uniforme.
+   
+   \item Para o \textbf{sensoriamento} do tanque de adição de sais poderá ser utilizado um sensor de condutividade.
+   Este sensor possui grande aplicabilidade a este sistema de sensoriamento, pois “A água tem um forte poder de dissociação,
+   pode separar o material dissolvido em íons carregados eletronicamente. Como consequência, o material dissolvido aumenta
+   bastante a condutividade da água” \cite{abilio05}.
+
+   
+  \end{itemize}

@@ -1,231 +1,349 @@
-\documentclass[12pt,openright,oneside,a4paper,brazil]{abntex2}
-\usepackage[utf8]{inputenc}
-\counterwithout{section}{section}
-\counterwithout{figure}{chapter}
-\counterwithout{table}{chapter}
-\setlength{\parindent}{1.3cm}
-\usepackage{indentfirst}
-\setlength{\parskip}{0.2cm}
-\usepackage[bottom=2cm,top=3cm,left=3cm,right=2cm]{geometry}
-\usepackage{graphicx}
-\graphicspath{{figuras/}}
-\usepackage{placeins}
-\usepackage{cite}
-\usepackage{url}
-\usepackage{breakurl}
-\include{bibliografia}
 
-\makeatletter
-\setlength{\@fptop}{0pt}
-\makeatother
+\textbf{Sensores}
 
-\begin{document}
+Ao se expor todos os parâmetros de qualidade da água, é necessário se ter o conhecimento dos sensores que farão a
+obtenção dessas informações. A seguir, se encontram uma série de sensores que foram pesquisados a fim de se ter uma 
+idéia geral de quais equipamentos poderão ser utilizados no projeto. 
 
-\textual
-\begin{center}
- {\large Anemômetroultrassônico}\\[0.2cm]
- \end{center}
- 
-Existem vários tipos de anemômetros, mas entre eles o mais vantajoso por ter uma rápida resposta, boa exatidão nos dados e é possível ser implementado em ambientes com extremas temperaturas e pressão é o ultrassónico. Este sensor basicamente utiliza o som que é desencadeado pelo movimento das partículas que o compõe, estimando assim a velocidade do vento. 
+Sensores são dispositivos eletroeletrônicos que tem a propriedade de transformar em sinal elétrico a transformação
+de uma grandeza física que esta relacionada a uma ou mais propriedade do material de que é feito o sensor. Esses elementos
+são capazes de monitorar a variação de uma grandeza física e transmitir esta informação a um sistema em que a indicação
+seja inteligível para nós ou para o elemento de controle do sistema. Os sensores são compostos por elementos denominados
+transdutores que convertem uma grandeza de entrada em uma grandeza elétrica, que pode ser processada por um circuito
+elétrico ou eletrônico \cite{vinay00}.
 
-O processo de recolhimento dos dados de velocidade e direção do vento é o seguinte,primeiramente com o sinal de excitação, transmite-o para um transistor-transmissor que posteriormente repassa para um transistor-transmissor um sinal ultrassônico, neste processo de transição o sinal sofre alterações, desse modo no transistor-transmissor o sinal é processado e analisado para entregar as informações requeridas. O arranjo do equipamento é essencial para o recolhimento dos dados, por causa de seu formato, que contémum tetraedro com três transdutores em cada extremidade, sendo possível detectar a direção do vento e assim sua velocidade. 
+Existem diversos tipos de sensores os que julgamos necessários para o controle do sistema de capitação de água pela rotação
+da turbina. São os sensores de umidade relativa do ar, sensores de velocidade e direção do vento (anemômetro), sensores
+de nível e fluxo de entrada e saída de água, sensores de oxigênio, sensores de condutividade, sensores de pH, sensores
+de turbidez, sensores de nitrato/nitrogênio, entre outros.
 
-Abaixo especificações técnicas de um anemômetro ultrassônico (Vaisala WINDCAP® WMT700):
+  \begin{enumerate}
+  
+    \item \textbf{Sensor da umidade do ar e temperatura}
+      
+	Características:
+	
+	\begin{itemize}
+	 \item Processamento digital de sinal
+	 \item Umidade relativa e temperatura do ar em um único sensor
+	 \item Alta acurácia de leitura e linearização
+	 \item Sinais de saída condicionados
+	 \item Excelente estabilidade de longo termo
+	 \item Baixo tempo de resposta
+	 \item 100\% intercambialidade
+	\end{itemize}
 
-{\large Velocidade do vento}\\
-Faixa de medição	- 
+	Construção:
+	
+	O invólucro do sensor e do circuito eletrônico é moldado em plástico injetado e estabilizado para U.V.
+	O invólucro do circuito é selado, sendo à prova de respingos e poeira. Todas as conexões elétricas
+	são feitas através de um conector selado na base do sensor. O sensor opera de 0 a 100\% umidade relativa.
+	Os transdutores internos não sofrem danos mesmo com condensação. O circuito digital do sensor realiza a
+	compensação de temperatura e a linearização do sinal de saída. O armazenamento dos dados de calibração do
+	 sensor em memória interna não volátil fornece uma maior acurácia nas leituras.
+	 
+	 \begin{figure}[!htbp]
+	  \centering
+	  \includegraphics[scale=0.5]{editaveis/figuras/especificacao_sensor_umidade}
+	  \caption[Especificação do sensor de umidade e temperatura]{Especificação do sensor de umidade e temperatura. \footnotemark}
+	  \FloatBarrier
+	  \label{especificacao_sensor_umidade}
+	 \end{figure}
+	 \footnotetext{Fonte: \cite{squitter}}
+	 
+    \item \textbf{Sensor de pH}
+    
+	O sensor de pH da água é de extrema importância para o projeto da “planta de abastecimento de água potável
+	através da umidade do ar” pois monitora um dos índices de qualidade da água especificados pela \cite{anaGov}.
+	
+	\begin{center}
+	 \textbf{Especificação do sensor de pH}
+	\end{center}
 
-701	0...40 m/s
+	Para aplicações industriais, o método de medição de pH mais empregado é o eletrodo de vidro \cite{sole79}.
+	Os eletrodos de pH possuem basicamente o mesmo funcionamento que as baterias: transferem uma tensão mínima que poderá
+	ser detectada por um medidor ou um regulador de pH. A diferença é que os eletrodos de pH não produzem tensão de forma
+	contínua, a não ser quando são introduzidos num líquido.
+	
+	\begin{center}
+	 \textbf{Calibração de sensores de pH}
+	\end{center}
+	
+	O período de calibração de um sensor de pH depende do contexto em que o sensor será aplicado e do tipo de sensor
+	que será utilizado. O tipo de sensor a ser utilizado pode variar de acordo com parâmetros como temperatura.
+	O sensor de pH pode vir acoplado a um sensor de condutividade, entre outros. Apesar de existirem vários tipos,
+	todo eletrodo de pH requer calibração periódica. Uma calibração em dois pontos caracteriza um eletrodo com um
+	medidor de pH específico. Uma desvantagem dos sensores de pH é que eles necessitam de calibração diária.
+	Neste caso, seria necessário um funcionário que realizasse a calibração diariamente, ou de um sistema automatizado
+	que realize a calibração.
+	
+	
+    \item \textbf{Sensor ORP}
+    
+	O sensor ORP é similar ao sensor pH quanto ao seu funcionamento, porém, ao invés de seu eletrodo ser envolvido por
+	vidro, é geralmente envolvido por platina ou ouro, devido ao fato de esses metais não interferirem nas reações químicas.
+	Nos sensores ORP, o gel interno recebe a corrente elétrica provinda do meio e a transmite ao interior do sensor.
+	Posteriormente, o fio e prata pura transmite a corrente positiva ao para o cabo de conexão, que leva o sinal recebido
+	ao controlador.
+	
+    \item \textbf{Sensor de turbidez}
+    
+	Os sensores de turbidez são necessários para aferir a quantidade de sólidos que existem na água, já que este é um dos
+	índices de qualidade da água definidos pela ANA.
+	
+	\begin{center}
+	 \textbf{Especificação do sensor de turbidez}
+	\end{center}
+	
+	O sensor de turbidez é o equipamento utilizado para medir a turbidez de um líquido. A aferição compara o espalhamento
+	de um feixe de luz ao passar pela amostra, com o de um feixe de igual intensidade, ao passar por uma suspensão
+	padrão \cite{usepa99}. Os sensores de turbidez funcionam por meio de detectores fotoelétricos, que são sensíveis
+	a sutis mudanças na intensidade da luz, proporcionando uma maior precisão. O sensor de turbidez utilizado
+	atualmente é o turbidímetro nefelométrico. 
+	
+	\begin{center}
+	 \textbf{Funcionamento do sensor de turbidez}
+	\end{center}
+	
+	O princípio de funcionamento dos turbidímetros atuais, baseia-se na emissão de um feixe luminoso e na detecção da luz
+	refletida pelas partículas em suspensão ou diferença de intensidade entre a luz emitida e recebida, a qual é convertida
+	em sinal elétrico e mostrada no equipamento. Nos instrumentos comerciais o detector é disposto em ângulos de
+	45, 90 ou 180 graus. A emissão de luz normalmente é obtida por meio de lâmpadas de mercúrio,lâmpadas de tungstênio,
+	laser ou diodos de emissão \cite{padua06}. Os sensores de turbidez processam as informações analógicas 
+	e as devolvem em forma de tensão.
+	
+	\begin{center}
+	 \textbf{Calibração do sensor de turbidez}
+	\end{center}
+	
+	A calibração do sensor de turbidez pode ser feita de três formas:
+	
+	\textbf{Calibração direta} na qual é utilizada uma solução padrão de formazina para a calibração do sensor.
+	\textbf{Calibração Indireta} na qual a grandeza que deseja ser medida é fornecida por um meio externo, como um equipamento
+	  previamente calibrado, que atua simultaneamente no Sistema de Medição em Calibração e no Sistema de Medição Padrão,
+	  e é feita uma comparação com os resultados obtidos \cite{cni01}.
+	\textbf{Via Software} na qual a calibração é feita por um software que pode ser realizada no próprio aparelho ou com a
+	  utilização de um computador que faz a calibração quando o sensor é conectado. 
+	
+    \item \textbf{Sensor de temperatura da água}
+	
+	Os sensores de temperatura da água medem a temperatura da água e funcionam segundo o princípio de resistência variável.
+	Os sensores de temperatura de líquidos em geral são envolvidos por materiais com alta resistência a corrosão.
+	Estes sensores funcionam com transdutores, que são componentes que possuem a função de transformar grandezas elétricas.
+	Basicamente, um sensor de temperatura é uma espécie de resistor que aumenta sua resistência quando a temperatura do
+	líquido aumenta.
+	
+    \item \textbf{Sensor de temperatura da água}
+	
+	\begin{center}
+	 \textbf{Calibração do sensor de temperatura da água}
+	\end{center}
+	
+	Uma das vantagens dos sensores de temperatura é o fato de que estes componentes não necessitam de calibração constante.
+	Um dos métodos de calibração mais utilizados atualmente é o Método Comparativo no qual o sensor a calibrar tem sua
+	indicação comparada com as de um padrão de referência. O método consiste em imergir ambos em um meio térmico uniforme
+	e estável, cuja temperatura possa ser controlada na faixa requerida.
+	
+    \item \textbf{Sensor de nitrogênio}
+	 
+	O Nitrogênio pode ser encontrado no meio aquático nas seguintes formas: nitrogênio molecular, nitrogênio orgânico,
+	nitrogênio amoniacal (amônia), nitrato e nitrito. Na natureza o nitrogênio está presente nas proteínas e pode advir
+	também da composição celular de microorganismos. Quanto à origem antropogênica do nitrogênio pode ser proveniente 
+	também de despejos domésticos e industriais assim como de excrementos animais e fertilizantes químicos, podendo indicar
+	grau de contaminação \cite{sperling96}. A falta de controle do nível de nitrogênio pode acarretar danos nos 
+	filamentos das brânquias e diminuição imunológica levando-o a morte.
+	
+	O aparelho que será utilizado para medição do nível de nitrogênio é a sonda YSI 6820 V2.
+	
+	\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|p{6cm}|p{5cm}|}
+	
+	\hline
+	Nitrato/Nitrogênio &
+	0 a 200 mg/L-N &
+	0,001 a 1 mg/L(em função da faixa de leitura) &
+	10\% da leitura ou 2mg/L, o que for maior.\\
+	\hline
 
-702	0...65 m/s
-
-703	0...75 m/s
-
-Precisão	-	+/- 0,2 m/s ou 3 \% da leitura, o que for maior
-
-Limite inicial - 0,01 m/s
-
-Resolução - 0,01 m/s\\
-
-{\large Direção do vento}
-
-Faixa de medição - 0 ... $300\,^{\circ}\mathrm{C}$
-
-Precisão - +/- $2\,^{\circ}\mathrm{C}$
-
-Limite inicial - 0,1 m/s
-
-Resolução - $1\,^{\circ}\mathrm{C}$,
-
-{\large Saídas}
-
-Taxa de transmissão - 300, 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200
-
-Médias disponíveis -  máx. 3600 s
-
-Intervalo de atualização de leitura - máx. 4 Hz
-
-Unidades
-
-Saídas digitais - m/s, nós, mph, km/h
-
-Saídas analógicas - V, mA, Hz
-
-Temperatura virtual - graus Celsius
-
-{\large Geral}
-
-Temperatura de operação	- -10 ... +60 ou -40 ... +60 ou -55 ... $+70\,^{\circ}\mathrm{C}$,
-\newpage
-
-\begin{center}
- {\large Sensor de pH}\\[0.2cm]
- \end{center}
- 
-{\large Especificação do sensor de pH}\\
- O sensor de pH da água é de extrema importância para o projeto da “planta de abastecimento de água potável através da umidade do ar” pois monitora um dos índices de qualidade da água especificados pela ANA(agência nacional de águas). 
- 
-	Para aplicações industriais, o método de medição de pH mais empregado é o eletrodo de vidro(Solé, 1979).Os eletrodos de pHpossuem basicamente o mesmo funcionamento que as baterias: transferem uma tensão mínima que poderá ser detectada por um medidor ou um regulador de pH. A diferençaé que os eletrodos de pH não produzem tensão de forma contínua, a não ser quando são introduzidos num líquido
-
-{\large Calibração de sensores de pH}\\
-O período de calibração de um sensor de pH depende do contexto em que o sensor será aplicado e do tipo de sensor que será utilizado. O tipo de sensor a ser utilizado pode variar de acordo com parâmetros como temperatura. O sensor de pH pode vir acoplado a um sensor de condutividade, entre outros. Apesar de existirem vários tipos, todo eletrodo de pH requer calibração periódica. Uma calibração em dois pontos caracteriza um eletrodo com um medidor de pH específico.
-
-{\large Sensor ORP}\\
-O sensor ORP é similar ao sensor pH quanto ao seu funcionamento, porém, ao invés de seu eletrodo ser envolvido por vidro, é geralmente envolvido por platina ou ouro, devido ao fato de esses metais não interferirem nas reações químicas. Nos sensores ORP, o gel interno recebe a corrente elétrica provinda do meio e a transmite ao interior do sensor. Posteriormente, o fio e prata pura transmite a corrente positiva ao para o cabo de conexão, que leva o sinal recebido ao controlador.
-\newpage
-
-\begin{center}
- {\large Métodos de Processamento de Sinais}\\
- \end{center}
- O processamento de sinais será realizado por meio de um sistema de sensoriamento do local onde se encontrará a planta de abastecimento. Os sensores farão a varredura do local, coletando dados sobre a qualidade da água já tratada provinda da umidade do ar. Os dados a serem coletados estão de acordo com o Índice de Qualidade da Água(IQA). Para cada fator a ser monitorado de acordo com o IQA existirá um sensor relacionado. 
- 
-	Como foi dito anteriormente, almeja-se utilizar a sonda YSI EXO, que coleta dados de 6 sensores substituíveis e que estão de acordo com o Índice de Qualidade da Água(IQA). A sonda YSI EXO é comandada por um software embarcado. Além disso, a própria sonda, além de possuir um sistema de sensoriamento, processa suas próprias informações, enviando-as à uma central computadorizada.
-\newpage
-\begin{center}
- {\large Especificações do Sensor de Umidade Relativa e Temperatura do Ar}\\
- \end{center}
-{\large Características:}\\
- \begin{itemize}
-\item Processamento digital de sinal
-\item Umidade relativa e temperatura do ar em um único sensor
-\item Alta acurácia de leitura e linearização
-\item Sinais de saída condicionados
-\item Excelente estabilidade de longo termo
-\item Baixo tempo de resposta
-\item 100 \% intercambialidade
- \end{itemize}
-{\large Construção:}\\
-O invólucro do sensor e do circuito eletrônico é moldado em plástico injetado e estabilizado para U.V. O invólucro do circuito é selado, sendo à prova de respingos e poeira. Todas as conexões elétricas são feitas através de um conector selado na base do sensor. O sensor opera de 0 a 100\% umidade relativa. Os transdutores internos não sofrem danos mesmo com condensação. O circuito digital do sensor realiza a compensação de temperatura e a linearização do sinal de saída. O armazenamento dos dados de calibração do sensor em memória interna não volátil fornece uma maior acurácia nas leituras.
-\begin{figure}
-\centering
-\includegraphics[scale=1]{umidade}
-\end{figure}
-\FloatBarrier
-\newpage
-\begin{center}
- {\large Sensores de Processamento de Sinais para Umidade do Ar}\\
- \end{center}
- O uso de equipamentos que usa o processamento de sinais é de suma importância para extrair informações do clima para a aplicação de retirada de água a partir da umidade do ar. O uso de um sensor de umidade relativa e temperatura do ar combinam sensores de umidade e temperatura de alta precisão em um único instrumento. Ambos os sensores fornecem sinais de saída diretamente proporcionais à umidade relativa e temperatura. O  processamento digital de sinais embutido no sensor garante uma precisa linearização dos sinais de saída em toda a faixa de operação e total intercambialidade do sensor. 
- 
-Operação: Para melhor desempenho, ele deve ser posicionado em local com boa circulação de ar e longe de grandes construções, como  edifícios ou muros. A membrana protetora do sensor de umidade relativa deve ser regularmente limpa. Sempre que possível, a limpeza deve ser feita sem a remoção do filtro. Em aplicações que envolvem contínuo contato com água ou poeira grossa, um filtro de espuma  opcional esta disponível. A calibração do sensor de temperatura não é necessária. Para o sensor de umidade, a calibração pode ser feita a cada 6 a 12 meses para garantia de máximo desempenho.
- Características:
- \begin{itemize}
-\item Processamento digital de sinal
-\item Umidade relativa e temperatura do ar em um único sensor
-\item Alta acurácia de leitura e linearização
-\item Sinais de saída condicionados
-\item Excelente estabilidade de longo termo
-\item Baixo tempo de resposta
-\item 100 \% intercambialidade
- \end{itemize}
- \newpage
-\begin{center}
- {\large Parâmetros da qualidade da água}\\
- \end{center}
-Existe um indicador chamado Índice de Qualidade das Águas (IQA), que é o principal índice de qualidade da água utilizado em todo o país. A finalidade do desenvolvimento de tal índice é analisar a qualidade da água após o tratamento da mesma.
-
-Como desvantagens do uso do IQA, deve-se citar o fato de o índice não contemplar vários parâmetros importantes para o abastecimento público, tais como:
-\begin{itemize}
-\item Substâncias tóxicas (ex: metais pesados, pesticidas, compostos orgânicos);
-\item Protozoários patogênicos
-\item Substâncias que interferem nas propriedades organolépticas da água.
-
-\end{itemize}
-
-O IQA é composto por nove parâmetros, que têm seus respectivos pesos, os quais foram fixados de acordo com sua importância global na determinação da qualidade da água. Veja na tabela a seguir:
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.8]{tabela}
-\end{figure}
-\FloatBarrier
-Além de seu peso (w), cada parâmetro possui um valor de qualidade (q), obtido do respectivo gráfico de qualidade em função de sua concentração ou medida. Observe a figura abaixo:
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.8]{grafico}
-\end{figure}
-\FloatBarrier
-
-O cálculo do IQA é dado da seguinte forma:
-
-\begin{figure}[h]
-\centering
-\includegraphics[scale=1]{eq1}
-\end{figure}
-
-Onde:
-\begin{itemize}
-
-\item IQA: Índice de Qualidade das Águas. Um número de 0 a 100;
-\item qi: qualidade do i-ésimo parâmetro. Um número entre 0 e 100, obtido do respectivo gráfico de qualidade, em função de sua concentração ou medida (resultado da análise).
-\item wi: peso correspondente ao i-ésimo parâmetro fixado em função da sua importância para a conformação global da qualidade, isto é,  um número de 0 a 1, de forma que:
-\begin{figure}[h]
-\centering
-\includegraphics[scale=01]{eq2}
-\end{figure}
-\FloatBarrier
-\end{itemize}
-
-Sendo n o número de parâmetros que entram no cálculo do IQA.
-A descrição dos parâmetros que compõe o IQA será efetuada a seguir.
-\begin{itemize}
-\item Oxigênio dissolvido (OD): é um fator limitante para a manutenção da vida aquática e de processos de autodepuração em sistemas aquáticos naturais e estações de tratamento de esgotos [2]. Águas limpas têm concentração de oxigênio, na maioria das vezes, maior ou igual a 5 mg/L. 
-No que se refere aos processos que contribuem para a introdução do oxigênio na água, pode-se citar, além da fotossíntese, determinados processos físicos os quais dependem das características hidráulicas dos corpos d’água, por exemplo: velocidade da água.
-\item Coliformes termotolerantes: São bactérias não patogênicas que ocorrem no trato intestinal de animais de sangue quente e são indicadoras de poluição da água causada pelos esgotos domésticos. Quando há grande quantidade dessas bactérias na água, há a possibilidade de existir microorganismos capazes de transmitir doenças de veiculação hídrica[1].
-\item Potencial Hidrogeniônico (pH): O pH (medida que determina a acidez ou basicidade de uma mistura) é capaz de alterar o metabolismo de diversas espécies aquáticas.Dessa forma, o CONAMA estabelece que o pH deve estar entre 6 e 9 para a proteção da vida aquática.
-\item Demanda Bioquímica de Oxigênio (DBO5,20): representa a quantidade necessária de oxigênio para oxidar a matéria orgânica aquática por meio da decomposição microbiana aeróbia. A ocorrência de altos valores de DBO5,20 acarreta na diminuição   dos valores de oxigênio dissolvido (OD). A sigla DBO5,20 equivale à quantidade de oxigênio consumido em 5 dias a uma temperatura de 20C.
-\item Temperatura da água: influencia em diversos parâmetros físico-químicos da água (ex: tensão superficial e a viscosidade) além de afetar o crescimento e reprodução de espécies aquáticas.
-\item Nitrogênio total: O nitrogênio pode ocorrer nos corpos d’água em diversas formas (orgânica, amoniacal, nitrito e nitrato). Os nitratos são tóxicos aos humanos.
-Além disso, como os compostos de nitrogênio nutrem os processos biológicos, a grande concentração de nitrogênio (juntamente com outros nutrientes) em corpos d’água causa a eutrofização, que prejudica o abastecimento público e a preservação da vida aquática. A principal fonte de nitrogênio em corpos d’água é o lançamento de esgotos sanitários e efluentes industriais.Em áreas agrícolas, o escoamento da água das chuvas em solos que receberam fertilizantes também é uma fonte de nitrogênio, assim como a drenagem de águas pluviais em áreas urbanas[1].
-\item Fósforo total: Assim como o nitrogênio, o fósforo (em excesso) causa a eutrofização das águas. As principais fontes de fósforo são os esgotos domésticos, pelo fato de eles terem a presença de detergentes superfostadados e das próprias fezes. Além disso, a drenagem pluvial de áreas agrícolas e urbanas também é uma fonte significativa. Entre os efluentes industriais destacam-se os das indústrias de fertilizantes, alimentícias, laticínios, frigoríficos e abatedouros [1].
-\item Turbidez: indica o grau de atenuação que um feixe de luz sofre ao atravessar a água. Tal atenuação é devida à absorção e espalhamento de luz causada pelos sólidos em suspensão. A principal fonte de turbidez é a erosão dos solos (chuvas trazem os corpos sólidos).
-\item Resíduo total: é a matéria a qual permanece após a evaporação, secagem ou calcinação da amostra de água durante um determinado tempo e temperatura.
-
-\end{itemize}
-Existe uma empresa chamada Clean Environment Brasil, que fornece equipamentos de monitoramento e controle da água à ANA (Agência Nacional de Águas). Eles produzem várias sondas multiparamétricas (conseguem monitorar vários parâmetros em uma só sonda). 
-Seria interessante utilizar a sonda YSI EXO, que coleta dados de 6 sensores substituíveis, pois ela também é usada pela ANA para determinar a qualidade da água.
-
-As opções de sensores para esse tipo de sonda são:
-\begin{itemize}
-\item Condutividade e temperatura;
-\item Oxigênio dissolvido;
-\item Matéria Orgânica Dissolvida (fluorescência);
-\item pH ou pH/ORP;
-\item Profundidade (que já é integrado);
-\item Algas totais (canal duplo para clorofila e algas azuis/verdes);
-\item Turbidez [3].
-\end{itemize}
-Assim, com apenas um equipamento relativamente leve (3,6 kg com baterias e sensores instalados) de pequenas dimensões ($\Phi$ = 7,62cm e comprimento = 71,10cm) é possível monitorar a maioria dos parâmetros do índice IQA.
-\newpage
-Referências
-
-[1] - http://portalpnqa.ana.gov.br/indicadores-indice-aguas.aspx
-
-[2] - http://www.cetesb.sp.gov.br/mortandade/causas\_oxigenio.php
-
-[3] - http://www.clean.com.br/site/ysi-exo-2/
-
-[4] - http://www.inicepg.univap.br/cd/INIC\_2006/inic/inic/07/INIC0000904.ok.pdf
-
-[5] - http://br.vaisala.com/br/products/windsensors/Pages/WMT700.aspx
-
-\end{document}
+	\end{tabular}
+	\end{table}
+    
+    \item \textbf{Sensor de oxigênio dissolvido}
+    
+	O nível de oxigênio dissolvido na água é o parâmetro mais importante especificado pela ANA,
+	para medir-se este parâmetro em tempo real, utiliza-se um sensor, chamado de sensor eletroquímico
+	de oxigênio dissolvido.
+	
+	Esse sensor possui no seu interior uma membrana permeável ao gás que envolve um eletrodo que reage com
+	o oxigênio dissolvido, quando a quantidade de oxigênio cai, o catodo gera uma corrente proporcional à
+	pressão exterior a membrana \cite{ferreira07}.
+	
+	\begin{figure}[!h]
+	  \centering
+	  \includegraphics[scale=0.4]{editaveis/figuras/sensor_oxigenio}
+	  \caption[Sensor de oxigênio dissolvido]{Sensor de oxigênio dissolvido}
+	  \FloatBarrier
+	  \label{sensor_oxigenio}
+	 \end{figure}
+	
+	\begin{center}
+	 \textbf{Medição de nível de fósforo total}
+	\end{center}
+	
+	O fósforo encontrado na agua pode ter origem da dissolução doas solos e decomposição de matéria orgânica,
+	do uso de fertilizantes, despejos domésticos e industriais, detergentes e excrementos animais \cite{danelon12}.
+	
+	Então é importante que os níveis do fósforo sejam controlados, seguindo os níveis propostos pela ANA,
+	para medir-se esse parâmetro, não é possível por meio de sensores, então
+	se utiliza um aparelho chamado de Fotômetro medidor de fósforo.
+	  
+	\begin{figure}[!h]
+	  \centering
+	  \includegraphics[scale=0.6]{editaveis/figuras/fotometro_spec}
+	  \caption[Especificações de um fotômetro]{Tabela de especificações do Fotômetro (Modelo HI 96706C)}
+	  \FloatBarrier
+	  \label{fotometro_spec}
+	 \end{figure}
+	
+    \item \textbf{Coliformes fecais}
+    
+	Coliformes totais são bactérias que não causam doenças, uma vez que habitam o intestino de animais mamíferos inclusive
+	o homem. Dentre as bactérias pertencentes ao grupo coliforme totais, a mais estudada é a \textit{Escherichia Coli} (E. Coli),
+	resumida como pertencente ao grupo das enterobacterias \cite{neidhardt96}.
+	
+	A determinação da concentração dos coliformes assume importância como parâmetro indicador da possibilidade da 
+	existência de microorganismos patogênicos, responsáveis pela transmissão de doenças de veiculação hídrica, tais como
+	febre tifóide, febre paratifóide, desinteria bacilar e cólera \cite{anaGovIndicadores}.
+	
+	A importância dos coliformes também está relacionada com a qualidade da água, uma vez que é um dos principais
+	parâmetros para o cálculo do Índice de Qualidade de Água (IQA) \cite{cetesbIndiceQualidadeH2O}.
+	
+	A análise de coliformes deve ser realizada de acordo com as normas técnicas da CETESB que prescrevem que a análise
+	deve ser realizada por meio da técnica de membrana filtrante para determinação da densidade de bactérias do grupo
+	coliforme, com aplicação em: controle de qualidade de águas destinadas: ao abastecimento público (sem ou com simples
+	desinfecção, ou após tratamento simplificado ou convencional); a irrigação de hortaliças e plantas; a recreação de
+	contato primário (natação, esqui-aquático, mergulho); a criação natural e/ou Anais XVI Simpósio Brasileiro de
+	Sensoriamento Remoto - SBSR, Foz do Iguaçu, PR, Brasil, 13 a 18 de abril de 2013, INPE 6652 intensiva (aquicultura)
+	de espécies destinadas a alimentação humana; a dessedentarão de animais; ao abastecimento industrial \cite{cetesb84}.
+	
+	A quantidade de coliformes fecais não deve exceder um limite de 200 por 100 mililitros em 80\% ou mais de pelo menos
+	5 amostras mensais colhidas em qualquer mês.
+	
+    \item \textbf{Anêmometro ultrasônico}
+    
+	Anemômetro é um equipamento que mede a velocidade e a direção dos ventos. No SI (Sistema internacional) a unidade
+	utilizada para medir a velocidade do vento pode ser em m/s (metros por segundo), em km/h (quilômetros por hora) ou
+	em nós \cite{almeida04}.
+	
+	No mercado existem vários tipos de anemômetros com diferentes exatidões, custo e métodos de medição, são alguns deles: 
+	anemômetro de copo, termoelétrico e o ultrassônico.
+	
+	O anemômetro de copo é o mais utilizado e o mais comum no mercado \cite{cyliax06}. Ele possui vários copos ocos
+	fixos em dois eixos, que se movem proporcionalmente com a velocidade do vento, que é indicada por um tacômetro. Este
+	anemômetro é de baixo custo e possui precisão de mais ou menos 2\%, mas precisa ser calibrado e passar por manutenção
+	periodicamente, pois tem partes móveis que se desgastam com o tempo e alteram a sua precisão.
+	
+	O anemômetro termoelétrico possui dois tipos o de fio e o de tubo, genericamente os dois tipos utilizam o calor dissipado
+	pelos sensores do anemômetro para a medição da velocidade do vento, ou seja, o sensor é aquecido e o calor que é dissipado
+	é proporcional a velocidade do vento.  O tempo de resposta do termoelétrico é maior do que o de copo, é não possui partes
+	moveis, porém não é indicado para locais abertos, pois seus sensores são frágeis e os fios ou tubos acumulam impurezas,
+	desse modo diminuindo sua precisão.
+	
+	O anemômetro ultrassônico é um tipo anemômetro que possibilita a medição da velocidade do vento , por meio da velocidade
+	do som no ar.Possuisensores ultrassônicos dispostos em formato de tetraedro e em cada extremidade possui um sensor
+	piezolétricos \cite{ribeiro06}, este sensor é um tipo de transdutor ultrassônicos que pode se comportar tanto
+	como transdutor-transmissor quanto um transdutor-receptor, ou seja, ele pode gerar ondas ultrassônicas e também de
+	recebê-las (KOYAMA,2007).
+	
+	O tempo que o pulso enviado por um dos sensores leva para chegar a um dos outros é medido e incrementado ou decrementado,
+	dependendo da direção da velocidade do som, assim podendo obter-se a velocidade do vento nas três direções.
+	
+	\begin{figure}[!h]
+	  \centering
+	  \includegraphics[scale=0.8]{editaveis/figuras/sinal_ultrasonico}
+	  \caption[Soma do sinal ultrassônico e a velocidade do vento]
+	    {Figura ilustrativa da soma do sinal ultrassônico e a velocidade do vento \cite{cyliax06}.}
+	  \FloatBarrier
+	  \label{sinal_ultrasonico}
+	\end{figure}
+	
+	Este anemômetro é um dos mais confiáveis, não possui partes móveis, tem uma resposta rápida e com boa exatidão, não
+	precisa de manutenção periódica epode ser utilizado em qualquer ambiente, sem comprometer sua precisão.
+	
+	Abaixo uma tabela de especificações técnicas de um anemômetro ultrassônico (Vaisala WINDCAP\textregistered WMT700):
+	
+	\begin{figure}[!h]
+	  \centering
+	  \includegraphics[scale=0.6]{editaveis/figuras/vaisala_spec}
+	  \caption[Especificações técnicas do anemômetro ultrassônico Vaisala WINDCAP\textregistered WMT700]
+	    {Especificações técnicas do anemômetro ultrassônico Vaisala WINDCAP\textregistered WMT700}
+	  \FloatBarrier
+	  \label{vaisala_spec}
+	\end{figure}
+	
+    \item \textbf{Demanda Bioquímica de Oxigênio (DBO5,20)}
+    
+	Os principais métodos de determinação do DBO são o método manométrico e o método da diluição. O primeiro se baseia em
+	mensurar a variação de pressão de oxigênio durante a análise, já o segundo consiste em incubação em garrafas Winkler
+	(impedem que qualquer ser vivo seja capaz de realizar a fotossíntese dentro da garrafa) (UMWELT, 2015).
+	
+	O método da diluição envolve a medição de OD (oxigênio dissolvido) na amostra a ser analisada antes da incubação, e 
+	5 dias depois da incubação. Dessa forma, a diferença entre OD final e OD inicial obtida representa a DBO5,20 (em caso 
+	do ambiente de experimentação estar à 20 graus Celsius) \cite{cetesbOxigenioDissolvido}.
+	
+	Por outro lado, o método manométrico se baseia no consumo de oxigênio determinado pela variação de pressão. Essa diferença
+	de pressão é medida com o auxílio de um sensor de pressão (piezoelétrico, por exemplo) acoplado ao topo das garrafas.
+	As vantagens desse método são:
+	
+	\begin{itemize}
+	 \item Não há necessidade de diluição da amostra;
+	 \item Exibição contínua do valor de DBO durante o tempo de incubação.
+	\end{itemize}
+	
+	Foram obtidas algumas especificações de um sensor que realizam tal tipo de medição disponível no mercado:
+	
+	CONTINUAR DAQUI
+    
+    \item \textbf{Microcontroladores}
+	
+	O microcontrolador é uma espécie de computador que é programado para realizar funções de acordo com o que se deseja.
+	Dentro de um computador de mesa (desktop), por exemplo, existem vários microcontroladores de vários modelos e tamanhos
+	que realizam diversas funções diferentes. Ou seja, são dispositivos que geralmente são embutidos no interior de um produto
+	que podem controlar as funções ou ações desse produto \footnotemark. 
+	\footnotetext{Disponível em: <http://tecnologia.hsw.uol.com.br/microcontroladores1.htm>}
+	
+	No contexto em que se encaixa este documento, os microcontroladores serão responsáveis por fazerem leituras de sinais 
+	que posteriormente poderão nos informar a qualidade da água, potência em que se está sendo trabalhada a turbina,
+	quantidade de água armazenada no reservatório em tempo real, a velocidade atual em que o vento atinge as turbinas,
+	umidade do ar, etc. Mas para a obtenção dessas diversas informações, é necessária a utilização dos vários sensores
+	citados anteriormente que vão trabalhar de modo conjunto com os microcontroladores, que formam um sistema para ler
+	essas informações.
+	
+	Inicialmente, ao se receber a informação dentro do sistema, ela tem de ser condicionada. O condicionador mais comum é
+	o amplificador. Este tem a função de amplificar sinais de baixa intensidade a fim de se aumentar sua resolução. Logo
+	após isto, este sinal é enviado a um filtrador que tem por função melhorar a freqüência enviada, ou seja, ele vai
+	remover sinais indesejados fazendo a freqüência permanecer no formato desejado. Dependendo de cada sinal, deverá ser
+	usado um filtro diferente, pois sinais AC e DC requerem tratamentos diferenciados. Por exemplo, sensores de temperatura 
+	recolhem sinais DC que geralmente são de alta freqüência, com isto, os filtradores buscam deixar esse sinal mais tênue.
+	Posteriormente também se pode amplificar novamente o sinal. Essa etapa geralmente depende da ordem em que a tensão está
+	chegando. Uma tensão da ordem de micro volts pode requerer ser amplificada mais uma vez para que seja sensível ao
+	microcontrolador. Em sequência, o sinal deve passar por um conversor analógico digital, que tem por função passar
+	informação do nosso mundo, como luz, som, para o formato digital, e então é enviado para um microcontrolador. A partir
+	dessa etapa, o microcontrolador passa a informação para um transmissor que envia a informação para uma central \footnotemark.
+	
+	\footnotetext{Disponível em: <http://www.sabereletronica.com.br/artigos/2805-condicionamento-de-sinais-analgicos-e-sensores>}
+	
+	A figura ~\ref{funcionamento_microcontrolador} ilustra o funcionamento desse sistema.
+	
+	\begin{figure}[!h]
+	  \centering
+	  \includegraphics[scale=0.6]{editaveis/figuras/funcionamento_microcontrolador}
+	  \caption[Processamento do sinal]{Processamento do sinal}
+	  \FloatBarrier
+	  \label{funcionamento_microcontrolador}
+	\end{figure}
+	
+  \end{enumerate}
+  
+  \vfill
