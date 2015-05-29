@@ -3,7 +3,13 @@
 \setlength{\labelsep}{0pt}\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{v-1.9.2 }
+\abntbstabout{v-1.9.3 }
+
+\bibitem[ABC]{abc}
+\abntrefinfo{ABC}{ABC}{}
+{ABC, D. \emph{Nasoni}.
+Disponível em<http://elmaxilab.com/definicao-abc/letra-n/nasoni.php>. Acesso
+  em: 24/05/2015.}
 
 \bibitem[Abilio e Etiene 2005]{abilio05}
 \abntrefinfo{Abilio e Etiene}{ABILIO; ETIENE}{2005}
@@ -47,6 +53,11 @@ Disponível em:<http://portalpnqa.ana.gov.br/indicadores-indice-aguas.aspx>.
 {ANVISA. \emph{Resolução RDC nº 274, de 22 de setembro de 2005. REGULAMENTO
   TÉCNICO PARA ÁGUAS ENVASADAS E GELO.} 2005.
 Diário Oficial da União, Brasília, n. 151, 23 set. 2005.}
+
+\bibitem[bank) 2014]{bank}
+\abntrefinfo{bank)}{BANK)}{2014}
+{BANK), B.~M. (world. \emph{Indicadores Banco Mundial}. 2014.
+Disponível em<http://data.worldbank.org/products/wdi>. Acesso em: 25/05/2015.}
 
 \bibitem[Barros e Varella]{barrosVarela}
 \abntrefinfo{Barros e Varella}{BARROS; VARELLA}{}
@@ -200,6 +211,12 @@ Disponível em:
   oriental do rio grande do norte.
 2007.}
 
+\bibitem[Pádua e Luiz 2006]{padua06}
+\abntrefinfo{Pádua e Luiz}{PáDUA; LUIZ}{2006}
+{PáDUA, V. L.~D.; LUIZ, D.~B. Comparação entre turbidez e distribuição de
+  tamanhos de partículas.
+2006.}
+
 \bibitem[Pereira 2007]{pereira07}
 \abntrefinfo{Pereira}{PEREIRA}{2007}
 {PEREIRA, R.~V. \emph{Sensores e transdutores para um sistema automático de
@@ -210,12 +227,6 @@ Disponível em:
 \abntrefinfo{Preece, Rogers e Sharp}{PREECE; ROGERS; SHARP}{2002}
 {PREECE, J.; ROGERS, Y.; SHARP, H. \emph{Interaction Design: beyond
   Human-Computer Interaction}. [S.l.]: John Wiley \& Sons, 2002.}
-
-\bibitem[Pádua e Luiz 2006]{padua06}
-\abntrefinfo{Pádua e Luiz}{PáDUA; LUIZ}{2006}
-{PáDUA, V. L.~D.; LUIZ, D.~B. Comparação entre turbidez e distribuição de
-  tamanhos de partículas.
-2006.}
 
 \bibitem[Ramaswamy 1996]{ramaswamy96}
 \abntrefinfo{Ramaswamy}{RAMASWAMY}{1996}
@@ -232,6 +243,12 @@ Disponível em:
 {RIBEIRO, M. R.~S. et al. Desenvolvimento de um anêmometro digital
   ultrasônico.
 2006.}
+
+\bibitem[Rodriques 2013]{rodrigues}
+\abntrefinfo{Rodriques}{RODRIQUES}{2013}
+{RODRIQUES, L. \emph{Vamos beber água no Nasone?} 2013.
+Disponível em <http://turismoemroma.com/1-vamos-beber-a-agua-no-nasone>.
+  Acesso em: 27/05/2015.}
 
 \bibitem[ROSSI, OLIVEIRA e ALÉ]{rossiEtAl}
 \abntrefinfo{ROSSI, OLIVEIRA e ALÉ}{ROSSI; OLIVEIRA; ALÉ}{}
@@ -259,7 +276,7 @@ Disponível em: <http://www.eolewater.com/gb/our-products/our-expertise.html>.
 \bibitem[Sperling 1996]{sperling96}
 \abntrefinfo{Sperling}{SPERLING}{1996}
 {SPERLING, M.~V. \emph{Introdução à qualidade das águas e ao tratamento de
-  esgotos}. 1. ed. [S.l.: s.n.], 1996.}
+  esgotos}. 1. ed. UFMG, Belo Horizonte: [s.n.], 1996.}
 
 \bibitem[SQUITTER 2009]{squitter}
 \abntrefinfo{SQUITTER}{SQUITTER}{2009}
