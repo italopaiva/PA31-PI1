@@ -5,9 +5,9 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.3 }
 
-\bibitem[ABC]{abc}
-\abntrefinfo{ABC}{ABC}{}
-{ABC, D. \emph{Nasoni}.
+\bibitem[ABC 2015]{abc}
+\abntrefinfo{ABC}{ABC}{2015}
+{ABC, D. \emph{Nasoni}. 2015.
 Disponível em<http://elmaxilab.com/definicao-abc/letra-n/nasoni.php>. Acesso
   em: 24/05/2015.}
 

@@ -2,7 +2,6 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: pa31.aux
 The style file: abntex2-alf.bst
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
-Warning--campo year vazio ou faltando em abc
 Warning--campo year vazio ou faltando em anaGov
 Warning--campo year vazio ou faltando em barrosVarela
 Warning--campo year vazio ou faltando em cleanEnvironmentBrasil
@@ -18,4 +17,4 @@ Warning--campo year vazio ou faltando em loggerPro
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-(There were 11 warnings)
+(There were 10 warnings)
