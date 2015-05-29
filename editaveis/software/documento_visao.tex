@@ -16,38 +16,14 @@
 % \title{}
 % \author{}
  
-% \begin{document}
+%\begin{document}
  
  
  \textual
 \begin{center}
- {\large Planta de abastecimento da água através da umidade do ar}\\[0.2cm]
- {Sistema de controle da qualidade da água}\\
- {Documento de visão técnica}\\
+ {\large Documento de visão técnica}\\[0.2cm]
  \end{center}
- 
- \section*{Histórico de Alterações}
-\begin{table}[h]
-\centering
-\begin{tabular}{|c|p{1.5cm}|p{6cm}|p{5cm}|}\hline
-\textbf{Data} & \textbf{Versão} & \textbf{Descrição} & \textbf{Responsável}\\
-\hline                               
-18/05/2015 & 0.0 & Criação do Documento & Hugo Martins\\
-\hline
-18/05/2015 & 1.0 & Definição da descrição do problema e de alguns requisitos do sistema & Alexandre Torres,  Hugo Martins, Italo Paiva, Jonnatas Lennon, Karine Valença\\
-\hline
-20/05/2015 & 2.0 &Edição no documento geral& Hugo Martins e Italo Paiva\\
-\hline
-21/05/2015 & 3.0 & Criação dos requisitos do sistema & Alexandre Torres, Hugo Martins, Italo Paiva, Jonnatas Lennon, Karine Valença.\\
-\hline
-21/05/2015&	4.0&Edição no documento geral&Alexandre Torres \\ \hline
-23/05/2015&	5.0&	Edição no documento geral&Hugo Martins \\ \hline
-25/05/2015&	6.0	&Criação dos requisitos não funcionais	&Alexandre Torres,  Jonnatas Lennon, Karine Valença\\ \hline
-26/05/2015	& 7.0 &	Modificação dos requisitos funcionais&	Alexandre Torres\\ \hline
-27/05/2015	&8.0&	Alterações gerais  e finalização do documento&	Alexandre Torres\\ \hline
 
-\end{tabular}
-\end{table}
 
 \section*{Introdução}
 Como tentativa de amenizar os problemas gerados pela falta de água potável na cidade de Acarí - RN, foi proposto um sistema capaz de gerar água de boa qualidade a partir da umidade do ar. Para o correto funcionamento desse sistema é necessário um software capaz de permitir o monitoramento da água.
@@ -56,7 +32,7 @@ O objetivo primário do software proposto será o monitoramento da qualidade e d
 
 \section*{Descrição do Problema}
 Encontra-se abaixo tabelas com as descrições dos problemas identificados:
-\begin{table}[!t]
+\begin{table}[!h]
 \centering
 \begin{tabular}{|p{4cm}|p{10cm}|}\hline
 \textbf{O problema de:}&Falta de um software para monitorar o funcionamento da tecnologia projetada.\\ \hline
@@ -67,7 +43,7 @@ Encontra-se abaixo tabelas com as descrições dos problemas identificados:
 \end{tabular}
 \end{table}
 
-\begin{table}[!t]
+\begin{table}[!h]
 \centering
 \begin{tabular}{|p{4cm}|p{10cm}|}\hline
 \textbf{O problema de:}&Falta de informações referentes à qualidade da água.\\ \hline
@@ -77,7 +53,7 @@ Encontra-se abaixo tabelas com as descrições dos problemas identificados:
 \end{tabular}
 \end{table}
 
-\section*{DESCRIÇÕES DOS ENVOLVIDOS E USUÁRIOS}
+\section*{Descrições dos envolvidos e usuários}
 Os \emph{stakeholders} envolvidos no projeto de software são a equipe de desenvolvimento do projeto, mais diretamente a equipe formada pelos integrantes da engenharia de software, os professores da disciplina, os técnicos que serão usuários do sistema, a população que se beneficia do sistema.
 
 \subsection*{Resumo dos Envolvidos}
@@ -92,7 +68,7 @@ O sistema será implantado na casa  de Controle da planta de abastecimento da á
 \subsection*{Ambiente das Principais Necessidades dos Envolvidos ou Usuários}
 A equipe deve assegurar que a água extraída pela planta esteja em um nível considerável para consumo. Caso não esteja problema causador deve ser mitigado, evitando que ocorra novamente. O técnico também abastecerá o reservatório de sais utilizados na mistura com a água caso esteja com uma pequena quantidade.
 
-\section*{VISÃO GERAL DO PRODUTO}
+\section*{Visão geral do produto}
 \subsection*{Perspectiva do Produto}
 Esse software é um componente do sistema proposto de geração de água potável a partir da umidade do ar. A sua finalidade principal é o monitoramento do sistema como um todo. Nele haverá informações relacionadas à qualidade e quantidade da água obtida, características do ambiente externo onde as turbinas se encontram, casa de controle, distribuição de energia excedida, ao armazenamento e tratamento com sais da água, dados sobre a turbina. 
 
@@ -105,7 +81,7 @@ Esse software é um componente do sistema proposto de geração de água potáve
 \subsection*{Suposições e Dependências}
 É possível que haja alterações futuras no software proposto, principalmente, relacionadas a integração com eletrônica. Alterações nos componentes eletrônicos afetam diretamente o software proposto.
 
-\section*{RECURSOS DO PRODUTO}
+\section*{Recursos do produto}
 Este item traz todos os recursos referentes ao produto: Os requisitos funcionais, os não funcionais e as restrições referentes ao sistema. Cada um desses requisitos possui um código de identificação para facilitar a rastreabilidade, a sua descrição e o seu nível de prioridade que são prioridade alta, média ou baixa e abaixo está estabelecido o significado de cada uma destas prioridades.
 \begin{itemize}
 \item Alta:  O sistema só funcionará de maneira eficaz caso este requisito esteja sendo atendido.
@@ -180,7 +156,16 @@ RS2	&O sistema deverá estar associado a um banco de dados local, onde ficarão 
 RS3	&O software deverá funcionar continuamente, sem interrupções.\\ \hline
 RS4	&O software deve ser desenvolvido deverá ser desenvolvido na linguagem C\# ou C++.\\ \hline
 RS5	&O sistema deve ser capaz de interagir com os microprocessadores definidos.\\ \hline
-
 \end{tabular}
 \end{table}
+
+\subsection*{Modelo de Caso de Uso}
+\FloatBarrier
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=0.5]{figuras/modelo_caso_uso}
+\caption[Modelo Caso Uso]{Modelo de caso de uso do sistema}
+\label{caso_uso}
+\end{figure}
+\FloatBarrier
 %\end{document}
