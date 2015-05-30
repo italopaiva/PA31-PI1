@@ -4,17 +4,23 @@ Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
 Warning--campo year vazio ou faltando em anaGov
 Warning--campo year vazio ou faltando em barrosVarela
+Warning--campo year vazio ou faltando em essencials_r410A
 Warning--campo year vazio ou faltando em cleanEnvironmentBrasil
 Warning--campo year vazio ou faltando em cetesbOxigenioDissolvido
 Warning--campo year vazio ou faltando em warkawater
+Warning--campo year vazio ou faltando em edge
+Warning--campo year vazio ou faltando em embracovalvula
 Warning--campo year vazio ou faltando em portalEnergia
 Warning--campo year vazio ou faltando em eWater
+Warning--campo year vazio ou faltando em filtracom
 Warning--campo year vazio ou faltando em aquaChem
 Warning--campo year vazio ou faltando em rossiEtAl
+Warning--campo year vazio ou faltando em compressors
+Warning--campo year vazio ou faltando em compressors_for_refrigeration
 Warning--campo year vazio ou faltando em loggerPro
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.3           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-(There were 10 warnings)
+(There were 16 warnings)
