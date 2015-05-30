@@ -135,9 +135,77 @@ o açude pode facilitar essa distribuição.
   que cada aerogerador gera em média 1000L de água.
   
 \subsection{Descrição do projeto}
-O projeto possui a finalidade de desenvolver uma planta de abastecimento de água potável, por meio de um sistema de cinco aerogeradores que executam a captação do ar e tranformam a partir da umidade o ar em água.
+O projeto consiste em criar uma Planta de Abastecimento de Água Através da Umidade do Ar (PA31), de forma a monitorar o controle de água, gerar uma matriz energética eficiente ao ponto da turbina ser auto sustentável e distribuir essa água para a população do bairro Vereador Tarcísio Bezerra Galvão, na cidade de Acari, RN. Ainda, por meio de parcerias com o governo Municipal de Acarí e empresas privadas distribuir essa água de forma gratuita para o bairro visando o social. 
 
-	 Este projeto será localizado na cidade de Acari, Rio Grande do Norte, mais precisamente no bairro Vereador Tarcísio Bezerra Galvão.O sistema de captação de água será localizado nas proximidades do reservatório Gargalheiras, mais precisamente na encosta noroeste do açude. E a distribuição da água será realizada através de torneiras acopladas a parte externa da torre de controle, com acesso direto ao produto final.
+	O sistema de captação de água será localizado nas proximidades do reservatório Gargalheiras, mais precisamente na encosta noroeste do açude. Essa captação é realizada por cinco aerogeradores, utilizando o método de condensação do ar e o transformando em água potável de forma eficiente e sustentável, que não causa prejuízo ao meio ambiente. Portanto, esse documento descreverá de forma resumida como será o funcionamento do da turbina e a geração de água desde o sistema de captação até chegar aos consumidores.
+\subsubsection{Metodologia de funcionamento da turbina}
+\FloatBarrier
+\begin{figure}[!h]
+      \centering
+      \includegraphics[scale = 0.9]{editaveis/figuras/funcionamento_turbina}
+      \label{funcionamento_turbina}
+      \caption[Funcionamento da turbina]{Desenho esquemático do funcionamento da turbina geradora de energia e água}
+    \end{figure}
+    \FloatBarrier
+    
+    O desenho esquemático da turbina acima onde encontra-se as pás acopladas ao rotor, que por meio de um eixo cilíndrico conecta-se ao gerador. Este gerador é o responsável pela geração de energia elétrica através da energia mecânica. A energia mecânica é provinda do giro das hélices que os ventos provocam ao entrar em contato com as pás.  No compartimento à esquerda, onde se encontram o eixo do rotor e o gerador, contem também um filtro de partículas e dois cilindros de compressores. O filtro de partículas frontal é necessário para evitar que resíduos do ar danifiquem os componentes eletrônicos presentes nessa região, tendo em vista que há uma circulação de vento nesse compartimento com o âmbito de refrigerar o gerador e os compressores. Já os compressores, irão comprimir o gás presente em ductos (que estão acoplados ao condensador presente no outro compartimento) para que se atinja uma temperatura baixa possível de se realizar a condensação do ar.
+
+	No segundo compartimento, que tem uma circulação de ventos independente do primeiro compartimento, estão presentes os componentes necessários para a captação de água através da umidade. A entrada de ar úmido se dá pelo topo da nacele por meio de uma ventoinha que suga o ar da atmosfera para dentro da turbina. Uma vez o ar úmido dentro da turbina, o ar passa por um filtro de partículas para que as impurezas não molestem o funcionamento de nenhum componente. Filtrado o ar, este entra em contato com o condensador que, junto com os ductos vindos do compressor, irá condensar este ar. O ar condensado (líquido) escorre pelas paredes do condensador até cair no reservatório contido na base da nacele, enquanto o ar quente provocado pelo condensar neste processo é sugado por um exaustor e enviado diretamente para fora da nacele por meio de uma ventoinha presente no extremo oposto às pás. A água permanece no reservatório até que sensores permitam a abertura da válvula de escoamento que, uma vez aberta, toda a quantidade de líquido até então armazenada escorrerá, por ação da gravidade, pelo cano presente ao longo da torre de sustentação.
+	\subsubsection{Metodologia do sistema das válvulas}
+\FloatBarrier
+\begin{figure}[!h]
+      \centering
+      \includegraphics[scale = 0.6]{editaveis/figuras/reservatorio}
+      \label{funcionamento_reservatorio}
+      \caption[Esquemático Reservatório]{Desenho esquemático do reservatório}
+    \end{figure}
+    \FloatBarrier	
+    
+Após sair da turbina, a água irá descer pelo cano em direção ao reservatório. A água provinda da turbina contará com processos mecânicos e digitais, sendo assim, após filtragem a água é direcionada para o tanque primário o qual o mesmo encherá até certo nível.
+
+Diante disso o sensor de nível 1 (N1) será acionado e  a válvula 1 (V1) dará passagem para a água atingir o tanque secundário, nesse momento os sensores que serão descritos mais adiantes presentes no tanque secundário farão leituras que testarão a qualidade da água com medições de Oxigênio diluído, pH, Turbidez, Condutividade e Nitrogênio. Desse modo, dependendo da leitura do sensor de condutividade a válvula (V3) é aberta e a solução salina é adicionada a água filtrada, pois uma das propriedades mais importantes da água é o fato de ser uma substância polar, capaz de associar-se a outras substâncias polares ou iônicas para formar soluções aquosas. Assim R3 será a injeção dos sais na água a fim de deixá-la apropriada para consumo por meio de um Dosador Automático que varia a dosagem de uma substância de acordo com as concentrações da mesma na mistura que será constantemente verificada.
+
+\FloatBarrier
+\begin{figure}[!h]
+      \centering
+      \includegraphics[scale = 0.6]{editaveis/figuras/controle_sais}
+      \label{controle_sais}
+      \caption[Esquema controle sais]{Esquema de controle de sais na água}
+    \end{figure}
+    \FloatBarrier
+Para isso usará o dosador Dosimat 865, da empresa Metrohm, que possui o modo de operação CNT D que ao ser inserida a concentração final que se deseja de uma substância, o dosador é capaz de determinar o volume de água a ser adicionado para que a concentração desejada seja mantida.
+	
+	Logo, quando o sensor de condutividade tiver uma leitura satisfatória, V3 será fechada e V4 aberta de modo a possibilitar a retirada da água, e nos períodos onde não há retirada de água (à noite, por exemplo) a válvula V4 é fechada e a válvula V2 é aberta, por fim água que sobra é enviada para a rede de distribuição de água local. 
+
+O sistema de controle tem a função de abrir e fecha o tanque de armazenamento da água retirada da umidade do ar. Tendo acesso direto ao aparelho dosador e ao sistema de sensoriamento, pois por meio dele controlará as concentrações dos sais adicionados ao R2 pelo R3 ver esquemática do reservatório figura 1. Quando as concentrações de sais no R2 estiverem altas, a comporta se abrirá e mais água será adicionada à mistura. Por outro lado, quando as concentrações de sais estiverem baixas no tanque de adição, os comandos serão dados para que a comporta seja fechada. Este processo ocorrerá até que as concentrações ideais dos sais sejam atingidas.
+
+A válvula de retenção será utilizada para que a água flua apenas em um sentido, que no caso do esquemático seria da esquerda para a direita. Isto impedirá que a água já adicionada de sais retorne ao tanque da água fornecida da turbina.
+
+O tanque para adição de sais será o reservatório 2 R2 que já contem  a água filtrada. Neste tanque, além de ocorrer a adição de sais, ocorrerá também o processo de mistura para que a solubilização dos sais na água aconteça de forma uniforme.
+
+Para o sensoriamento do R2 será utilizado um sensor de condutividade. Este sensor possui grande aplicabilidade a este sistema de sensoriamento, pois a água pode dissociar íons aumentando a sua condutividade.
+
+	\subsubsection{Metodologia de monitoramento, manutenção e cadastro}
+	O controle de tais sensores se dará por meio do software a sua finalidade principal é o monitoramento do sistema como um todo. Nele haverá informações relacionadas à qualidade e quantidade da água obtida, características do ambiente externo onde as turbinas se encontram casa de controle, distribuição de energia excedida, ao armazenamento e tratamento com sais da água ainda dados sobre a turbina.
+	 
+Alguns dos dados referentes à turbina que serão monitorados pelo software são: as temperaturas internas, a quantidade de energia gerada por cada turbina, a velocidade de rotação das pás. A qualidade da água também será monitorada, pois o software fará as devidas leituras dos sensores, dados relacionados à casa de controle incluem, por exemplo, a voltagem das baterias, a falta ou presença de energia. Com relação à distribuição de energia, o software deve mostrar se a energia excedida está sendo direcionada a rede ou se está abastecendo a casa de controle.
+
+ Também serão obtidos dados referentes à umidade do ar e as características do vento de onde as turbinas se encontram, como exemplo de dados relacionados ao ambiente externo. Percebe-se, portanto, que o software que será utilizado possibilitará o monitoramento de uma série de aspectos relacionados a tecnologia de captação de água a partir da umidade do ar.
+
+Além de realizar a manutenção da água, e os sensores que capacitam a boa qualidade da água distribuída, os softwares permitirão o cadastramento de pessoas que chegarão para buscar a água. Isso permite que façamos um censo e adequemos o sistema a cada mudança de demanda por água, seja por que o número de pessoas atendidas tenha aumentado ou diminuído.
+
+\subsubsection{Metodologia de distribuição}
+\FloatBarrier
+\begin{figure}[!h]
+      \centering
+      \includegraphics[scale = 0.4]{editaveis/figuras/distribuicao_agua}
+      \label{distribuicao_agua}
+      \caption[Distribuição água]{Esquema de distribuição da água até chegar ao local de distribuição.}
+    \end{figure}
+    \FloatBarrier
+    A água será distribuída através de torneiras acopladas a parte externa da torre de controle, com acesso direto ao produto final. A água que ficar em excesso no reservatório será engarrafada em garrafas apropriadamente higienizadas, as quais serão cedidas pelas empresas parceiras. Sendo essas também responsáveis pelo destino das garrafas quando chegar a hora do descarte delas.
+	
+	A prefeitura Municipal de Acari, juntamente com empresas parceiras construirá uma praça de finalidade educacional da população, onde será localizado o centro de distribuição de água. A água será distribuída de forma gratuita, pois o projeto visa o lado social e a melhora na qualidade de vida.
 
   \subsection{Localização da implantação do sistema de captação de água}
   
