@@ -9,7 +9,6 @@ Warning--campo year vazio ou faltando em cleanEnvironmentBrasil
 Warning--campo year vazio ou faltando em cetesbOxigenioDissolvido
 Warning--campo year vazio ou faltando em warkawater
 Warning--campo year vazio ou faltando em edge
-Warning--campo year vazio ou faltando em embracovalvula
 Warning--campo year vazio ou faltando em portalEnergia
 Warning--campo year vazio ou faltando em eWater
 Warning--campo year vazio ou faltando em filtracom
@@ -23,4 +22,4 @@ Warning--campo year vazio ou faltando em loggerPro
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-(There were 16 warnings)
+(There were 15 warnings)
