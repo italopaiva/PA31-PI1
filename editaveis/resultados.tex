@@ -34,12 +34,25 @@
     
   \section{Sistema de monitoramento e controle da qualidade da água}
     
-    \subsection{Escolha dos sensores}
+    
+      Optou-se por sensores os quais não são integrados em um sistema próprio isolado que já disponibiliza a leitura das grandezas
+      referentes às propriedades analisadas: turbidez, oxigênio dissolvido, etc. Tal escolha foi feita visando agrupar todas as
+      leituras em uma só interface controlada por um microcontrolador capaz de processar os sinais de saída de todos os sensores.
+      Além disso, percebeu-se que fazendo esse tipo de abordagem (preferência por sensores não integrados à um sistema isolado)
+      é possível baratear o projeto, uma vez que os sensores integrados são bem mais caros.
+    
+    \subsection{Monitoramento do sistema de captação}
       
-      \input{editaveis/eletronica/sensor_rotacao}
-      \input{editaveis/eletronica/sensor_ph}
-      \input{editaveis/eletronica/acelerometro}
+      Esta seção apresenta os sensores que serão utilizados para o monitoramento do sistema de captação
+      de água, que compreende as turbinas e suas respectivas estruturas.
+      
       \input{editaveis/eletronica/anemometro}
+      \input{editaveis/eletronica/sensor_rotacao}
+      \input{editaveis/eletronica/acelerometro}
+      
+    \subsection{Monitoramento da qualidade da água}
+    
+      \input{editaveis/eletronica/sensor_ph}
     
     \pagebreak
     \subsection{Processo de adição de sais minerais}

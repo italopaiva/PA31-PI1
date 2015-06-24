@@ -3,7 +3,7 @@
 \setlength{\labelsep}{0pt}\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{v-1.9.3 }
+\abntbstabout{v-1.9.2 }
 
 \bibitem[ABC 2015]{abc}
 \abntrefinfo{ABC}{ABC}{2015}
@@ -101,11 +101,6 @@ Disponível em: <http://www.cemig.com.br>. Accesso em 23/04/2015.}
 Disponível em: <http://www.cetesb.sp.gov.br/mortandade/causas\_oxigenio.php>.
   Acesso em: 19/04/2015.}
 
-\bibitem[CETESB 1984]{cetesb84}
-\abntrefinfo{CETESB}{CETESB}{1984}
-{CETESB, C. de~Tecnologia de Saneamento Ambiental do Estado~de S.~P.
-  \emph{Norma técnica L5.221}. 1984.}
-
 \bibitem[CETESB 2008]{cetesbIndiceQualidadeH2O}
 \abntrefinfo{CETESB}{CETESB}{2008}
 {CETESB, C. de~Tecnologia de Saneamento Ambiental do Estado~de S.~P.
@@ -113,6 +108,11 @@ Disponível em: <http://www.cetesb.sp.gov.br/mortandade/causas\_oxigenio.php>.
 Disponível em:
   <http://www.cetesb.sp.gov.br/agua/águassuperficiais/108-índices-de-qualidade-das-águas
   01.pdf/02.pdf/>. Acesso em: 19/04/2015.}
+
+\bibitem[Christine et al. 2008]{christine08}
+\abntrefinfo{Christine et al.}{CHRISTINE et al.}{2008}
+{CHRISTINE, C. et al. Sais minerais sua concentração nos alimentos.
+2008.}
 
 \bibitem[Cirilo 2007]{cirilo}
 \abntrefinfo{Cirilo}{CIRILO}{2007}
@@ -138,13 +138,6 @@ CircuitCellar, the Magazine for Computer Applications, 2006.}
 {D'ALEXANDRIA, C.~B. Otimização de sistema de bombeamento com energia eólica
   : sistema de bombeamento de são gabriel-ba.
 Natal-RN, 2007.}
-
-\bibitem[Danelon, Netto e Rodrigues 2012]{danelon12}
-\abntrefinfo{Danelon, Netto e Rodrigues}{DANELON; NETTO; RODRIGUES}{2012}
-{DANELON, V. R.~B.; NETTO, F. M. D.~L.; RODRIGUES, S. C.~R. AnÁlise do nÍvel
-  de fosforo total, nitrogÊnio amoniacal e cloretos nas Águas do cÓrrego
-  terra branca no municÍpio de uberlÂndia.
-2012.}
 
 \bibitem[DEVELOPMENT 2012]{renewable}
 \abntrefinfo{DEVELOPMENT}{DEVELOPMENT}{2012}
@@ -197,13 +190,6 @@ Disponível
   em:<http://www.ewater.com.au/products/music/related-tools/water-quality-analyser/>.
   Acesso em: 20/04/2015.}
 
-\bibitem[Ferreira 2007]{ferreira07}
-\abntrefinfo{Ferreira}{FERREIRA}{2007}
-{FERREIRA, M. A.~C. Desenvolvimento de sensores de oxigÊnio dissolvido
-  utilizando mÉtodos eletroquÍmicos e Ópticos para monitoramento em tempo
-  real da qualidade da Água.
-2007.}
-
 \bibitem[Filtracom]{filtracom}
 \abntrefinfo{Filtracom}{FILTRACOM}{}
 {FILTRACOM. \emph{HEPA ULTRA FILTER}.
@@ -253,22 +239,11 @@ Disponível em:
   <https://www.sparkfun.com/datasheets/Components/General/Hall-US1881EUA.pdf>.
   Acesso em 26/05/2015.}
 
-\bibitem[Neidhardt et al. 1996]{neidhardt96}
-\abntrefinfo{Neidhardt et al.}{NEIDHARDT et al.}{1996}
-{NEIDHARDT, F.~C. et al. \emph{Escherichia coli andSalmonella: cellular and
-  molecular biology}. 2. ed. Washington D.C.: ASM Press, 1996.}
-
 \bibitem[Olimpio 2007]{olimpio07}
 \abntrefinfo{Olimpio}{OLIMPIO}{2007}
 {OLIMPIO, J.~G. CaracterizaÇÃo geoambiental da microrregiÃo do seridÓ
   oriental do rio grande do norte.
 2007.}
-
-\bibitem[Pádua e Luiz 2006]{padua06}
-\abntrefinfo{Pádua e Luiz}{PáDUA; LUIZ}{2006}
-{PáDUA, V. L.~D.; LUIZ, D.~B. Comparação entre turbidez e distribuição de
-  tamanhos de partículas.
-2006.}
 
 \bibitem[Pereira 2007]{pereira07}
 \abntrefinfo{Pereira}{PEREIRA}{2007}
@@ -280,6 +255,12 @@ Disponível em:
 \abntrefinfo{Preece, Rogers e Sharp}{PREECE; ROGERS; SHARP}{2002}
 {PREECE, J.; ROGERS, Y.; SHARP, H. \emph{Interaction Design: beyond
   Human-Computer Interaction}. [S.l.]: John Wiley \& Sons, 2002.}
+
+\bibitem[Pádua e Luiz 2006]{padua06}
+\abntrefinfo{Pádua e Luiz}{PáDUA; LUIZ}{2006}
+{PáDUA, V. L.~D.; LUIZ, D.~B. Comparação entre turbidez e distribuição de
+  tamanhos de partículas.
+2006.}
 
 \bibitem[Ramaswamy 1996]{ramaswamy96}
 \abntrefinfo{Ramaswamy}{RAMASWAMY}{1996}
@@ -325,11 +306,6 @@ Disponível em: <http://www.eolewater.com/gb/our-products/our-expertise.html>.
 \abntrefinfo{Solé}{SOLé}{1979}
 {SOLé, A.~C. \emph{Instrumentacion Industrial}. 2. ed. Barcelona: Marcombo,
   S.A., 1979.}
-
-\bibitem[Sperling 1996]{sperling96}
-\abntrefinfo{Sperling}{SPERLING}{1996}
-{SPERLING, M.~V. \emph{Introdução à qualidade das águas e ao tratamento de
-  esgotos}. 1. ed. UFMG, Belo Horizonte: [s.n.], 1996.}
 
 \bibitem[SQUITTER 2009]{squitter}
 \abntrefinfo{SQUITTER}{SQUITTER}{2009}
