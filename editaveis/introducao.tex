@@ -7,7 +7,7 @@ os objetivos e a metodologia de gerenciamento do projeto.
 
 \section{Contexto}
 
-Água, de todos os recursos naturais, o mais importante, extremamente essencial para a manutenção da vida na Terra.
+Água, de todos os recursos naturais, é o mais importante e extremamente essencial para a manutenção da vida na Terra.
 Não há nenhuma forma de vida que não tenha necessidade de água para sua sobrevivência e desenvolvimento. 
 
 A água doce é também base de atividades econômicas e sociais, como por exemplo, o abastecimento público, agricultura,
@@ -124,7 +124,7 @@ o açude pode facilitar essa distribuição.
   do Norte, no bairro Vereador Tarcísio Bezerra Galvão. Além de atender os requisitos de facilidade de locomoção até a instalação,
   proximidade ao ponto de consumo da energia, espaço necessário para manutenções, não é uma área muito fria, não tem prédios, árvores,
   plantações e construções elevadas (diminuem a velocidade do vento e causam turbulência). Ainda há o fato do bairro sofrer 
-  constantemente com a falta de água, pois o açude Gargalheiras, que abastece os municípios de Acarí e Currais Novos, atingiu o 
+  constantemente com a falta de água, pois o açude Gargalheiras, que abastece os municípios de Acari e Currais Novos, atingiu o 
   pior volume de água de toda a sua história. O reservatório, que tem capacidade de aproximadamente 44 milhões de metros cúbicos
   de água, está com pouco mais de 8\% do total, deixando diversas pessoas em má situação. O bairro tem uma população de 
   aproximadamente 900 habitantes.
@@ -134,6 +134,79 @@ o açude pode facilitar essa distribuição.
   do bairro escolhido. Para tal, será necessário o uso de 5 aerogeradores, o que acarreta numa produção média de 5000L, uma vez
   que cada aerogerador gera em média 1000L de água.
   
+\subsection{Descrição do projeto}
+O projeto consiste em criar uma Planta de Abastecimento de Água Através da Umidade do Ar (PA31), de forma a monitorar o controle de água, gerar uma matriz energética eficiente ao ponto da turbina ser auto sustentável e distribuir essa água para a população do bairro Vereador Tarcísio Bezerra Galvão, na cidade de Acari, RN. Ainda, por meio de parcerias com o governo Municipal de Acarí e empresas privadas distribuir essa água de forma gratuita para o bairro visando o social. 
+
+	O sistema de captação de água será localizado nas proximidades do reservatório Gargalheiras, mais precisamente na encosta noroeste do açude. Essa captação é realizada por cinco aerogeradores, utilizando o método de condensação do ar e o transformando em água potável de forma eficiente e sustentável, que não causa prejuízo ao meio ambiente. Portanto, esse documento descreverá de forma resumida como será o funcionamento do da turbina e a geração de água desde o sistema de captação até chegar aos consumidores.
+\subsubsection{Metodologia de funcionamento da turbina}
+\FloatBarrier
+\begin{figure}[!h]
+      \centering
+      \includegraphics[scale = 0.9]{editaveis/figuras/funcionamento_turbina}
+      \label{funcionamento_turbina}
+      \caption[Funcionamento da turbina]{Desenho esquemático do funcionamento da turbina geradora de energia e água}
+    \end{figure}
+    \FloatBarrier
+    
+    O desenho esquemático da turbina acima mostra as pás acopladas ao rotor, que por meio de um eixo cilíndrico conecta-se ao gerador. Este gerador é o responsável pela geração de energia elétrica através da energia mecânica. A energia mecânica é provinda do giro das hélices que os ventos provocam ao entrar em contato com as pás.  No compartimento à esquerda, onde se encontram o eixo do rotor e o gerador, contem também um filtro de partículas e dois cilindros de compressores. O filtro de partículas frontal é necessário para evitar que resíduos do ar danifiquem os componentes eletrônicos presentes nessa região, tendo em vista que há uma circulação de vento nesse compartimento com o âmbito de refrigerar o gerador e os compressores. Já os compressores, irão comprimir o gás presente em ductos (que estão acoplados ao condensador presente no outro compartimento) para que se atinja uma temperatura baixa possível de se realizar a condensação do ar.
+
+	No segundo compartimento, que tem uma circulação de ventos independente do primeiro compartimento, estão presentes os componentes necessários para a captação de água através da umidade. A entrada de ar úmido se dá pelo topo da nacele por meio de uma ventoinha que suga o ar da atmosfera para dentro da turbina. Uma vez o ar úmido dentro da turbina, ele passa por um filtro de partículas para que as impurezas não danifiquem o funcionamento de nenhum componente. Filtrado o ar, este entra em contato com o condensador que, junto com os ductos vindos do compressor, irá condensar este ar. O ar condensado (líquido) escorre pelas paredes do condensador até cair no reservatório contido na base da nacele, enquanto o ar quente provocado pelo condensar neste processo é sugado por um exaustor e enviado diretamente para fora da nacele por meio de uma ventoinha presente no extremo oposto às pás. A água permanece no reservatório até que sensores permitam a abertura da válvula de escoamento que, uma vez aberta, toda a quantidade de líquido até então armazenada escorrerá, por ação da gravidade, pelo cano presente ao longo da torre de sustentação.
+	\subsubsection{Metodologia do sistema das válvulas}
+\FloatBarrier
+\begin{figure}[!h]
+      \centering
+      \includegraphics[scale = 0.6]{editaveis/figuras/reservatorio}
+      \label{funcionamento_reservatorio}
+      \caption[Esquemático Reservatório]{Desenho esquemático do reservatório}
+    \end{figure}
+    \FloatBarrier	
+    
+Após sair da turbina, a água irá descer pelo cano em direção ao reservatório. A água provinda da turbina contará com processos mecânicos e digitais, sendo assim, após filtragem a água é direcionada para o tanque primário o qual o mesmo encherá até certo nível.
+
+Diante disso o sensor de nível 1 (N1) será acionado e  a válvula 1 (V1) dará passagem para a água atingir o tanque secundário, nesse momento os sensores que serão descritos mais adiantes presentes no tanque secundário farão leituras que testarão a qualidade da água com medições de Oxigênio diluído, pH, Turbidez, Condutividade e Nitrogênio. Desse modo, dependendo da leitura do sensor de condutividade a válvula (V3) é aberta e a solução salina é adicionada a água filtrada, pois uma das propriedades mais importantes da água é o fato de ser uma substância polar, capaz de associar-se a outras substâncias polares ou iônicas para formar soluções aquosas. Assim R3 será a injeção dos sais na água a fim de deixá-la apropriada para consumo por meio de um Dosador Automático que varia a dosagem de uma substância de acordo com as concentrações da mesma na mistura que será constantemente verificada.
+
+\FloatBarrier
+\begin{figure}[!h]
+      \centering
+      \includegraphics[scale = 0.6]{editaveis/figuras/controle_sais}
+      \label{controle_sais}
+      \caption[Esquema controle sais]{Esquema de controle de sais na água}
+    \end{figure}
+    \FloatBarrier
+Para isso usará o dosador Dosimat 865, da empresa Metrohm, que possui o modo de operação CNT D que ao ser inserida a concentração final que se deseja de uma substância, o dosador é capaz de determinar o volume de água a ser adicionado para que a concentração desejada seja mantida.
+	
+	Logo, quando o sensor de condutividade tiver uma leitura satisfatória, V3 será fechada e V4 aberta de modo a possibilitar a retirada da água, e nos períodos onde não há retirada de água (à noite, por exemplo) a válvula V4 é fechada e a válvula V2 é aberta, por fim água que sobra é enviada para a rede de distribuição de água local. 
+
+O sistema de controle tem a função de abrir e fecha o tanque de armazenamento da água retirada da umidade do ar. Tendo acesso direto ao aparelho dosador e ao sistema de sensoriamento, pois por meio dele controlará as concentrações dos sais adicionados ao R2 pelo R3 ver esquemática do reservatório Figura 1. Quando as concentrações de sais no R2 estiverem altas, a comporta se abrirá e mais água será adicionada à mistura. Por outro lado, quando as concentrações de sais estiverem baixas no tanque de adição, os comandos serão dados para que a comporta seja fechada. Este processo ocorrerá até que as concentrações ideais dos sais sejam atingidas.
+
+A válvula de retenção será utilizada para que a água flua apenas em um sentido, que no caso do esquemático seria da esquerda para a direita. Isto impedirá que a água já adicionada de sais retorne ao tanque da água fornecida da turbina.
+
+O tanque para adição de sais será o reservatório 2 R2 que já contem  a água filtrada. Neste tanque, além de ocorrer a adição de sais, ocorrerá também o processo de mistura para que a solubilização dos sais na água aconteça de forma uniforme.
+
+Para o sensoriamento do R2 será utilizado um sensor de condutividade. Este sensor possui grande aplicabilidade a este sistema de sensoriamento, pois a água pode dissociar íons aumentando a sua condutividade.
+
+	\subsubsection{Metodologia de monitoramento, manutenção e cadastro}
+	O controle de tais sensores se dará por meio do software a sua finalidade principal é o monitoramento do sistema como um todo. Nele haverá informações relacionadas à qualidade e quantidade da água obtida, características do ambiente externo onde as turbinas se encontram casa de controle, distribuição de energia excedida, ao armazenamento e tratamento com sais da água ainda dados sobre a turbina.
+	 
+Alguns dos dados referentes à turbina que serão monitorados pelo software são: as temperaturas internas, a quantidade de energia gerada por cada turbina, a velocidade de rotação das pás. A qualidade da água também será monitorada, pois o software fará as devidas leituras dos sensores, dados relacionados à casa de controle incluem, por exemplo, a voltagem das baterias, a falta ou presença de energia. Com relação à distribuição de energia, o software deve mostrar se a energia excedida está sendo direcionada a rede ou se está abastecendo a casa de controle.
+
+ Também serão obtidos dados referentes à umidade do ar e as características do vento de onde as turbinas se encontram, como exemplo de dados relacionados ao ambiente externo. Percebe-se, portanto, que o software que será utilizado possibilitará o monitoramento de uma série de aspectos relacionados a tecnologia de captação de água a partir da umidade do ar.
+
+Além de realizar a manutenção da água, e os sensores que capacitam a boa qualidade da água distribuída, os softwares permitirão o cadastramento de pessoas que chegarão para buscar a água. Isso permite que façamos um censo e adequemos o sistema a cada mudança de demanda por água, seja por que o número de pessoas atendidas tenha aumentado ou diminuído.
+
+\subsubsection{Metodologia de distribuição}
+\FloatBarrier
+\begin{figure}[!h]
+      \centering
+      \includegraphics[scale = 0.4]{editaveis/figuras/distribuicao_agua}
+      \label{distribuicao_agua}
+      \caption[Distribuição água]{Esquema de distribuição da água até chegar ao local de distribuição.}
+    \end{figure}
+    \FloatBarrier
+    A água será distribuída através de torneiras acopladas a parte externa da torre de controle, com acesso direto ao produto final. A água que ficar em excesso no reservatório será engarrafada em garrafas apropriadamente higienizadas, as quais serão cedidas pelas empresas parceiras. Sendo essas também responsáveis pelo destino das garrafas quando chegar a hora do descarte delas.
+	
+	A prefeitura Municipal de Acari, juntamente com empresas parceiras construirá uma praça de finalidade educacional da população, onde será localizado o centro de distribuição de água. A água será distribuída de forma gratuita, pois o projeto visa o lado social e a melhora na qualidade de vida.
+
   \subsection{Localização da implantação do sistema de captação de água}
   
     O sistema de captação de água será localizado nas proximidades do reservatório Gargalheiras, mais precisamente na encosta
@@ -177,7 +250,7 @@ o açude pode facilitar essa distribuição.
     \FloatBarrier
     
     A área total de disponível nessa encosta, considerando toda a área ingrime lateral e o topo parcialmente
-    plano são de 7,71 km $^2$, como ilustram as figuras ~\ref{mapa_area_1} e ~\ref{mapa_area_1_dados}.
+    plano são de 7,71 km $^2$, como ilustram as Figuras ~\ref{mapa_area_1} e ~\ref{mapa_area_1_dados}.
     
     \begin{figure}[h]
     \begin{center}
@@ -251,7 +324,7 @@ o açude pode facilitar essa distribuição.
     
     Outras justificativas para a escolha dessas empresas são que elas poderiam ceder recipientes (garrafas) que já possuem características higiênicas adequadas, por já trabalharem no ramo e terem controle sobre isso. Além de poderem fazer o descarte futuro dos recipientes de forma adequada, já que cuidam disso atualmente em suas empresas devido à preocupação ambiental que todas possuem.
     
-    Essa parceria possibilitaria, também, a distribuição gratuita das garrafas, pois ao invés de cobrarem pela ela, eles ganhariam visibilidade associando sua marca a um projeto inovador, social e ambiental. Essa associação poderia ser evidenciada e comprovada imprimindo o logotipo de empresa que desenvolveu a tecnologia, PA31, e dos implementadores e/ou parceiros.
+    Essa parceria possibilitaria, também, a distribuição gratuita das garrafas, pois ao invés de cobrarem por ela, eles ganhariam visibilidade associando sua marca a um projeto inovador, social e ambiental. Essa associação poderia ser evidenciada e comprovada imprimindo o logotipo de empresa que desenvolveu a tecnologia, PA31, e dos implementadores e/ou parceiros.
     
     \subsubsection{Justificativa da escolha do tipo de distibuição}
     
@@ -264,8 +337,32 @@ o açude pode facilitar essa distribuição.
        \item Estruturalmente mais econômico;
        \item Este tipo de implementação já ocorre em outros projetos;
        \item Capacidade de parcerias públicas e com empresas que tem interesse social.
+       \item Possibilidade de criar um cadastro familiar relacionado com a demanda da população.
+       \item A troca de garrafas é ambientalmente correto, ajudando a diminuir a produção deste tipo de material que geralmente termina nos lixões das cidades.
       \end{itemize}
-      
+
+	Como exemplo de cidade que já adotou esse tipo de distribuição de água temos Roma na Itália com as estruturas de “Nasoni” (nariz em italiano), ou também conhecidas como “fontana” (bebedouro/fonte em italiano). O primeiro nome faz alusão ao formato desses locais de distribuição de água que possuem um grande bico, como pode ser visto nas figuras abaixo, com suas devidas dimensões em centímetros\cite{rodrigues}. 
+	
+	\begin{figure}[!htbp]
+      \centering
+      \includegraphics[scale=1]{editaveis/figuras/nasone}
+      \caption[Dimensionamento de uma Nasoni]
+      {Dimensionamento de uma Nasoni \cite{rodrigues}}
+      \label{dimensionamento_nasoni}
+    \end{figure}
+    
+    Essas fontes foram resultado de uma iniciativa do funcionário municipal Rinazzi, em 1874. Há registros que comprovam a implantação de mais de 2500 dessas fontes, que saem água potável durante todo o dia \cite{abc}. A iniciativa deu tão certo que desde 1990 toda a população rural da Itália (100\%) tem acesso à fonte de água potável enquanto que nessa época, 1990, apenas 61,80\% do mundo tinha esse acesso\cite{bank}.
+    
+    Portanto esse mecanismo que escolhemos de distribuição é confiável e já resultou em melhorias significativas em outro país. Além de se tornar um ponto turístico na cidade de Acari, RN, como o Nisoni é na Itália, ele poderá melhorar a qualidade de vida das pessoas dessa cidade. Ainda, o mecanismo de abastecimento da PA31 possui vantagens sobre o italiano, pois ele não terá perda de água envolvida quando a população não estiver usando, já que não sairá água de forma livre durante todo o dia como o outro mecanismo, e sim apenas quando abrirem as torneiras. Outras vantagens sobre o Nasoni, é que mecanismo de captação da PA31 , possui um grande aparato tecnológico, é autossustentável, capta a água por meio da umidade do ar, têm vários sensores para estimar a qualidade da água e ainda poderá fazer um censo interno para averiguar a demanda populacional por água, permitindo então, o melhoramento do sistema com o passar dos anos.
+    \FloatBarrier
+	\begin{figure}[!htbp]
+      \centering
+      \includegraphics[scale=1]{editaveis/figuras/nasoni_italia}
+      \caption[Um Nasoni com o Circo Massimo e o Palatino ao fundo em Roma, Itália ]
+      {Um Nasoni com o Circo Massimo e o Palatino ao fundo em Roma, Itália  \cite{rodrigues}}
+      \label{dimensionamento_nasoni}
+    \end{figure}
+    \FloatBarrier
     \subsubsection{Possíveis empresas parceiras}
       
       Com a finalidade aumentar a viabilidade listamos três empresas abaixo as quais poderão se tornar parceiras nesse projeto, e que possuem preocupação ambiental e social.
@@ -299,15 +396,17 @@ o açude pode facilitar essa distribuição.
       abrangendo 40 fontes em mais de 15 estados \footnotemark.
       \footnotetext{Disponível em: <http://www.indaia.com.br/site/>.}
       Ela é a primeira empresa do Brasil da indústria de águas minerais
-      a ter todos os seus processos e áreas certificados pela ISO 9001 (normas responsáveis pela eficácia de gestão da empresa e
-      qualidade de seus produtos) \cite{iso9001}.
+      a ter todos os seus processos e áreas certificados pela ISO 9001 (normas responsáveis pela eficácia de gestão da empresa e qualidade de seus produtos) \cite{iso9001}.
       
-      Portanto, a Indaiá por abranger vários estados, dentre eles outros locais propícios à instalação do projeto capaz de retirar 
-      água do ar já que a empresa tem grande potencial industrial e características inovadoras. Atualmente, ela tem expandido na
+      Portanto, a Indaiá por abranger vários estados, dentre eles outros locais propícios à instalação do projeto capaz de retirar água do ar já que a empresa tem grande potencial industrial e características inovadoras. Atualmente, ela tem expandido na
       atuação no segmento de bebidas sendo referência no mercado e conquistando cada vez mais o gosto e a preferência dos
       consumidores. O projeto da PA31, seria um oportunidade deles associarem sua marca cada vez mais com a inovação dessa
       tecnologia \footnotemark.
       \footnotetext{Disponível em: <http://www.indaia.com.br/site/>.}
+	A empresa Cristalina de Natal possui vinte anos de experiência na indústria de água mineral, ela seria uma possível empresa parceira por está localizada na cidade de Macaíba, no Rio Grande do Norte, portanto, tendo proximidade com a cidade de Acari e por já distribuir água mineral em todo o estado do RN\footnotemark. A empresa garante a qualidade de sua água possuindo certificação da ISO 9001, atestado BPF (Boas Práticas de Fabricação), APPCC (Análise de perigos e Pontos Críticos de Controle) e vários prêmios de reconhecimento nacional\footnotemark.
+	\footnotetext{Disponível em: <http://www.cristalina.com.br/empresa.php>}
+	\footnotetext{Disponível em: <http://www.cristalina.com.br/qualidade.php25>}
+	Portanto, como já citado, essas empresas poderiam ser possíveis parceiras para a implementação desse projeto, garantindo qualidade na distribuição e contribuindo para a questão social. Suas marcas seriam associadas ao produto e consequentemente seriam reconhecidas por essas boas práticas em relação ao social, meio ambiente, e qualidade de vida.
       
       
 
@@ -315,10 +414,7 @@ o açude pode facilitar essa distribuição.
 \pagebreak
 \section{Objetivos}
 
-Este trabalho tem por objetivo propor uma solução que consiga suprir parte da demanda da população. Os esforços que serão
-realizados ao longo do período de desenvolvimento, no transcorrer de todas as etapas do processo buscam a qualidade e real
-eficácia do produto, ou seja, oferecer a demanda de água do bairro Vereador Tarcísio Bezerra Galvão situado em Aracarí-RN, 
-água potável de qualidade.
+Este trabalho tem por objetivo propor uma solução que consiga suprir parte da demanda de água potável da população do bairro Vereador Tarcísio Bezerra Galvão situado em Acarí-RN. Os esforços que serão realizados ao longo do período de desenvolvimento, no transcorrer de todas as etapas do processo buscam a qualidade e real eficácia do produto.
 
  \subsection{Objetivos específicos}
  
@@ -332,7 +428,6 @@ eficácia do produto, ou seja, oferecer a demanda de água do bairro Vereador Ta
 
  
 \section{Metodologia de Gerenciamento}
-
 A metodologia de gerenciamento do projeto utilizada foi o \textit{Scrum}, que é uma metodologia de gerenciamento de projetos ágil.
 O \textit{Scrum} divide o trabalho em \textit{sprints}, que são iterações com um tempo definido, e ao final de cada 
 \textit{sprint} é feita uma retroscpectiva para avaliar o que foi feito. No início de cada \textit{sprint},
@@ -412,12 +507,42 @@ Foram utilizados os seguintes planos de gerenciamento do PMBoK como documentos a
    \FloatBarrier
    
    \pagebreak
-   \textbf{Cronograma de atividades - Ponto de Controle 2}
+   \textbf{Cronograma de atividades - Ponto de Controle 2 - Sprint 1}
    \begin{figure}[!h]
     \centering
     \includegraphics[scale = 0.8]{editaveis/figuras/cronogramaPC2}
-    \label{Cronograma de atividades PC2}
-    \caption{Cronograma de atividades - Ponto de Controle 2}
+    \label{Cronograma de atividades PC2S1}
+    \caption{Cronograma de atividades - Ponto de Controle 2 - Sprint1}
+   \end{figure}
+   \FloatBarrier
+   
+   \pagebreak
+   \textbf{Cronograma de atividades - Ponto de Controle 2 - Sprint 2}
+   \begin{figure}[!h]
+    \centering
+    \includegraphics[scale = 0.8]{editaveis/figuras/cronogramaPC2S2}
+    \label{Cronograma de atividades PC2S2}
+    \caption{Cronograma de atividades - Ponto de Controle 2 - Sprint 2}
+   \end{figure}
+   \FloatBarrier
+   
+   \pagebreak
+   \textbf{Cronograma de atividades - Ponto de Controle 2 - Sprint 3}
+   \begin{figure}[!h]
+    \centering
+    \includegraphics[scale = 0.8]{editaveis/figuras/cronogramaPC2S3}
+    \label{Cronograma de atividades PC2S3}
+    \caption{Cronograma de atividades - Ponto de Controle 2 - Sprint 3}
+   \end{figure}
+   \FloatBarrier
+   
+    \pagebreak
+   \textbf{Cronograma de atividades - Ponto de Controle 2 - Sprint 4}
+   \begin{figure}[!h]
+    \centering
+    \includegraphics[scale = 0.8]{editaveis/figuras/cronogramaPC2S4}
+    \label{Cronograma de atividades PC2S4}
+    \caption{Cronograma de atividades - Ponto de Controle 2 - Sprint 4}
    \end{figure}
    \FloatBarrier
    
@@ -435,19 +560,49 @@ Foram utilizados os seguintes planos de gerenciamento do PMBoK como documentos a
   \textbf{Gráfico de Gantt- Ponto de Controle 1}
    \begin{figure}[!h]
     \centering
-    \includegraphics[scale = 0.45]{editaveis/figuras/ganttPC1}
+    \includegraphics[scale = 0.4]{editaveis/figuras/ganttPC1}
     \label{Gráfico de Gantt PC 1}
     \caption{Gráfico de Gantt - Ponto de Controle 1}
    \end{figure}
    \FloatBarrier
    
   \pagebreak
-  \textbf{Gráfico de Gantt- Ponto de Controle 2}
+  \textbf{Gráfico de Gantt- Ponto de Controle 2 - Sprint 1}
    \begin{figure}[!h]
     \centering
-    \includegraphics[scale = 0.5]{editaveis/figuras/ganttPC2}
+    \includegraphics[scale = 0.4]{editaveis/figuras/ganttPC2}
     \label{Gráfico de Gantt PC2}
     \caption{Gráfico de Gantt - Ponto de Controle 2}
+   \end{figure}
+   \FloatBarrier
+   
+    \pagebreak
+  \textbf{Gráfico de Gantt- Ponto de Controle 2 - Sprint 2}
+   \begin{figure}[!h]
+    \centering
+    \includegraphics[scale = 0.9]{editaveis/figuras/ganttPC2S2}
+    \label{Gráfico de Gantt PC2S2}
+    \caption{Gráfico de Gantt - Ponto de Controle 2 - Sprint 2}
+   \end{figure}
+   \FloatBarrier
+   
+    \pagebreak
+  \textbf{Gráfico de Gantt- Ponto de Controle 2 - Sprint 3}
+   \begin{figure}[!h]
+    \centering
+    \includegraphics[scale = 1]{editaveis/figuras/ganttPC2S3}
+    \label{Gráfico de Gantt PC2S3}
+    \caption{Gráfico de Gantt - Ponto de Controle 2 - Sprint 3}
+   \end{figure}
+   \FloatBarrier
+   
+   \pagebreak
+  \textbf{Gráfico de Gantt- Ponto de Controle 2 - Sprint 4}
+   \begin{figure}[!h]
+    \centering
+    \includegraphics[scale = 1]{editaveis/figuras/ganttPC2S4}
+    \label{Gráfico de Gantt PC2S4}
+    \caption{Gráfico de Gantt - Ponto de Controle 2 - Sprint 4}
    \end{figure}
    \FloatBarrier
    

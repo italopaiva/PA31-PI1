@@ -3,12 +3,22 @@
 \setlength{\labelsep}{0pt}\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{v-1.9.2 }
+\abntbstabout{v-1.9.3 }
+
+\bibitem[ABC 2015]{abc}
+\abntrefinfo{ABC}{ABC}{2015}
+{ABC, D. \emph{Nasoni}. 2015.
+Disponível em<http://elmaxilab.com/definicao-abc/letra-n/nasoni.php>. Acesso
+  em: 24/05/2015.}
 
 \bibitem[Abilio e Etiene 2005]{abilio05}
 \abntrefinfo{Abilio e Etiene}{ABILIO; ETIENE}{2005}
 {ABILIO, S.~G.; ETIENE, C. \emph{Propriedades físico-químicas da água}.
   Universidade Federal Fluminense: [s.n.], 2005.}
+
+\bibitem[Aldabo 2002]{aldabo2002}
+\abntrefinfo{Aldabo}{ALDABO}{2002}
+{ALDABO, R. \emph{Energia Eólica}. [S.l.]: Atiber, 2002.}
 
 \bibitem[Almeida 2004]{almeida04}
 \abntrefinfo{Almeida}{ALMEIDA}{2004}
@@ -48,12 +58,24 @@ Disponível em:<http://portalpnqa.ana.gov.br/indicadores-indice-aguas.aspx>.
   TÉCNICO PARA ÁGUAS ENVASADAS E GELO.} 2005.
 Diário Oficial da União, Brasília, n. 151, 23 set. 2005.}
 
+\bibitem[bank) 2014]{bank}
+\abntrefinfo{bank)}{BANK)}{2014}
+{BANK), B.~M. (world. \emph{Indicadores Banco Mundial}. 2014.
+Disponível em<http://data.worldbank.org/products/wdi>. Acesso em: 25/05/2015.}
+
 \bibitem[Barros e Varella]{barrosVarela}
 \abntrefinfo{Barros e Varella}{BARROS; VARELLA}{}
 {BARROS, M.~M. de; VARELLA, V.~S. de Q. \emph{Fontes de Energia Renováveis:
   Geração Eólica}.
 Disponível em: <http://www.solar.coppe.ufrj.br/eolica/eol\_txt.htm>. Acesso em
   23/04/2015.}
+
+\bibitem[Bowman]{essencials_r410A}
+\abntrefinfo{Bowman}{BOWMAN}{}
+{BOWMAN, M. L.~H. \emph{The low GWP refrigerante R407F – For highly efficient
+  and environmental friendly refrigeration systems with Bock compressors}.
+Disponível em <http://web.fscj.edu/Mark.Bowman/handouts.htm>. Acesso em:
+  12/05/2015.}
 
 \bibitem[Brasil]{cleanEnvironmentBrasil}
 \abntrefinfo{Brasil}{BRASIL}{}
@@ -102,6 +124,10 @@ Disponível em:
 {CNI, C. N. D.~I. \emph{Metrologia: Conhecendo e aplicando na sua empresa}.
   Brasília: [s.n.], 2001.}
 
+\bibitem[Custodio 2013]{custodio2013}
+\abntrefinfo{Custodio}{CUSTODIO}{2013}
+{CUSTODIO, R. \emph{Energia Eólica}. 2. ed. [S.l.]: Synergia, 2013.}
+
 \bibitem[Cyliax 2006]{cyliax06}
 \abntrefinfo{Cyliax}{CYLIAX}{2006}
 {CYLIAX, I. Connected sonic anemometer.
@@ -136,12 +162,33 @@ Disponível em:
   <http://yogui.co/fantastica-invencao-que-gera-100-litros-de-agua-por-dia-warka-water>.
   Acesso em 23/04/2015.}
 
+\bibitem[edge]{edge}
+\abntrefinfo{edge}{EDGE}{}
+{EDGE, E. \emph{HEPA AIR FILTER}.
+Disponível em: <http://www.engineersedge.com/filtration/hepa\_filter.htm>.
+  Acesso em 24/05.}
+
+\bibitem[Embraco]{embracovalvula}
+\abntrefinfo{Embraco}{EMBRACO}{}
+{EMBRACO. \emph{Clube da Refrigeração. Elementos de Controle.}
+Disponível em:
+  <http://www.clubedarefrigeracao.com.br/downloads/elementos-de-controle>.
+  Acesso em: 25 de Maio de 2015.}
+
 \bibitem[ENERGIA]{portalEnergia}
 \abntrefinfo{ENERGIA}{ENERGIA}{}
 {ENERGIA, P. \emph{Eole Water cria aerogerador capaz de gerar água potável}.
 Disponível em:
   <http://www.portal-energia.com/eole-water-cria-aerogerador-capaz-de-gerar-agua-potavel>.
   Acesso em 23/04/2015.}
+
+\bibitem[EPA 2014]{epa2014}
+\abntrefinfo{EPA}{EPA}{2014}
+{EPA, E. P.~A. \emph{Ozone Layer Protection – Regulatory Programs. What You
+  Should Know about Refrigerants When Purchasing or Repairing a Residential A/C
+  System or Heat Pump.} 2014.
+Disponível em: <http://www.epa.gov/ozone/title6/phaseout/22phaseout.html>.
+  Acesso em: 12 de Maio de 2015.}
 
 \bibitem[eWater]{eWater}
 \abntrefinfo{eWater}{EWATER}{}
@@ -156,6 +203,12 @@ Disponível
   utilizando mÉtodos eletroquÍmicos e Ópticos para monitoramento em tempo
   real da qualidade da Água.
 2007.}
+
+\bibitem[Filtracom]{filtracom}
+\abntrefinfo{Filtracom}{FILTRACOM}{}
+{FILTRACOM. \emph{HEPA ULTRA FILTER}.
+Disponível em: <http://filtracom.com.br/portfolio/filtro-hepa-absoluto/>.
+  Acesso em 24/05.}
 
 \bibitem[Hydrogeologic]{aquaChem}
 \abntrefinfo{Hydrogeologic}{HYDROGEOLOGIC}{}
@@ -181,6 +234,17 @@ British Standards Institution.}
 {KRAJEWSKI, J.~L.; HITZMAN, P.~L. \emph{Operations management strategy and
   analysis}. [S.l.]: Addison Wesley, 1996.}
 
+\bibitem[Layton 2011]{layton2011}
+\abntrefinfo{Layton}{LAYTON}{2011}
+{LAYTON, J. Como funciona a energia eólica.
+2011.}
+
+\bibitem[Limited 2013]{axair}
+\abntrefinfo{Limited}{LIMITED}{2013}
+{LIMITED, A. F.~U. \emph{Fans – Rosenberg Selection 2013}. 2013.
+Disponivel em http://www.axair-fans.co.uk/axial-fans/low-power-fans.html
+  acessado em 18/Mai/2015.}
+
 \bibitem[Melexis 2005]{melexis}
 \abntrefinfo{Melexis}{MELEXIS}{2005}
 {MELEXIS, M. I.~S. \emph{Datasheet do componente sensor de efeito Hall US1881}.
@@ -200,6 +264,12 @@ Disponível em:
   oriental do rio grande do norte.
 2007.}
 
+\bibitem[Pádua e Luiz 2006]{padua06}
+\abntrefinfo{Pádua e Luiz}{PáDUA; LUIZ}{2006}
+{PáDUA, V. L.~D.; LUIZ, D.~B. Comparação entre turbidez e distribuição de
+  tamanhos de partículas.
+2006.}
+
 \bibitem[Pereira 2007]{pereira07}
 \abntrefinfo{Pereira}{PEREIRA}{2007}
 {PEREIRA, R.~V. \emph{Sensores e transdutores para um sistema automático de
@@ -210,12 +280,6 @@ Disponível em:
 \abntrefinfo{Preece, Rogers e Sharp}{PREECE; ROGERS; SHARP}{2002}
 {PREECE, J.; ROGERS, Y.; SHARP, H. \emph{Interaction Design: beyond
   Human-Computer Interaction}. [S.l.]: John Wiley \& Sons, 2002.}
-
-\bibitem[Pádua e Luiz 2006]{padua06}
-\abntrefinfo{Pádua e Luiz}{PáDUA; LUIZ}{2006}
-{PáDUA, V. L.~D.; LUIZ, D.~B. Comparação entre turbidez e distribuição de
-  tamanhos de partículas.
-2006.}
 
 \bibitem[Ramaswamy 1996]{ramaswamy96}
 \abntrefinfo{Ramaswamy}{RAMASWAMY}{1996}
@@ -232,6 +296,12 @@ Disponível em:
 {RIBEIRO, M. R.~S. et al. Desenvolvimento de um anêmometro digital
   ultrasônico.
 2006.}
+
+\bibitem[Rodriques 2013]{rodrigues}
+\abntrefinfo{Rodriques}{RODRIQUES}{2013}
+{RODRIQUES, L. \emph{Vamos beber água no Nasone?} 2013.
+Disponível em <http://turismoemroma.com/1-vamos-beber-a-agua-no-nasone>.
+  Acesso em: 27/05/2015.}
 
 \bibitem[ROSSI, OLIVEIRA e ALÉ]{rossiEtAl}
 \abntrefinfo{ROSSI, OLIVEIRA e ALÉ}{ROSSI; OLIVEIRA; ALÉ}{}
@@ -259,13 +329,28 @@ Disponível em: <http://www.eolewater.com/gb/our-products/our-expertise.html>.
 \bibitem[Sperling 1996]{sperling96}
 \abntrefinfo{Sperling}{SPERLING}{1996}
 {SPERLING, M.~V. \emph{Introdução à qualidade das águas e ao tratamento de
-  esgotos}. 1. ed. [S.l.: s.n.], 1996.}
+  esgotos}. 1. ed. UFMG, Belo Horizonte: [s.n.], 1996.}
 
 \bibitem[SQUITTER 2009]{squitter}
 \abntrefinfo{SQUITTER}{SQUITTER}{2009}
 {SQUITTER, S. E.~P. do B. \emph{Sensor de umidade relativa \& umidade do ar
   MODELO S2095.} 2009.
 Disponível em: <www.squitter.com.br>. Acesso em: 17/04/2015.}
+
+\bibitem[TECHNOLOGIES]{compressors}
+\abntrefinfo{TECHNOLOGIES}{TECHNOLOGIES}{a}
+{TECHNOLOGIES, E.~C. \emph{Copeland Scroll\textsuperscript{TM} Compressors}.
+Disponível em
+  <http://www.emersonclimate.com/europe/en-eu/Products/Compressors/Scroll\_Compressors/Pages/default.aspx>.
+  Acesso em: 11/05/2015.}
+
+\bibitem[TECHNOLOGIES]{compressors_for_refrigeration}
+\abntrefinfo{TECHNOLOGIES}{TECHNOLOGIES}{b}
+{TECHNOLOGIES, E.~C. \emph{Copeland Scroll\textsuperscript{TM} Compressors for
+  Refrigeration}.
+Disponível em
+  <http://www.emersonclimate.com/europe/en-eu/Products/Compressors/Scroll\_Compressors/Refrigeration/Pages/default.aspx>.
+  Acesso em: 11/05/2015.}
 
 \bibitem[Terciote 2002]{terciote02}
 \abntrefinfo{Terciote}{TERCIOTE}{2002}
