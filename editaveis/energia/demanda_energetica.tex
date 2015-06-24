@@ -1,0 +1,18 @@
+O sistema que realizará o processo de retirada da água da umidade do ar terá a sua demanda energética suprida pela energia eólica, que é transformada em energia útil da mesma maneira que em aerogeradores usados atualmente. Para se estimar a necessidade de energia para todo o processo, incluindo o monitoramento, deve-se levar em consideração o consumo elétrico de todos os componentes.
+
+A partir da análise dos componentes do sistema, chegou-se à uma lista de dispositivos que consomem energia elétrica, são eles: compressor de refrigeração, sensores (velocidade do vento e parâmetros de qualidade da água), aparelhos eletrônicos (casa de máquinas) e trocador de calor.
+
+Os dois compressores usados serão de 18kW de potência. O trocador de calor, formado por duas ventoinhas, funciona com uma potência de 5kW. Tendo em vista o consumo de energia elétrico por lâmpadas e por computadores, estimou-se por meio de um simulador online o consumo da casa de máquinas, que será de 36kW, o que gera um consumo para cada turbina de 7.2kW. O consumo dos sensores será entorno de 1kW. Somando o gasto de todos os dispositivos, o consumo é de 47.2 kW por turbina.
+Tendo em vista a eficiência do gerador elétrico de 90\% e a potência demandada pelo sistema, já considerando um excedente necessário para armazenamento, tem-se o valor da potência a ser captada de 55kW. Conhecendo essas informações, calcula-se o diâmetro do rotor a partir da seguinte equação:
+
+\FloatBarrier
+\begin{figure}[!ht]
+\centering
+\includegraphics[scale=1]{figuras/eq_1energia}
+\caption[Equação Rotor]{Equação diâmetro do rotor}
+\label{rotor}
+\end{figure}
+\FloatBarrier
+
+Onde P é a potência captada, $\rho$ é a massa específica do ar, r é o raio do rotor e V a velocidade do ar. Usando o valor da velocidade média dos ventos na região de 7m/s,m chegou-se ao valor do raio do rotor de 9,22m \cite{layton2011}.
+A potência excedente produzida pelas 5 turbinas será de aproximadamente 40kW, já que a torre de controle usará energia da rede elétrica. A torre de controle só será abastecida pelas baterias em casos emergenciais, que serão utilizadas por até duas horas. Essa potência excedente será redirecionada para a rede por meio de um relé \cite{aldabo2002}.
