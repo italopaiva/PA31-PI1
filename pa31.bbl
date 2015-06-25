@@ -3,7 +3,7 @@
 \setlength{\labelsep}{0pt}\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{v-1.9.3 }
+\abntbstabout{v-1.9.2 }
 
 \bibitem[ABC 2015]{abc}
 \abntrefinfo{ABC}{ABC}{2015}
@@ -271,12 +271,6 @@ Disponível em:
   oriental do rio grande do norte.
 2007.}
 
-\bibitem[Pádua e Luiz 2006]{padua06}
-\abntrefinfo{Pádua e Luiz}{PáDUA; LUIZ}{2006}
-{PáDUA, V. L.~D.; LUIZ, D.~B. Comparação entre turbidez e distribuição de
-  tamanhos de partículas.
-2006.}
-
 \bibitem[Pereira 2007]{pereira07}
 \abntrefinfo{Pereira}{PEREIRA}{2007}
 {PEREIRA, R.~V. \emph{Sensores e transdutores para um sistema automático de
@@ -287,6 +281,12 @@ Disponível em:
 \abntrefinfo{Preece, Rogers e Sharp}{PREECE; ROGERS; SHARP}{2002}
 {PREECE, J.; ROGERS, Y.; SHARP, H. \emph{Interaction Design: beyond
   Human-Computer Interaction}. [S.l.]: John Wiley \& Sons, 2002.}
+
+\bibitem[Pádua e Luiz 2006]{padua06}
+\abntrefinfo{Pádua e Luiz}{PáDUA; LUIZ}{2006}
+{PáDUA, V. L.~D.; LUIZ, D.~B. Comparação entre turbidez e distribuição de
+  tamanhos de partículas.
+2006.}
 
 \bibitem[Ramaswamy 1996]{ramaswamy96}
 \abntrefinfo{Ramaswamy}{RAMASWAMY}{1996}
