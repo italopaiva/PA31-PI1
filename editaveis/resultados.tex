@@ -5,13 +5,22 @@
   
   \section{Visão geral da solução}
     
+    A solução proposta conta com quatro subsistemas que se integram para compor o sistema final, são elas: 
+    o sistema de captação de água, o sistema eletrônico de monitoramento e controle da qualidade da água, o sistema de 
+    gestão da informação e a matriz energética.
     
+    O sistema de captação de água é o responsável por produzir a água a partir da umidade do ar e conta com as turbinas para tal.
+    A partir da produção da água pelas turbinas, a mesma é levada para um reservatório onde será feito todo o acompanhamento da
+    qualidade da água através dos aparatos eletrônicos. No sistema de captação da água, as turbinas também contam com um monitoramento 
+    feito pelos sensores de vibração da estrutura, velocidade dos ventos, temperatura das turbinas, entre outros.
+    Esses dados produzidos pelos sensores serão acompanhados pelo \textit{software} de gestão da informação para permitir o controle e 
+    tomada de decisões no processo de produção, por parte dos técnicos envolvidos. O sistema de gestão da informação também fará 
+    o controle da distribuição da água para a população. Para dar o suporte para todo o processo de produção e acompanhamento da 
+    produção, a solução possui uma matriz energética própria.
+    
+    \input{editaveis/visao_geral_solucao}
 
   \section{Sistema de captação de água}
-  
-    Esta seção a apresenta os aspectos inerentes ao sistema de captação de água.
-    
-    \subsection{Funcionamento da turbina}
     
       Para condensar o vapor de água presente no ar, usaremos do conceito de temperatura de orvalho. A temperatura de orvalho 
       é a temperatura na qual o ar começa a se condensar, pois sua umidade relativa chega a 100\%. Foi feita uma estimativa
@@ -51,7 +60,7 @@
   \pagebreak
   \section{Matriz energética}
       
-      Esta seção apresenta o funcionamento da matriz energética do sistama.
+      Esta seção apresenta o funcionamento da matriz energética do sistema.
       
   	\subsection{Processo de produção de energia}
   		\input{editaveis/energia/Processo_producao_de_energia}
@@ -145,5 +154,45 @@
      Algumas telas do sistema foram prototipadas para ilustrar alguns dos requisitos funcionais do sistema. As telas prototipadas se 
      encontram no anexo \ref{prototipo_sgi}.
      
+     \subsection{Integração com os componentes eletrônicos}
      
+      O computador no qual o \textit{software} se encontra estará ligado a um receptor eletrônico, esse equipamento será responsável por transmitir os dados de todos os sensores para o computador. Antes de chegar ao receptor, os dados serão processados por um microcontrolador, que os codificará segundo um protocolo estabelecido. Dessa forma, os dados recebidos pelo computador poderão ser decodificados, ao aplicarmos o processo inverso do que foi aplicado nos microcontroladores.
+      
+      Os dados serão enviados e recebidos em pacotes, seguindo um protocolo de comunicação definido previamente. Nesse processo, a codificação dos dados será feito por microprocessadores, e a decodificação será feita no computador com a utilização de um software. Os dados obtidos serão armazenados em um banco de dados, para a melhor segurança e facilidade na manipulação das informações.
+	
+      Para esse protocolo de comunicação foi definido que serão enviados diversos pacotes de dados, conjuntos de bits, que indicarão o funcionamento de cada componente do sistema que está sendo monitorado. 
+      
+      A partir da tabela abaixo é possível observar de forma genérica o formato que os dados serão recebidos pelo receptor e enviados ao computador.
+      
+      \begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+
+	\hline
+	Start & Código do componente & Tipo de sensor & Valor do sensor & ... & End\\
+	\hline                               
+	8 bits & 8 bits & 8 bits & 8 bits & 8 bits & 8 bits\\
+	\hline
+	\end{tabular}
+	\caption[Forma genérica da transmissão de dados]{Forma genérica da transmissão de dados.}
+      \end{table}
+      
+      Os primeiro 8 bits, serão um valor padronizado para indicar o início da transmissão dos dados. Os 8 bits seguintes indicarão o componente do sistema a qual os dados se referem, cada componente terá um valor único que o identifica. Os próximos bits são pares de dados, sendo que os 8 primeiros estão associados ao tipo de sensor que está sendo analisado e os 8 últimos indicam o valor obtido por esse sensor. Finalmente, os últimos 8 bits representam o fim da comunicação.
+      
+      A tabela a seguir pode ser vista como um exemplo da transmissão de alguns dados de uma das turbinas.
+      
+      \begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+
+	\hline
+	Start & "Código da Turbina 1" & "Código do sensor de Temperatura" & 50.00 & End\\
+	\hline
+	\end{tabular}
+	\caption[Exemplo de uma transmissão dos dados da turbina]{Exemplo de uma transmissão dos dados da turbina.}
+      \end{table}
+      
+      Os códigos dos componentes e sensores citados como exemplo serão conjunto de bits especificados previamente no \textit{software} do computador e do microcontrolador para a correta identificação dos componentes físicos associados.
+      
+      Dessa forma, o \textit{software} permitirá o monitoramento individualmente cada peça de cada um dos subsistema, os dados obtidos serão armazenadas para futuras consultas.
      
