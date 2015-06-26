@@ -1,28 +1,67 @@
-\chapter[Resultados]{Resultados e discussão}
-\addcontentsline{toc}{chapter}{Resultados}
- 
-  \section{Sistema de captação e transporte da água}
-    \subsection{Projeto mecânico estrutural das unidades de captação}
+\chapter{Solução Proposta}
+
+  Este capítulo apresenta uma visão geral da solução proposta, e se aprofunda nos projetos específicos que 
+  compõem a solução final.
+  
+  \section{Visão geral da solução}
+    
+    A solução proposta conta com quatro subsistemas que se integram para compor o sistema final, são elas: 
+    o sistema de captação de água, o sistema eletrônico de monitoramento e controle da qualidade da água, o sistema de 
+    gestão da informação e a matriz energética.
+    
+    O sistema de captação de água é o responsável por produzir a água a partir da umidade do ar e conta com as turbinas para tal.
+    A partir da produção da água pelas turbinas, a mesma é levada para um reservatório onde será feito todo o acompanhamento da
+    qualidade da água através dos aparatos eletrônicos. No sistema de captação da água, as turbinas também contam com um monitoramento 
+    feito pelos sensores de vibração da estrutura, velocidade dos ventos, temperatura das turbinas, entre outros.
+    Esses dados produzidos pelos sensores serão acompanhados pelo \textit{software} de gestão da informação para permitir o controle e 
+    tomada de decisões no processo de produção, por parte dos técnicos envolvidos. O sistema de gestão da informação também fará 
+    o controle da distribuição da água para a população. Para dar o suporte para todo o processo de produção e acompanhamento da 
+    produção, a solução possui uma matriz energética própria.
+    
+    \input{editaveis/visao_geral_solucao}
+
+  \section{Sistema de captação de água}
+    
+      Para condensar o vapor de água presente no ar, usaremos do conceito de temperatura de orvalho. A temperatura de orvalho 
+      é a temperatura na qual o ar começa a se condensar, pois sua umidade relativa chega a 100\%. Foi feita uma estimativa
+      teórica da produção de água pela turbina. O cálculo se encontra no anexo \ref{estimativa_producao_agua}.
+      
+      O funcionamento do sistema de captação de água se dá da seguinte maneira: primeiro, captamos o ar úmido e quente do ambiente.
+      Em seguida, abaixamos a temperatura do ar até abaixo da temperatura de orvalho. O ar não suportará toda a umidade que ele
+      conterá, e desprenderá parte dela. Essa parte de vapor de água condensado é a água que coletaremos em nossa turbina. 
+      Para resfriar essa massa de ar, usaremos um ciclo de refrigeração composto de compressores , evaporador e condensador,
+      que será abordado no tópico seguinte.
+    
+    \subsection{Peças da turbina}
+      
+      Esta seção apresenta as peças definidas para composição das turbinas do sistema de captação de água.
+      
     	\subsubsection{Compressor}
-   			\input{editaveis/aero/compressor}
-   		\subsubsection{Valvula expansora}
-   			\input{editaveis/aero/valvula}
-   		\subsubsection{Condensador}
-   			\input{editaveis/aero/condensador}
-   		\subsection{Evaporador}
-   			\input{editaveis/aero/evaporador}
-   		\subsubsection{Filtro de Partículas de Ar}
-   			\input{editaveis/aero/filtro}
-   		\subsubsection{Controle do fluxo de ar interno}
-   			\input{editaveis/aero/fluxo}
-   		\subsubsection{Especificação do material usado na nacele}
-   			\input{editaveis/aero/material}
-   		\subsubsection{Protótipos CATIA}
-   			\input{editaveis/aero/catia}
-    
-    %\subsection{Projeto estrutural do transporte da água}
-    
+		\input{editaveis/aero/compressor}
+	\subsubsection{Valvula expansora}
+		\input{editaveis/aero/valvula}
+	\subsubsection{Condensador}
+		\input{editaveis/aero/condensador}
+	\subsubsection{Evaporador}
+		\input{editaveis/aero/evaporador}
+	\subsubsection{Filtro de Partículas de Ar}
+		\input{editaveis/aero/filtro}
+	\subsubsection{Controle do fluxo de ar interno}
+		\input{editaveis/aero/fluxo}
+	\subsubsection{Torre de sustentação}
+		\input{editaveis/aero/torre_sustentacao}
+	\subsubsection{Especificação do material usado na nacele}
+		\input{editaveis/aero/material}
+	\subsubsection{Protótipos CATIA}
+	  As peças necessárias para a construção da turbina foram prototipadas na ferramenta Catia \textregistered  e se encontram no 
+	  anexo \ref{prototipos_catia}.
+  
+  \vfill
+  \pagebreak
   \section{Matriz energética}
+      
+      Esta seção apresenta o funcionamento da matriz energética do sistema.
+      
   	\subsection{Processo de produção de energia}
   		\input{editaveis/energia/Processo_producao_de_energia}
   	\subsection{Demanda energética}
@@ -33,32 +72,127 @@
   		\input{editaveis/energia/gerador}
   	\subsection{Bateria}
   		\input{editaveis/energia/baterias}
-    
+  
+  \vfill
+  \pagebreak
   \section{Sistema de monitoramento e controle da qualidade da água}
-    
-    \subsection{Escolha dos sensores}
       
-      \input{editaveis/eletronica/sensor_rotacao}
-      \input{editaveis/eletronica/sensor_ph}
-      \input{editaveis/eletronica/acelerometro}
-      \input{editaveis/eletronica/anemometro}
+      Optou-se por sensores os quais não são integrados em um sistema próprio isolado que já disponibiliza a leitura das grandezas
+      referentes às propriedades analisadas: turbidez, oxigênio dissolvido, etc. Tal escolha foi feita visando agrupar todas as
+      leituras em uma só interface controlada por um microcontrolador capaz de processar os sinais de saída de todos os sensores.
+      Além disso, percebeu-se que fazendo esse tipo de abordagem (preferência por sensores não integrados à um sistema isolado)
+      é possível baratear o projeto, uma vez que os sensores integrados são bem mais caros.
     
+    \subsection{Monitoramento do sistema de captação}
+      
+      Esta seção apresenta os sensores que serão utilizados para o monitoramento do sistema de captação
+      de água, que compreende as turbinas e suas respectivas estruturas.
+      
+      \input{editaveis/eletronica/anemometro}
+      \input{editaveis/eletronica/sensor_rotacao}
+      \input{editaveis/eletronica/acelerometro}
+      
+    \subsection{Monitoramento da qualidade da água}
+    
+      \input{editaveis/eletronica/sensor_ph}
+      \input{editaveis/eletronica/sensor_turbidez}
+      \input{editaveis/eletronica/sensor_nivel}
+    
+    \subsection{Controle dos dados monitorados}
+    
+      No projeto de captação de água a partir da umidade do ar o microcontrolador irá ser embarcado em algum ponto estratégico para que se possa controlar as funções ou ações do projeto. O microcontrolador que se utilizará tem a capacidade de integrar elementos adicionais em sua estrutura interna como memórias para registro e controle de dados e sensores de medição quando usados com condicionamento de sinais.
+      
+      \subsubsection{Placas de aquisição de dados}
+      
+	Placas de aquisição de dados são utilizadas para recolher informação do mundo real e gera dados que podem ser manipuladas pelo computador. Essas placas usam processamentos de sinais para obtenção das informações desejadas. Os sensores usados convertem os parâmetros medidos em sinais eletrônicos e são processados pelo microcontrolador. Os dados são analisados, monitorados e guardados em um computador. 
+	
+	A placa de aquisição de dados multifunções, série M, fabricante National Instruments apresenta funcionalidades otimizadas para as aplicações que o projeto demanda. Ela é ideal para o registro e controle de dados e para interface com sensores de medições e processamentos de sinais. A figura a seguir apresentam as especificações da placa.
+	
+	\begin{figure}[!ht]
+	  \centering
+	  \includegraphics[scale=0.6]{editaveis/figuras/placa_aquisicao_spec}
+	  \caption[Especificações técnicas da placa de aquisição de dados utilizada]
+	      {Especificações técnicas da placa de aquisição de dados utilizada. Fonte: \cite{national04}.}
+	\label{placa_aquisicao_spec}
+	\end{figure}
+	
+	A interface da placa com os sensores de medição é feita através de um bloco conector I/O CB – 68LP da mesma fabricante. Este conector ilustrado na imagem abaixo tem 68 terminais para uma ligação fácil com os sensores de medição.
+    
+	\begin{figure}[!ht]
+	  \centering
+	  \includegraphics[scale=0.5]{editaveis/figuras/bloco_conector_placa_aquisicao}
+	  \caption[Bloco conector I/O CB-68LP]
+	      {Bloco conector I/O CB-68LP. Fonte: \cite{national04}.}
+	\label{bloco_conector_placa_aquisicao}
+	\end{figure}
+	
+	As dimensões do bloco conector I/O CB – 68LP são de 14,35 cm por 10,74 cm. A ligação entre a placa de aquisição de dados e o bloco conector exige um cabo R6868 Ribbon I/O, que apresentam nas suas extremidades um conector de 68 terminais. 
+	
+	O custo para a utilização da placa de aquisição de dados com o bloco conector e o cabo de 68 terminais se totaliza em \$580,00.
+	
     \pagebreak
     \subsection{Processo de adição de sais minerais}
     
       \input{editaveis/eletronica/sais_minerais}
-    
-    \vfill
-    
-    \pagebreak
-    \subsection{Sistema de Gestão da Informação}
-      \input{editaveis/software/documento_visao}
       
-    \subsubsection{Interface Homem-Máquina}
-      	\input{editaveis/software/prototipo}
+    \subsection{Transmissão dos dados}
+    
+      \input{editaveis/eletronica/transmissao_dados}
+    
+  \vfill
+  \pagebreak
+  \section{Sistema de Gestão da Informação}
+      
+     Para o acompanhamento e controle de todo o processo de captação e distribuição da água, o projeto contará com um sistema 
+     que irá gerir as informações referentes ao processo, como os dados fornecidos pelos sensores do planta eletrônica,
+     os níveis das baterias das turbinas, o nível dos reservatórios, controle das válvulas dos reservatórios, entre outros.
+     
+     Para a criação do \textit{software}, foram levantados os requisitos com base em \textit{softwares} semelhantes
+     e com o contexto da aplicação. Os requisitos levantados para o sistema de gestão da informação e algumas outras informações
+     relevantes se encontram no Documento de Visão (anexo \ref{doc_visao}).
+     
+     Algumas telas do sistema foram prototipadas para ilustrar alguns dos requisitos funcionais do sistema. As telas prototipadas se 
+     encontram no anexo \ref{prototipo_sgi}.
+     
+     \subsection{Integração com os componentes eletrônicos}
+     
+      O computador no qual o \textit{software} se encontra estará ligado a um receptor eletrônico, esse equipamento será responsável por transmitir os dados de todos os sensores para o computador. Antes de chegar ao receptor, os dados serão processados por um microcontrolador, que os codificará segundo um protocolo estabelecido. Dessa forma, os dados recebidos pelo computador poderão ser decodificados, ao aplicarmos o processo inverso do que foi aplicado nos microcontroladores.
+      
+      Os dados serão enviados e recebidos em pacotes, seguindo um protocolo de comunicação definido previamente. Nesse processo, a codificação dos dados será feito por microprocessadores, e a decodificação será feita no computador com a utilização de um software. Os dados obtidos serão armazenados em um banco de dados, para a melhor segurança e facilidade na manipulação das informações.
+	
+      Para esse protocolo de comunicação foi definido que serão enviados diversos pacotes de dados, conjuntos de bits, que indicarão o funcionamento de cada componente do sistema que está sendo monitorado. 
+      
+      A partir da tabela abaixo é possível observar de forma genérica o formato que os dados serão recebidos pelo receptor e enviados ao computador.
+      
+      \begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
 
-    
-    
-    
-    
-    
+	\hline
+	Start & Código do componente & Tipo de sensor & Valor do sensor & ... & End\\
+	\hline                               
+	8 bits & 8 bits & 8 bits & 8 bits & 8 bits & 8 bits\\
+	\hline
+	\end{tabular}
+	\caption[Forma genérica da transmissão de dados]{Forma genérica da transmissão de dados.}
+      \end{table}
+      
+      Os primeiro 8 bits, serão um valor padronizado para indicar o início da transmissão dos dados. Os 8 bits seguintes indicarão o componente do sistema a qual os dados se referem, cada componente terá um valor único que o identifica. Os próximos bits são pares de dados, sendo que os 8 primeiros estão associados ao tipo de sensor que está sendo analisado e os 8 últimos indicam o valor obtido por esse sensor. Finalmente, os últimos 8 bits representam o fim da comunicação.
+      
+      A tabela a seguir pode ser vista como um exemplo da transmissão de alguns dados de uma das turbinas.
+      
+      \begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+
+	\hline
+	Start & "Código da Turbina 1" & "Código do sensor de Temperatura" & 50.00 & End\\
+	\hline
+	\end{tabular}
+	\caption[Exemplo de uma transmissão dos dados da turbina]{Exemplo de uma transmissão dos dados da turbina.}
+      \end{table}
+      
+      Os códigos dos componentes e sensores citados como exemplo serão conjunto de bits especificados previamente no \textit{software} do computador e do microcontrolador para a correta identificação dos componentes físicos associados.
+      
+      Dessa forma, o \textit{software} permitirá o monitoramento individualmente cada peça de cada um dos subsistema, os dados obtidos serão armazenadas para futuras consultas.
+     
