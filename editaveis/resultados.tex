@@ -1,28 +1,58 @@
-\chapter[Resultados]{Resultados e discussão}
-\addcontentsline{toc}{chapter}{Resultados}
- 
-  \section{Sistema de captação e transporte da água}
-    \subsection{Projeto mecânico estrutural das unidades de captação}
+\chapter{Solução Proposta}
+
+  Este capítulo apresenta uma visão geral da solução proposta, e se aprofunda nos projetos específicos que 
+  compõem a solução final.
+  
+  \section{Visão geral da solução}
+    
+    
+
+  \section{Sistema de captação de água}
+  
+    Esta seção a apresenta os aspectos inerentes ao sistema de captação de água.
+    
+    \subsection{Funcionamento da turbina}
+    
+      Para condensar o vapor de água presente no ar, usaremos do conceito de temperatura de orvalho. A temperatura de orvalho 
+      é a temperatura na qual o ar começa a se condensar, pois sua umidade relativa chega a 100\%. Foi feita uma estimativa
+      teórica da produção de água pela turbina. O cálculo se encontra no anexo \ref{estimativa_producao_agua}.
+      
+      O funcionamento do sistema de captação de água se dá da seguinte maneira: primeiro, captamos o ar úmido e quente do ambiente.
+      Em seguida, abaixamos a temperatura do ar até abaixo da temperatura de orvalho. O ar não suportará toda a umidade que ele
+      conterá, e desprenderá parte dela. Essa parte de vapor de água condensado é a água que coletaremos em nossa turbina. 
+      Para resfriar essa massa de ar, usaremos um ciclo de refrigeração composto de compressores , evaporador e condensador,
+      que será abordado no tópico seguinte.
+    
+    \subsection{Peças da turbina}
+      
+      Esta seção apresenta as peças definidas para composição das turbinas do sistema de captação de água.
+      
     	\subsubsection{Compressor}
-   			\input{editaveis/aero/compressor}
-   		\subsubsection{Valvula expansora}
-   			\input{editaveis/aero/valvula}
-   		\subsubsection{Condensador}
-   			\input{editaveis/aero/condensador}
-   		\subsection{Evaporador}
-   			\input{editaveis/aero/evaporador}
-   		\subsubsection{Filtro de Partículas de Ar}
-   			\input{editaveis/aero/filtro}
-   		\subsubsection{Controle do fluxo de ar interno}
-   			\input{editaveis/aero/fluxo}
-   		\subsubsection{Especificação do material usado na nacele}
-   			\input{editaveis/aero/material}
-   		\subsubsection{Protótipos CATIA}
-   			\input{editaveis/aero/catia}
-    
-    %\subsection{Projeto estrutural do transporte da água}
-    
+		\input{editaveis/aero/compressor}
+	\subsubsection{Valvula expansora}
+		\input{editaveis/aero/valvula}
+	\subsubsection{Condensador}
+		\input{editaveis/aero/condensador}
+	\subsubsection{Evaporador}
+		\input{editaveis/aero/evaporador}
+	\subsubsection{Filtro de Partículas de Ar}
+		\input{editaveis/aero/filtro}
+	\subsubsection{Controle do fluxo de ar interno}
+		\input{editaveis/aero/fluxo}
+	\subsubsection{Torre de sustentação}
+		\input{editaveis/aero/torre_sustentacao}
+	\subsubsection{Especificação do material usado na nacele}
+		\input{editaveis/aero/material}
+	\subsubsection{Protótipos CATIA}
+	  As peças necessárias para a construção da turbina foram prototipadas na ferramenta Catia \textregistered  e se encontram no 
+	  anexo \ref{prototipos_catia}.
+  
+  \vfill
+  \pagebreak
   \section{Matriz energética}
+      
+      Esta seção apresenta o funcionamento da matriz energética do sistama.
+      
   	\subsection{Processo de produção de energia}
   		\input{editaveis/energia/Processo_producao_de_energia}
   	\subsection{Demanda energética}
@@ -33,10 +63,11 @@
   		\input{editaveis/energia/gerador}
   	\subsection{Bateria}
   		\input{editaveis/energia/baterias}
-    
+  
+  \vfill
+  \pagebreak
   \section{Sistema de monitoramento e controle da qualidade da água}
-    
-    
+        
       Optou-se por sensores os quais não são integrados em um sistema próprio isolado que já disponibiliza a leitura das grandezas
       referentes às propriedades analisadas: turbidez, oxigênio dissolvido, etc. Tal escolha foi feita visando agrupar todas as
       leituras em uma só interface controlada por um microcontrolador capaz de processar os sinais de saída de todos os sensores.
@@ -61,14 +92,13 @@
     
       \input{editaveis/eletronica/sais_minerais}
     
-    \vfill
-    
-    \pagebreak
-    \subsection{Sistema de Gestão da Informação}
+  \vfill
+  \pagebreak
+  \section{Sistema de Gestão da Informação}
       \input{editaveis/software/documento_visao}
       
-    \subsubsection{Interface Homem-Máquina}
-      	\input{editaveis/software/prototipo}
+    \subsection{Interface Homem-Máquina}
+      \input{editaveis/software/prototipo}
 
     
     
