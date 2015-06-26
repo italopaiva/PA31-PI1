@@ -89,10 +89,46 @@
       \input{editaveis/eletronica/sensor_turbidez}
       \input{editaveis/eletronica/sensor_nivel}
     
+    \subsection{Controle dos dados monitorados}
+    
+      No projeto de captação de água a partir da umidade do ar o microcontrolador irá ser embarcado em algum ponto estratégico para que se possa controlar as funções ou ações do projeto. O microcontrolador que se utilizará tem a capacidade de integrar elementos adicionais em sua estrutura interna como memórias para registro e controle de dados e sensores de medição quando usados com condicionamento de sinais.
+      
+      \subsubsection{Placas de aquisição de dados}
+      
+	Placas de aquisição de dados são utilizadas para recolher informação do mundo real e gera dados que podem ser manipuladas pelo computador. Essas placas usam processamentos de sinais para obtenção das informações desejadas. Os sensores usados convertem os parâmetros medidos em sinais eletrônicos e são processados pelo microcontrolador. Os dados são analisados, monitorados e guardados em um computador. 
+	
+	A placa de aquisição de dados multifunções, série M, fabricante National Instruments apresenta funcionalidades otimizadas para as aplicações que o projeto demanda. Ela é ideal para o registro e controle de dados e para interface com sensores de medições e processamentos de sinais. A figura a seguir apresentam as especificações da placa.
+	
+	\begin{figure}[!ht]
+	  \centering
+	  \includegraphics[scale=0.6]{editaveis/figuras/placa_aquisicao_spec}
+	  \caption[Especificações técnicas da placa de aquisição de dados utilizada]
+	      {Especificações técnicas da placa de aquisição de dados utilizada. Fonte: \cite{national04}.}
+	\label{placa_aquisicao_spec}
+	\end{figure}
+	
+	A interface da placa com os sensores de medição é feita através de um bloco conector I/O CB – 68LP da mesma fabricante. Este conector ilustrado na imagem abaixo tem 68 terminais para uma ligação fácil com os sensores de medição.
+    
+	\begin{figure}[!ht]
+	  \centering
+	  \includegraphics[scale=0.5]{editaveis/figuras/bloco_conector_placa_aquisicao}
+	  \caption[Bloco conector I/O CB-68LP]
+	      {Bloco conector I/O CB-68LP. Fonte: \cite{national04}.}
+	\label{bloco_conector_placa_aquisicao}
+	\end{figure}
+	
+	As dimensões do bloco conector I/O CB – 68LP são de 14,35 cm por 10,74 cm. A ligação entre a placa de aquisição de dados e o bloco conector exige um cabo R6868 Ribbon I/O, que apresentam nas suas extremidades um conector de 68 terminais. 
+	
+	O custo para a utilização da placa de aquisição de dados com o bloco conector e o cabo de 68 terminais se totaliza em \$580,00.
+	
     \pagebreak
     \subsection{Processo de adição de sais minerais}
     
       \input{editaveis/eletronica/sais_minerais}
+      
+    \subsection{Transmissão dos dados}
+    
+      \input{editaveis/eletronica/transmissao_dados}
     
   \vfill
   \pagebreak
